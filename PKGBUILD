@@ -37,7 +37,8 @@ _srctag=v${pkgver%.*}-${pkgver##*.}
 source=(
   https://cdn.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/${_srcname}.tar.{xz,sign}
   $url/releases/download/$_srctag/linux-$_srctag.patch.zst{,.sig}
-  config  # the main kernel config file
+  config.arm64
+  config.x86
 )
 validpgpkeys=(
   ABAF11C65A2970B130ABE3C479BE3E4300411886  # Linus Torvalds
@@ -55,6 +56,12 @@ b2sums=('9294ae977d7b8b929c476e649cbb116969a674d3923e5a4cddf8615ee5ba373761630f1
         '705574fb00542c2ba7e63691616e0b1583ff7b498060d55daeca118394cad956ea3b7cc7a0e0f3726ba8ec81fa3e13e73e9874ac0857906390f8be62a9d82a64'
         'SKIP'
         '6567305d4402ba3e1a80ed89ce0588a2c4aa7ec850720ab63e4289b2d4a905100bae7c4b2318c6aedaaebc7c474437320c3298efa90dd2499608b3dc18677f86')
+
+case "${CARCH}" in
+ x86_64)  KARCH=x86 ;;
+ aarch64) KARCH=arm64 ;;
+esac
+export KARCH
 
 export KBUILD_BUILD_HOST=archlinux
 export KBUILD_BUILD_USER=$pkgbase
@@ -78,9 +85,9 @@ prepare() {
   done
 
   echo "Setting config..."
-  cp ../config .config
+  cp "../config.${KARCH}" .config
   make olddefconfig
-  diff -u ../config .config || :
+  diff -u "../config.${KARCH}" .config || :
 
   make -s kernelrelease > version
   echo "Prepared $pkgbase version $(<version)"
@@ -104,6 +111,9 @@ _package() {
     'linux-firmware: firmware images needed for some devices'
     'scx-scheds: to use sched-ext schedulers'
     'wireless-regdb: to set the correct wireless channels of your country'
+  )
+  optdepends_aarch64=(
+    'linux-dtbs: device tree binaries'
   )
   provides=(
     KSMBD-MODULE
@@ -146,20 +156,22 @@ _package-headers() {
   install -Dt "$builddir" -m644 .config Makefile Module.symvers System.map \
     localversion.* version vmlinux tools/bpf/bpftool/vmlinux.h
   install -Dt "$builddir/kernel" -m644 kernel/Makefile
-  install -Dt "$builddir/arch/x86" -m644 arch/x86/Makefile
+  install -Dt "$builddir/arch/${KARCH}" -m644 "arch/${KARCH}/Makefile"
   cp -t "$builddir" -a scripts
   ln -srt "$builddir" "$builddir/scripts/gdb/vmlinux-gdb.py"
 
   # required when STACK_VALIDATION is enabled
-  install -Dt "$builddir/tools/objtool" tools/objtool/objtool
+  if grep -q "CONFIG_HAVE_STACK_VALIDATION=y" "../config.${KARCH}"; then
+    install -Dt "$builddir/tools/objtool" tools/objtool/objtool
+  fi
 
   # required when DEBUG_INFO_BTF_MODULES is enabled
   install -Dt "$builddir/tools/bpf/resolve_btfids" tools/bpf/resolve_btfids/resolve_btfids
 
   echo "Installing headers..."
   cp -t "$builddir" -a include
-  cp -t "$builddir/arch/x86" -a arch/x86/include
-  install -Dt "$builddir/arch/x86/kernel" -m644 arch/x86/kernel/asm-offsets.s
+  cp -t "$builddir/arch/${KARCH}" -a "arch/${KARCH}/include"
+  install -Dt "$builddir/arch/${KARCH}/kernel" -m644 "arch/${KARCH}/kernel/asm-offsets.s"
 
   install -Dt "$builddir/drivers/md" -m644 drivers/md/*.h
   install -Dt "$builddir/net/mac80211" -m644 net/mac80211/*.h
@@ -179,8 +191,10 @@ _package-headers() {
   find . -name 'Kconfig*' -exec install -Dm644 {} "$builddir/{}" \;
 
   echo "Installing Rust files..."
-  install -Dt "$builddir/rust" -m644 rust/*.rmeta
-  install -Dt "$builddir/rust" rust/*.so
+  if grep -q "CONFIG_RUST=y" "../config.${KARCH}"; then
+    install -Dt "$builddir/rust" -m644 rust/*.rmeta
+    install -Dt "$builddir/rust" rust/*.so
+  fi
 
   echo "Installing unstripped VDSO..."
   make INSTALL_MOD_PATH="$pkgdir/usr" vdso_install \
@@ -189,7 +203,7 @@ _package-headers() {
   echo "Removing unneeded architectures..."
   local arch
   for arch in "$builddir"/arch/*/; do
-    [[ $arch = */x86/ ]] && continue
+    [[ $arch = */"${KARCH}"/ ]] && continue
     echo "Removing $(basename "$arch")"
     rm -r "$arch"
   done
@@ -245,11 +259,24 @@ _package-docs() {
   ln -sr "$builddir/Documentation" "$pkgdir/usr/share/doc/$pkgbase"
 }
 
+_package-dtbs() {
+  pkgdesc="Device tree binaries for the $pkgdesc kernel"
+
+  cd $_srcname
+  echo "Installing device tree binaries..."
+  mkdir -p "$pkgdir/boot/dtb"
+  make INSTALL_DTBS_PATH="$pkgdir/boot/dtb" dtbs_install
+}
+
 pkgname=(
   "$pkgbase"
   "$pkgbase-headers"
   "$pkgbase-docs"
 )
+if [[ $CARCH = aarch64 ]]; then
+  pkgname+=("$pkgbase-dtbs")
+fi
+
 for _p in "${pkgname[@]}"; do
   eval "package_$_p() {
     $(declare -f "_package${_p#$pkgbase}")
