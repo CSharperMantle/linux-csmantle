@@ -3,7 +3,7 @@
 
 pkgbase=linux-csmantle
 pkgver=6.18.6.arch1
-pkgrel=1
+pkgrel=2
 pkgdesc='Linux'
 url='https://github.com/archlinux/linux'
 arch=(loong64)
@@ -59,7 +59,8 @@ sha256sums=('472497197b2f68d4dbf1bc32cc6dc669ca220ff4c0eb0dc39a9cff9a88f9a31b'
             '415aa6b21912dce689c11c6e2afcb6d2fb887f38a8c6da18b8f7727d3256d743'
             'c46de055ed82702c20d3c70cc2a268ed48a6fa4ad2a546fd3b339a1366954618'
             '30accab32bd0699304421ad347bd9866820a499b78d473d14e099600912717a8'
-            'e629cc73e44a63c4a332c8f77f8e4baa01227a9ed4390bf5ef978b02be9b6b0d')
+            'e629cc73e44a63c4a332c8f77f8e4baa01227a9ed4390bf5ef978b02be9b6b0d'
+            'e613c0d8c475a02bfaaa6ab64881af9f07f1e3438f525780e15814d36069254e')
 b2sums=('f56b4894cef3fdc24d963985d4f497d8a1fd80cae48197aabcf58038132c3c03da74537b47411aebc158483f08bad8200544103f31647b711acb59c4d652e387'
         'SKIP'
         'e99d4b9d40339240b429af1f6911244851fc60bceb444d38e1db405d6c2bd5db7523392366e85ba178495ebb6c92fa83c0160f2e8632ffe76e2a6c380ea5dbaf'
@@ -73,7 +74,8 @@ b2sums=('f56b4894cef3fdc24d963985d4f497d8a1fd80cae48197aabcf58038132c3c03da74537
         'be8e7e21b4706e6d7c5ea314c080f6d50cd0fefde7a7694d424d82be6f85d5588fc683514d505f14f74c76b9b435d03281c0761cbb7d177222984f7c4710d70b'
         '6b00b56e99f3c534f51b3991a051c3a158a155c19de1e1d4f344965c56f84ea95b8d2c6fb91b96930847a8c68699a46393235777d6176dfd1c2946b11ea4857e'
         '4513616d06073e36675511be5375e64be7cc2bcff0fecbf959fae4485875d5c0f2428ac8df9492052cce9cf1cc99d44e94cbbd49364146a491d97716d8ca7595'
-        'e9e60112c0b5e0d57db30b2dc7b7c0d093d5df846daaaccc7df4f1a8cdbc1e445542132d9db06d87210bacf495d9a95d655f4f227869d38d312234a654a233f1')
+        'e9e60112c0b5e0d57db30b2dc7b7c0d093d5df846daaaccc7df4f1a8cdbc1e445542132d9db06d87210bacf495d9a95d655f4f227869d38d312234a654a233f1'
+        'ba018630e8cf8fca33166f46d6cd33cb8a1ac5c2e1bf38901ada9c61a242fd41a7c7679fdac38a94368ee10c41271ec6bb430be98ac44b3217808564cc4d1b48')
 
 export KBUILD_BUILD_HOST=archlinux
 export KBUILD_BUILD_USER=$pkgbase
@@ -312,6 +314,7 @@ source+=("loong-config.16k"
          "0019-BACKPORT-FROMLIST-drm-xe-regs-fix-RING_CTL_SIZE-size.patch"
          "0020-FROMLIST-drm-xe-use-4K-alignment-for-cursor-jumps.patch"
          "0021-FROMLIST-drm-xe-query-use-PAGE_SIZE-as-the-minimum-p.patch"
+         "ANOLIS-LOONGARCH-Adjust-the-calc-method-of-number-of-pack.patch"
 )
 
 # vim:set ts=8 sts=2 sw=2 et:
