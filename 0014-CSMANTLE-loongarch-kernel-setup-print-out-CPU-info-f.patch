@@ -1,0 +1,27 @@
+From 5a4279ab274ebeb0cf11552c907c3430378d3a63 Mon Sep 17 00:00:00 2001
+From: Rong Bao <rong.bao@csmantle.top>
+Date: Wed, 21 Jan 2026 10:09:44 +0800
+Subject: [PATCH 14/14] CSMANTLE: loongarch: kernel/setup: print out CPU info
+ for debugging
+
+---
+ arch/loongarch/kernel/setup.c | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/arch/loongarch/kernel/setup.c b/arch/loongarch/kernel/setup.c
+index 1ba69b954b70..dc509163ce4c 100644
+--- a/arch/loongarch/kernel/setup.c
++++ b/arch/loongarch/kernel/setup.c
+@@ -135,6 +135,9 @@ static void __init parse_cpu_table(const struct dmi_header *dm)
+ 	}
+         __max_packages++;
+ 
++        pr_info("cpuname = %s, cores_per_package = %d\n",
++                loongson_sysconf.cpuname,
++                loongson_sysconf.cores_per_package);
+ 	pr_info("CpuClock = %llu\n", cpu_clock_freq);
+ }
+ 
+-- 
+2.52.0
+
