@@ -1,7 +1,7 @@
 From 838869bd0093f81313582a97d88b5b1fec083004 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 26 Feb 2025 10:00:19 +0800
-Subject: [PATCH 06/14] BACKPORT: FROMLIST: drm/xe/guc: use SZ_4K for alignment
+Subject: [PATCH 06/15] BACKPORT: FROMLIST: drm/xe/guc: use SZ_4K for alignment
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit

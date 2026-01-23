@@ -1,7 +1,7 @@
 From 23f647fb2a1deef30f3b819d888cb6e58e0c6a71 Mon Sep 17 00:00:00 2001
 From: Rong Bao <rong.bao@csmantle.top>
 Date: Wed, 21 Jan 2026 10:09:44 +0800
-Subject: [PATCH 14/14] CSMANTLE: loongarch: print out CPU population info for
+Subject: [PATCH 14/15] CSMANTLE: loongarch: print out CPU population info for
  debugging
 
 ---
