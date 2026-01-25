@@ -1,7 +1,7 @@
 From 51d2a574b0d25b5025d516c1ee5039a89a79b199 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 26 Feb 2025 10:00:21 +0800
-Subject: [PATCH 08/16] FROMLIST: drm/xe: use 4K alignment for cursor jumps
+Subject: [PATCH 08/17] FROMLIST: drm/xe: use 4K alignment for cursor jumps
 
 It appears that the xe_res_cursor also assumes 4K alignment.
 

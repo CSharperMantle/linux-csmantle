@@ -1,7 +1,7 @@
 From e66b1d826ba45c40d9ac8d0876cba2b5b2fd931d Mon Sep 17 00:00:00 2001
 From: Bibo Mao <maobibo@loongson.cn>
 Date: Tue, 30 Sep 2025 17:37:41 +0800
-Subject: [PATCH 10/16] FROMLIST: LoongArch: KVM: Get VM PMU capability from HW
+Subject: [PATCH 10/17] FROMLIST: LoongArch: KVM: Get VM PMU capability from HW
  GCFG register
 
 Now VM PMU capability comes from host PMU capability directly, instead

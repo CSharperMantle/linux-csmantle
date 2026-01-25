@@ -1,0 +1,27 @@
+From 68d013bcef2565b7b2f570081a9aff7d16dcbdcd Mon Sep 17 00:00:00 2001
+From: Rong Bao <rong.bao@csmantle.top>
+Date: Sun, 25 Jan 2026 14:11:40 +0800
+Subject: [PATCH 17/17] CSMANTLE: pci: loongson: enable pci bridge speed quirks
+ for 0x3c09 bridges
+
+PCI bridges with ID 0x3c09 also need to be covered by the fixup
+function.
+---
+ drivers/pci/controller/pci-loongson.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/drivers/pci/controller/pci-loongson.c b/drivers/pci/controller/pci-loongson.c
+index a4250d7af1bf..a0fe080e5ee7 100644
+--- a/drivers/pci/controller/pci-loongson.c
++++ b/drivers/pci/controller/pci-loongson.c
+@@ -211,6 +211,7 @@ static void loongson_pci_bridge_speed_quirk(struct pci_dev *pdev)
+ }
+ DECLARE_PCI_FIXUP_HEADER(PCI_VENDOR_ID_LOONGSON, 0x3c19, loongson_pci_bridge_speed_quirk);
+ DECLARE_PCI_FIXUP_HEADER(PCI_VENDOR_ID_LOONGSON, 0x3c29, loongson_pci_bridge_speed_quirk);
++DECLARE_PCI_FIXUP_HEADER(PCI_VENDOR_ID_LOONGSON, 0x3c09, loongson_pci_bridge_speed_quirk);
+ 
+ static struct loongson_pci *pci_bus_to_loongson_pci(struct pci_bus *bus)
+ {
+-- 
+2.52.0
+
