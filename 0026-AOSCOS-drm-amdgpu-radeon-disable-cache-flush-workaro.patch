@@ -1,7 +1,7 @@
-From 82250c9e16b1f6abbf89f3815fb0bd1595d8c2de Mon Sep 17 00:00:00 2001
+From ebf4b815758f6dbff0b20aa2616d1b72bdfcdbbd Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <baimingcong@uniontech.com>
 Date: Sun, 22 Sep 2024 01:07:11 +0800
-Subject: [PATCH 14/16] AOSCOS: drm: amdgpu: radeon: disable cache flush
+Subject: [PATCH 26/32] AOSCOS: drm: amdgpu: radeon: disable cache flush
  workaround for LoongArch and Loongson64
 
 This workaround causes instability for LoongArch/Loongson (MIPS) devices
@@ -73,7 +73,7 @@ index 8a81713d97aa..61b999f2e8c8 100644
  	/* Then send the real EOP event down the pipe:
  	 * EVENT_WRITE_EOP - flush caches, send int */
 diff --git a/drivers/gpu/drm/radeon/cik.c b/drivers/gpu/drm/radeon/cik.c
-index 51a3e0fc2f56..55d2ba2d21e2 100644
+index 0b804e951b7b..7e7f6248b63a 100644
 --- a/drivers/gpu/drm/radeon/cik.c
 +++ b/drivers/gpu/drm/radeon/cik.c
 @@ -3543,6 +3543,13 @@ void cik_fence_gfx_ring_emit(struct radeon_device *rdev,

@@ -1,7 +1,7 @@
-From 7aa87c8970a87ee5adc441a136432fe8568ca8fb Mon Sep 17 00:00:00 2001
+From 03b3ffa14fc1e8c9115c909db7a0310272bc50db Mon Sep 17 00:00:00 2001
 From: wanghongliang <wanghongliang@loongson.cn>
 Date: Thu, 19 Dec 2024 14:27:28 +0800
-Subject: [PATCH 13/16] ANOLIS: LoongArch: adjust the calc method of number of
+Subject: [PATCH 24/32] ANOLIS: LoongArch: adjust the calc method of number of
  packages.
 
 ANBZ: #18965
