@@ -3,8 +3,8 @@
 # shellcheck shell=bash disable=SC2034,SC2154,SC2164
 
 pkgbase=linux-csmantle
-pkgver=6.18.7.arch1
-pkgrel=4
+pkgver=6.18.8.arch0
+pkgrel=1
 pkgdesc='Linux'
 url='https://github.com/archlinux/linux'
 arch=(loong64)
@@ -38,7 +38,9 @@ _srcname=linux-${pkgver%.*}
 _srctag=v${pkgver%.*}-${pkgver##*.}
 source=(
   https://cdn.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/${_srcname}.tar.{xz,sign}
-  $url/releases/download/$_srctag/linux-$_srctag.patch.zst{,.sig}
+  # FIXME: -arch0 packages don't have official patch list from Arch.
+  # We track patches together as *.patch files.
+  #$url/releases/download/$_srctag/linux-$_srctag.patch.zst{,.sig}
   config  # the main kernel config file
 )
 validpgpkeys=(
@@ -47,82 +49,88 @@ validpgpkeys=(
   83BC8889351B5DEBBB68416EB8AC08600F108CDF  # Jan Alexander Steffens (heftig)
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
-sha256sums=('b726a4d15cf9ae06219b56d87820776e34d89fbc137e55fb54a9b9c3015b8f1e'
-            'SKIP'
-            '57c22879f2228398564091db2ec9b186acbd56dfb0e1072f83418bfdd3829aae'
+sha256sums=('37f0c5d5c242c1d604e87d48f08795e861a5a85f725b4ca11d0a538f12ff8cff'
             'SKIP'
             '505d823490e964e66ebe5889a3701347b4e4e2faf1772b3964f0360a176eadf8'
             '60e26da620d96a7c0fad031d25b11b7d02a809d558b819bef2b10575f96e8195'
-            'b0fd3e8099b0950e7a8c3d7059aff28591ba6bedee6c84406449163ab2bbc52f'
-            '979302da4c16ae79da6f90be0aa638463b8521898a6102933d0c300490301d69'
-            'a39ac4934eef20f1051da06bd8cfaa1b4ad2414985a8d3208b02eb88bc176fe5'
-            '5b52bbf899c1107deb5e9df5f974965c1c715a23bc692dbb78cea5336c38d698'
-            '78c65ac344a38cfeabeb40816ba6bdbdfb23986350a11ecb731d0f1282cc4478'
-            '2de5cd51a986cfdc104f5cc6066714bf798aee8fbb2c5d46372acc85ab5b0517'
-            'c140990f77ef26c1bcd1295ee7cc8c96706815250614024187c6855aba0781e0'
-            '91eb22aee9baa6f7b542bdde8fd9515e7fd436326d1984a3540353d9fb803b76'
-            '31da4313b1f3b3e994364054c6b42c0c113348f0f6cc192a668f7725dec3ef5d'
-            '65cbe858330dbf551f3d6d7d988b2ce8378f2bb29f03e09bfc33f1046a2b952f'
-            '600532e4ad26c32fb75807e1ec875c557e368f8150b35f8cdc3d8f246b869b46'
-            '91c98780e1b32d80fde4c6a5992ea45df72d2fa9c39775a58c64c731429b381c'
-            '1f2e255c26f6a8bcc83152b48a989c1678a5d2729e0b61da386a20b37d510936'
-            '16f20d8eed6d0bdd1301f659b31fd54c6fd79de9c9e3740944012b26674d4ba1'
-            'f61b021a0124a9ce0610e8f27493c034140ba76586f79d23f26558376a3d0bed'
-            'e133ee1a4c4fdbce811f89e45790ce0fc183ce3782ec490373361ecac51f4d7a'
-            'a15027c8fe5c152ec389a470a491689612837c28ae52bdf8e2eb215c987fb481'
-            '01fe3816cd4115f0e462b83cf8c21d7963de48e938519343816f58204e05243f'
-            'ed01e256ae5d58b2b3de975712b9bfcd959953df241a3383fc1fdc05204f8715'
-            'ea2aa7e8ac2593993ac10753ed073731a1b70d9e59138a9e891a85e310b87ae0'
-            '627647a59ee7cfd6e2708734dade5de43736ff3174de39bcd01d4384e413a183'
-            'f6d0d3599b096e61a11def5f50991c629e386ac95397ccbad51d72201d8a1216'
-            'ee3d4b0302c8d5617cf87cb24f255c5ea214a306176d7dec6bd32b58cbc3d360'
-            '93f0ed5db82ad513123764f999d944c8225f8f49f753c074bc42180c7633361d'
-            'b764599bd8cfc5099e3ebe6e40b52bcfdf7445a388f4de60a0c9bdcdccac2ebb'
-            'e94e941b687a0275f7741eea1aadb850e025d61847762033a98609432e524b14'
-            'efa0c55fe44df6b8a8703e8d4ceccaab610735b01830e10cf4f06048ad012a85'
-            'e1fd36d8bcc318350ff67409da7eeaf1e7a96c1258379417046ed0867d3d2a31'
-            '12f43abf70a9ab3a2214abc521e2d8dcfaa0961516ad9c38147021ab7f04547d'
-            '9dd1af66e63e3fbd7a8dc0f6c40343a5f628eac13f04075cc3b41085cc613daa'
-            '361b38dd89b3f5d3d019e2b8e399c33327b79cff8844580d9731dd7158432065'
-            '2a2578d9e0c251031bdeeaa2299e0d92a7005e0b21ae2aadd9af273a67d7ac4c')
-b2sums=('3ad31b9b36ea2c8f865c87e63c97a4e7b6684abee35ae71d5838026de9f476edb4c847adab315235293c5f37f8f3b90799ae2b3d41915716710eae63acbf6863'
-        'SKIP'
-        '8ece2f1b2fc6530cdd65e597141550c184089a206b9aa49cb9e46d61d2e7cf9c3f07f35ed523670d892aa7e62626644a5b1e98dd9c6acd824cb7ad3254c17665'
+            '797fd7271367a1ce04485dbeb21eb15ec2594e9c7e0c0111a761490b21d7c6d8'
+            '22e20a599cf25bf12974dd3379c71cbb875da592aba93a0f4574e46aa0d15f5a'
+            '10a7832124b0fdbc0b6bed10794a93f3ddd9420ac6d63a28fb090d72dd982033'
+            '812af8534837720718b125403b57f83b56566af5ee6e886245459f0c24da6f1a'
+            '439c7a269574ba2dd715eeddd959b41f6931984faf4c5ccf6f829073c49e3d9d'
+            '3165aecab24e06625f7560525cf4cf79937ac026a8f4c42a9893a3166d9bb752'
+            'a0016c4e4d837929647b5d19d06783dd14a6b888e60fe56d821ffb9e4a571901'
+            'e2f412e09c7dc8a63ca9b5a4cf4ad06e6f007ee6d0ecf0e9ff0495658368a50f'
+            '963fcca3491a158a12979513349b467b92aed433ba3c5e913d25abc4831d6493'
+            '73f4150e444175c19d25856c4f96ee57d63f0dc6f7733eb4e3efd044eb91cb1e'
+            '06e58d2b1a6584046246785758bb9b3c586ad8819997b7ae5f3fed83d071807f'
+            'c711a315103f442ba4504fd85d52b12bb1e40d43909e1bea12cf0e7d6c96dc63'
+            'a795cf9c621f1557eeb6da7a87e84a25a2e62800c509dba9cd5bd2324a1acafe'
+            'eff884aaa2a05d139f6845aa358f5bbe15f2edd757cdd7e91857dd1b2e592383'
+            '4e6c7beb0b6cc3f648e8f50595f5e2eca5e8aa1c3f8d876aada1dc3ba3517cbe'
+            '7342fe388bd9e36d703e32d4afc3e36cac1e8c8bb0d6fe0faf13b6a871448d8b'
+            '00de8a466477da6749d40a8452703157d1eacccf1a8417c507c47da9902782b2'
+            'ab6bbd7a8d52b260d44ffea11a7c0107482a8818a32d678a52b2a432f3d1f1f6'
+            'd04a5b05343ef0b53cd5e94cd02b961f390cc009725e7d07f13a45c080324c48'
+            '30f7c9e4b463a3a859b34d8c3ce76541b321328049e83fa2192063f101cc2e8e'
+            '75d4f3167a8a23310ecc0f9ec38c37a010d6027ba2ada6a8665b0e6fbc1dde5d'
+            '308320eb378578d1eb92c98ac84f107950e84a404cde157a399d6a1f7eca828e'
+            '1383c5db33404c80ec8f9fbdb48fff3bf3cee0cc7f1e67b64367bf35d7623da7'
+            '8cfa78a3ee1427b66117b76effcb74c4b3b59681bf0470692312e90be8586f48'
+            'c0e33c742fa02e1a31404d78c82c2269a2b36adfc8b4875c0c10179614f785ea'
+            'f79442fe7c8b508e8601bb3ed3a0420adf15985727dd724cca1185615f267185'
+            '34f1740d722b403b85b2ed2481248ac46c3d948695a6fb337e5e568293184f02'
+            'b7e63c0876eb0a1cdc5074cc0d9066b92bbf4016d30eee26807069c07cfc7399'
+            '12087ec0a95f7dc7eebf2d3b6a5711c8bab94a8391da28b5c8ca7f21ba8a6535'
+            '32841923e8997a3d210fd59b434c413465820ed21f943b8f867ac1a6c29019fe'
+            'ce25353113febb79700926e56bde10d1d918bb49ecffa465dbc713bbdc1e378e'
+            '7fe6de45e701feab4f95f6851cd1a109aae341bfcecffbf2ced7e75814339d16'
+            'c77dc1c7ce7bef289ab1650a10bd3b5b3e8c170713464bfd6bb1bee318b76117'
+            'f159a22f57b5e7a632cba1dfe63dbca01e13069bc6ba0e250aeabc7aaeabee60'
+            '84f6d1765a17092e099276b343edef43e6754bd2f32121df3cd7d11e8cca274c'
+            'b627af414713c703b1823c5a6f63fb5bbe39fd08a9af797e3fc41bb82fbd8d2e'
+            '2090817b7f37bc12bb581e435f10c646be11d626de66f8e375f697b0d642faa0')
+b2sums=('9434b32e65e42c8663233d6ca4a7fe4fcbcc8fe2f5b0ba1c3a0bf602c0156009ecce4aef8cb6ed9435bc9b4f14cb4f5be8b5b8ea80f64b1dc2c9d4ad0faf5b4e'
         'SKIP'
         'f31d83e1e10bb901d0d25c1db0ad2844584ff1014c8bf36f342fcf1999f41e5e2d5ddfa20a5a23d4626c6b35005c7e01ebe8ae7f3de3d4b61a189a49add3a158'
         'b8c684b5baf73e687d8bb3379a757ec25d788b512b01fc10fc601930f087c7d411d338026ace88df603b201f512ce57bff28a2b646ddbf9e8ed9f65fba10681d'
-        'f03e92a15c482a99640aa2b96aa4c4cea350bef9ad28f4c17ae5ab0b5be4fba686006b75d99dd0be62e87e2cfe18b38c6342a63af7aff16f3b7dc4369d270c2c'
-        'd81213126fdb09fda20685b26ca49c35a8e406fd4d5243558edc435e0a29fb0c2ad9d96d6a9d6bc566ce0fa611af7f704ae8b3c8bde622c8e1ada3d758329ef9'
-        '4559d44e21fcf93c9fbaaa96459c0b83793df68cf85114ff32857d7c49def3ea671a05b27b6e6afa93173aa35e2c1f5b7569a0ff48cc006350801194329532b1'
-        'add7334cdfba8907ef3f470ccff6950f6cef605263a7c5c138705fef1f97fc7d125ef6b2d21644d8a1b7f2f2fb35e48ad4c6a18bec9af2f0095e15777bf00c55'
-        'fb752715bd7de3ca52aab3315eabc5dfd3a24c3ccf2496647b93edf026610b937185ba93cb8e7aae0919555e71cc7ab3051f68c4446293732fecad4eec033e36'
-        '06728e2d5b11641200768d23eef232c516ebef7ea6ef878cecfb496ecbfafae707e5ce879466d209526c06e513cb9f2514fb82e7382a1bd2c8eb1e97ad38892e'
-        'ed8d20ea183387d98ed47456eb220f7fa68fbf848e75f8fa2cdf49ac3d90cae520f1486bf3aed138a4af9cc0990b833c4fba6bbaf65e30956e239f0e1571baf3'
-        '4864d565d44446c2bc824367dabdd71421adc1640b9d3a25b820195f84f03a6e8cddfcc0d12a7274131550bf2642977fe59001d3e983bbe4fcbc682dc5dcadbe'
-        '06aa3a51d569077acd0cde86ce601248d883b58f3e2c642ffc251961021a5707dd94d9335cc656d9116e9aba9b5fa1f2a9c9e2c2badfe7a8bf7ec904dfda0e2d'
-        'c41ac23cab76dd5d74c9b964aad13894b12e7139576900d562d6734b1b112fda3db1e58adeec28a14429817be785dc1889ab2f4303b644694d8e2dc3da113a3a'
-        '8e933616ad045c3edf2f3468b23d9ae9d23385c1f643d67c88de954e891cb09995389006536d5c1cedf5fa6dd67ee22a1f157a43b6215b5358a1f1e6a96b245d'
-        'aa4403893223fda812e78288999cbf818635a73d54d4d7f607d352fe146dc7c6cf3fa083fa2ea56da788a86fe34d9822a0548906549fced0b8f848bbb3a1aca9'
-        '8b204c836063812570c285bff1ac1c21923c17827e24c42a5e1be49752aad4d60dbe12608f757c05cd065ca04ff26f86f3584e2850f175ccd929af7a9bc353a1'
-        'c4338eff5fcea50b1bb3614c4a18703069800badfd6652f053b96ca6bf28b6d00e9024d5c024705ebe54570fbc53616632762bde5a718eb73d0bce00d47751cb'
-        '70a9ea9af7d67b2dcffd0cdf067fc1ed7ce5c71e856480ef3c580a4b834a0d43b615bc3d6dd3d3af53577facc9bad453a31af74d8232fbed2fec007974a24391'
-        'a002f8ae610f240a64538984715f8732db4a43bc2425c6532dff82fbdb0652efd3b905831192264684a73ed6bdc416c8ecf4e545cc5d4bc86045307dd4953fd4'
-        '0422e8bd91911a6501af60602e00226112185698757a8989f7225d70bd3058f4db5e1134b84950a6aa21f4c98b673e1fffd0c4db161a91d388d97dc8bab70608'
-        '81b26866a517f4baa14ad6986ba962c9850aa9a6bbc7661d2335fa554081c2a3ab2f8029d81457acb46c9f55a00cc8ceb2386cbf8b63a2ccf7625e49988a7d30'
-        '71a99141bf07a973c9894e27df12e5620e375ec0f33b2675c28ba4694927e34663a3f4160aa046f1f446afbf871bf82463ac6cf0757bc073a7fcab27e681bd54'
-        'ef9481e544cb26dbc0cafd7c888f3fc0ec3fa394ff56573f33f7a53361486056244d6cb759a9273a9e9283ace1ab2d2942127902375a20769617b4c376fa6105'
-        'fe045fe08f798cdf99e991ccd15569bf565cda2da4924c5d6d0134c0addb8fcd75aa1eeed77e94106b17cf9b53034df3d40613a54ade870277060b063f74559b'
-        'e23dc26e6d695db35275c6644c1fa9f07cba6c29cd184ce0c9db5cf385658faf1c5815980a60fad0a788e8cdd10f17d137de6cea654c4616322824810d4d44e7'
-        'f614c43d73b917df7787d7720882346b8f548255150f87ec88437e07e580d222b0a41c4a6f6dd821b4c153b90685f2847572f881321d32553bce80adeff753af'
-        'e0599202e8cde39dbe7321151e3aec2a83f425ad112ef1ed21852e1aa42ba6cf5808b5b3ff3a988c4af9a35efd39138ccb414e86962c83d1ac4613947e262281'
-        'd96107c34e9343d5b193114cdb616280d5def0308a891a0bc91d4bdd5fecfa52255c6b839775a995412880bac440f26e3d746d0ef4b761b249f321bceebb742b'
-        'b5cbef5014e3a66f496909b497f534944d61ca0e32585e1c0b9f7aac4a5eff5a3da50c7a0f88a8e5d8b60c6f3a6d3bf5e0b820542ebf3a11705e92694ebe1d24'
-        '76e0ee5054dea5c56c2e9d348d9d8e5990e08f85434ed81cbf5620a1ce98e386368e866a4500156aa249f15fea9ff73598f88bcda36e4b25bb140693a41d7daa'
-        '11d7dc28658d48502754f761b4aed0bbbd84eff7ca44bab523353d7276fc4f13133fb4a11acfa7267a58d86fe105c919c673ac545a8cbd1106bb48835165698a'
-        '4b76aec376918f75f0fc71187387ef38e6430e3cff60972b72b8c8cb6031e84e56413449ca08200f5312c11c0b29dee74656309b84f35bf681cd0880bbe07c29'
-        '1d3edc072d56442fc173f902ffe7f6a376e9a3a48b5668a0dde6a3572871e805346d01d94bfdb33a299577cdfa6e4405de6aee9a6e7e904198ff1c833f80617b'
-        '3af648b1b006c4b3b34e3c74907c017853dde30636b29f7165f7bb9232216e3efe88a71b863592e628f9bc64d7cbb7cdac620f4ab80f5fdc27383e19ce973502'
-        '185013376ed5f9815576ad7b356d8570529e2fabe5975e6a8e1ec86503c3a44d2289e0c19012cab912f5c569996ca83fc845086f183643137d8d69f51bc207a1')
+        '323a7b55f34f60c39395c44b98f739c52ce142403fc1ec66230ba4dd0159c8073ee63754a97ba7959cbe8152624aa3a919f5ed50044585921424627e20ac455c'
+        '15ecee5cfc294f86998c4e790416f0a018eee26413afa128f6dd3b3455773290a00a54b78528658c5c7979f96a2792660320661097cff35fdce554bd8ada71ee'
+        '76ea414296ed11afd5bff9033ec494d6dd4bcabc99ade933d4b977cd5103628d8b07edd75b78079ac7bef207f42a256cb7ed327d66b50b05febc5166e0686a58'
+        '1faaf5754727b8c54cab5c9585556a88d05356fdd9bfc76a97da54427eced5c00cdce4d15489bd5882548104e51e292d64f7ee8337048863c6653d9d9ea19d37'
+        '8b8f5518d08608a2c7ce7881e9008779e7df259c5c7284590ad4cb799e5ab1300d2a425f685547c34d064fd2d74f349a02cacbde4469c8f342058f123d69805b'
+        '2e33720620dde1df1a3d5cb1e2528378737e0a350bc1a7c51df582cb9c0536cd818b216aa7e83b4f28c0d4a731b00c84f1da158401f660e7854c289dfcb8d04d'
+        'd68ddad4e67bbbf2b91b9eefab97b078551ecf72843e0ac419530d1bb5a2ed4314b04e9b734b6c104068a876429f9c558af3988f29f5e67cfaf095293a3e7753'
+        'b3127d0e7eab2699c05ea22435375ce06aa41deefc2e466a4faacf8d70c40df4ba775e8efbab5e6cc824f1a26a7e0c56f4803b36a8dbb844160c8bb015d656b0'
+        'c52a155e5691baecbe5a0b750e9f88f56a8edb4782872112fdb44008effb6796b26ba36026140276d2365d3900c4b9a3005d050587a4dcc92f7be098beddf520'
+        '1bfd0a085d307ee151d724d0c06d4d4faece1031a0f75ae8b2fc13ada4252a2092139dbb1e1e8606387b325b462367f7ad3fccfaea6d08592ecfe1be676b24dd'
+        '283eaadd40a22574e1f645124f545d2c53e7bfa8a031bad3ccae53c46604cde0aadd4973c6fe4b5428bf8f7614ee1fc59a666729a4e09b374639022ec3a2d649'
+        'fe4660164e92d5cbb69a7ea3405531980a34ec15722a43245d0358627223df946036219536a501ecc39f240173adefe71dc1076473ed333f871b50f151295309'
+        '23b365d8ad22f2f33539f1ccb3061fe26e0e092625666fba4265d7af01d282e481b5a2f661cd8eba2e92e45142810b497a587ce35588d19b4d34d455aa14ce32'
+        '9ba86402aa829306d8f9e92dd6f1c26f38e661fdcd91bec635cc1a486bf04443ab11a45ccd369505f8c5f165bb181df3d418632bd0a4e8d09b6c778595d5a9a8'
+        '7cde62a6db33de29bc44468d282fe2caef5aa98041dc0e9f6fb5f3705df7cddf40bc74e1d524c7755a3f7c124ef9cbfb2a83d5a56e2647038705d4cfb73f348e'
+        'abe94d5d7655823a32c4c2fd41c11f3cc73cb20ee175aff13db93f8deeb37b9be14e7ca999f233e80bb767aff3666544d8e1f0683435f06716b5bbf06ccb2288'
+        'bb2d1a3fc0d0742e54311f5c0ea3cf3f15fbcd88ed3c103be9af1f454248cc33e1bfbe3376870283d10badeb17d1e196414ad737073791706bfcd6eea20b7111'
+        '3e941d995b33d1393c3d371a8fd8b47067a1fc97f5639749dc026f8e54c99655a8533fd7475273d94df56c2193238b9c3faae5d8bdf22c4fcfa5de98ff6beb09'
+        'e535ad22ce528f6f2632d328d05770a94a22d5cc5bbfd4219c4e511f3a16be07e2ebe988f5873f1347453f55a2f1445173f336d3458527e128e2ac30e085a4f7'
+        '4ec0c83ec9b2361494c367dd476fac1f91298ea51064b0995f7e7dd6330a6623c364b323997061c2a15c29361aa994c29690c14f14468d676d157a5e9d8a7256'
+        '3d8a29121fd8b8d3087f09439c30748bb06347de9b3dc5b7471f4cad70f895233eed8f27442f7586faca5549244f56c7d798cedbb04a7e357feffa1a6c489966'
+        'ad502e6a4b0942d6418866693d21c82e4670a436aebe1df8c2ade233ea50e03aab80c66bf59ebc4645fa00c2e4aa1fa4cae770574fcb721a1293059ddaffddb7'
+        'd6843de0701dd7ff3c512531b8caad3969ddd4d3859ad83801107419203c77a2b80a2ab505e75312aa34aa3deae0f94d1f8822918f9c92ce3abacbc306f1823f'
+        '771410be07e3937b1eb766c821e66b4e8f64e282f46a29d1c337c475d3f1bfe81acc027269a0d524db9668b07d382ffeac345db7b707df93dc8cb8d060fc156c'
+        '8497d85f3a59653973abdf3567174c0152529ddb74c5e23aeb4c990bda6c45ca1dc6cc3b31b1faa9770cd80f62d769b1a94b95360ae8aaf0401eb24a4983405e'
+        '5244711972adc07bd36561013f41be219ea768b6fbedcbec4faa9c12619b06b979259276b2fdc15324fc7666c86d193e3f40723b805f11a904265b2163d9f1be'
+        'fa41823e026bc3de73bfcd44d414bbe8ad0e51877c1ab417cb649a91375be2304222ccb157519ffcb0e2db44b041729c2ea7476a5205fd6becfaadea83129c94'
+        '90018d52ac94581b3f31487a833dc07df67b6013ba31c0a5b4eed819b233272842bf3a7b305157e75d3d386621bec4820ca7bbdf46588b0a86942e0c250a289e'
+        '39f0d980361b537c41fbe02a4cc9e96a221515461cba14112ccc72dee8de937dd113f137151e8c03b6e45c172be6e1e5def659f7f81c3604b0c3af2158b324c6'
+        '6d26ce98887c21e0ee809e4c1cb4f72340cc68902fdb012abace5133258de2ec6dc8ef6c67d5b9877564b2b156aee8db5e06f079d3338d4adb3ff6915c11295e'
+        '4b936ad0ccb1066350e0ee4e104b836d8e2c5268727ff991b11d872ed05d281d90fe3592c12f44056a1d36bb30576059dfc9526a52dc3957a3ae02f3443be5ed'
+        '4bc93fc83210d9da9fb800f5109c5add2aa0e438b031f4f0d3c5db442308141482e62d92362b64d54036ecfde2167c51a591cb26333b6f60ddbf7c25578d3913'
+        'f0855fe1ab0308dc1ddd7f1d7c82673d131d868b12ee471ba5d2157e0744cd686e4c4d5537f0001055cee4da8e86a8bbba401064ab8a384ddeff36f087cec607'
+        '7fe4a2169393f315ff85e597fe73f35025b27044c91f5849d0e99e707a2aafabbde4f053ab527794322983618a03bb66f9acd1a74303c3700d44316c91ece676'
+        '80125a07dbf0772c5012e89598e8df31e30a8ff63e3df427ceb63112d12ab940bc52c815bc568b3d9e6dc9746f590918a28a05d1f3314650552a9aac0013aea6'
+        'd857de1c140b527d567dd4476dbf5bde7b9891545d4dcdbf5f33b3be3f37d6d8eaac54bd8c995be310ccbfb4053abe7d3a2ffe31b6bba6da0717ae86986f7cac'
+        'a119b0293264b62d6306ade2822cc3b3ff2f3dedb6483edd0555c15897f38ba65b37b9d7e515036c51e88b5ed87b9a5642ab1e234e81859541e5415cc629277a')
 
 export KBUILD_BUILD_HOST=archlinux
 export KBUILD_BUILD_USER=$pkgbase
@@ -353,38 +361,43 @@ for _p in "${pkgname[@]}"; do
 done
 
 source+=("loong-config.16k"
-         "0001-LOONGSON-irqchip-loongson-eiointc-Improve-IRQ-affini.patch"
-         "0002-LOONGSON-LoongArch-Add-CPU-HWMon-platform-driver.patch"
-         "0003-LOONGSON-drivers-firmware-Move-sysfb_init-from-devic.patch"
-         "0004-LOONGSON-drm-radeon-Workaround-radeon-driver-bug-for.patch"
-         "0005-LOONGSON-drm-ast-Restore-vaddr-field-to-struct-ast_p.patch"
-         "0006-LOONGSON-drm-ast-Support-both-SHMEM-helper-and-VRAM-.patch"
-         "0007-BACKPORT-FROMLIST-drm-Makefile-Move-tiny-drivers-bef.patch"
-         "0008-FROMLIST-drm-radeon-Call-mmiowb-at-the-end-of-radeon.patch"
-         "0009-FROMLIST-LoongArch-Update-the-flush-cache-policy.patch"
-         "0010-FROMLIST-LoongArch-dts-Add-uart-new-compatible-strin.patch"
-         "0011-FROMLIST-serial-8250-Add-Loongson-uart-driver-suppor.patch"
-         "0012-FROMLIST-dt-bindings-serial-8250-Add-Loongson-uart-c.patch"
-         "0013-BACKPORT-FROMLIST-drm-xe-bo-fix-alignment-with-non-4.patch"
-         "0014-BACKPORT-FROMLIST-drm-xe-guc-use-SZ_4K-for-alignment.patch"
-         "0015-BACKPORT-FROMLIST-drm-xe-regs-fix-RING_CTL_SIZE-size.patch"
-         "0016-FROMLIST-drm-xe-use-4K-alignment-for-cursor-jumps.patch"
-         "0017-FROMLIST-drm-xe-query-use-PAGE_SIZE-as-the-minimum-p.patch"
-         "0018-FROMLIST-PCI-Prevent-LS7A-Bus-Master-clearing-on-kex.patch"
-         "0019-FROMLIST-PCI-Use-local_pci_probe-when-best-selected-.patch"
-         "0020-FROMLIST-LoongArch-KVM-Get-VM-PMU-capability-from-HW.patch"
-         "0021-FROMLIST-PCI-Release-BAR0-of-an-integrated-bridge-to.patch"
-         "0022-FROMLIST-mailmap-map-all-Icenowy-Zheng-s-mail-addres.patch"
-         "0023-BACKPORT-FROMLIST-loongarch-wire-up-memfd_secret-sys.patch"
-         "0024-ANOLIS-LoongArch-adjust-the-calc-method-of-number-of.patch"
-         "0025-AOSCOS-drm-amdgpu-use-amdgpu-by-default-for-si-cik-d.patch"
-         "0026-AOSCOS-drm-amdgpu-radeon-disable-cache-flush-workaro.patch"
-         "0027-AOSCOS-drm-loongson-add-ls7a2000_support-module-para.patch"
-         "0028-FROMLIST-PCI-loongson-Override-PCIe-bridge-supported.patch"
-         "0029-FROMLIST-loongarch-retrieve-CPU-package-ID-from-PPTT.patch"
-         "0030-BACKPORT-DEEPIN-pci-quirks-LS7A2000-Fix-pm-transitio.patch"
-         "0031-AOSCOS-drm-radeon-limit-mmiowb-hack-for-radeon_ring_.patch"
-         "0032-AOSCOS-ast-Drop-drm_gem_vram_-un-pin-calls.patch"
+         "0001-drm-amdgpu-avoid-memory-allocation-in-the-critical-c.patch"
+         "0002-drm-amdgpu-use-GFP_ATOMIC-instead-of-NOWAIT-in-the-c.patch"
+         "0003-rust_binder-correctly-handle-FDA-objects-of-length-z.patch"
+         "0004-drm-amd-display-Add-an-hdmi_hpd_debounce_delay_ms-mo.patch"
+         "0005-Arch-Linux-kernel-v6.18.8-arch0.patch"
+         "0006-LOONGSON-irqchip-loongson-eiointc-Improve-IRQ-affini.patch"
+         "0007-LOONGSON-LoongArch-Add-CPU-HWMon-platform-driver.patch"
+         "0008-LOONGSON-drivers-firmware-Move-sysfb_init-from-devic.patch"
+         "0009-LOONGSON-drm-radeon-Workaround-radeon-driver-bug-for.patch"
+         "0010-LOONGSON-drm-ast-Restore-vaddr-field-to-struct-ast_p.patch"
+         "0011-LOONGSON-drm-ast-Support-both-SHMEM-helper-and-VRAM-.patch"
+         "0012-BACKPORT-FROMLIST-drm-Makefile-Move-tiny-drivers-bef.patch"
+         "0013-FROMLIST-drm-radeon-Call-mmiowb-at-the-end-of-radeon.patch"
+         "0014-FROMLIST-LoongArch-Update-the-flush-cache-policy.patch"
+         "0015-FROMLIST-LoongArch-dts-Add-uart-new-compatible-strin.patch"
+         "0016-FROMLIST-serial-8250-Add-Loongson-uart-driver-suppor.patch"
+         "0017-FROMLIST-dt-bindings-serial-8250-Add-Loongson-uart-c.patch"
+         "0018-BACKPORT-FROMLIST-drm-xe-bo-fix-alignment-with-non-4.patch"
+         "0019-BACKPORT-FROMLIST-drm-xe-guc-use-SZ_4K-for-alignment.patch"
+         "0020-BACKPORT-FROMLIST-drm-xe-regs-fix-RING_CTL_SIZE-size.patch"
+         "0021-FROMLIST-drm-xe-use-4K-alignment-for-cursor-jumps.patch"
+         "0022-FROMLIST-drm-xe-query-use-PAGE_SIZE-as-the-minimum-p.patch"
+         "0023-FROMLIST-PCI-Prevent-LS7A-Bus-Master-clearing-on-kex.patch"
+         "0024-FROMLIST-PCI-Use-local_pci_probe-when-best-selected-.patch"
+         "0025-FROMLIST-LoongArch-KVM-Get-VM-PMU-capability-from-HW.patch"
+         "0026-FROMLIST-PCI-Release-BAR0-of-an-integrated-bridge-to.patch"
+         "0027-FROMLIST-mailmap-map-all-Icenowy-Zheng-s-mail-addres.patch"
+         "0028-BACKPORT-FROMLIST-loongarch-wire-up-memfd_secret-sys.patch"
+         "0029-ANOLIS-LoongArch-adjust-the-calc-method-of-number-of.patch"
+         "0030-AOSCOS-drm-amdgpu-use-amdgpu-by-default-for-si-cik-d.patch"
+         "0031-AOSCOS-drm-amdgpu-radeon-disable-cache-flush-workaro.patch"
+         "0032-AOSCOS-drm-loongson-add-ls7a2000_support-module-para.patch"
+         "0033-FROMLIST-PCI-loongson-Override-PCIe-bridge-supported.patch"
+         "0034-FROMLIST-loongarch-retrieve-CPU-package-ID-from-PPTT.patch"
+         "0035-BACKPORT-DEEPIN-pci-quirks-LS7A2000-Fix-pm-transitio.patch"
+         "0036-AOSCOS-drm-radeon-limit-mmiowb-hack-for-radeon_ring_.patch"
+         "0037-AOSCOS-ast-Drop-drm_gem_vram_-un-pin-calls.patch"
 )
 
 # vim:set ts=8 sts=2 sw=2 et:
