@@ -1,4 +1,4 @@
-From dfcfb5b3a9d25bc36f8a9adf3353ef24396c42be Mon Sep 17 00:00:00 2001
+From 3d8e8f5e3df27f66156adfb9459edb57988b8af6 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Christian=20K=C3=B6nig?= <christian.koenig@amd.com>
 Date: Tue, 28 Oct 2025 11:16:12 +0100
 Subject: [PATCH 02/37] drm/amdgpu: use GFP_ATOMIC instead of NOWAIT in the
@@ -52,5 +52,5 @@ index b2af2cc6826c..9cab36322c16 100644
  				goto error;
  
 -- 
-2.52.0
+2.53.0
 

@@ -1,4 +1,4 @@
-From e4e6e139e17fe5d92e0e39e4fdfec7c576252949 Mon Sep 17 00:00:00 2001
+From a4c13fe54f1b6f7c24f24bcbbdefb3a59d46d5da Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Wed, 9 Nov 2022 17:24:11 +0800
 Subject: [PATCH 06/37] LOONGSON: irqchip/loongson-eiointc: Improve IRQ
@@ -83,5 +83,5 @@ index 39e5a72ccd3c..451df8549306 100644
  	regaddr = EIOINTC_REG_ENABLE_VEC(vector);
  
 -- 
-2.52.0
+2.53.0
 

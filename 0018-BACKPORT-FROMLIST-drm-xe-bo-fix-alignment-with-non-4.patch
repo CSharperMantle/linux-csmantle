@@ -1,4 +1,4 @@
-From 79d4b3efa41079166ad748db499432a36d8c77ee Mon Sep 17 00:00:00 2001
+From 68b9b6d77385fb11b8c9b2241a9aeb65bdd95fa7 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 26 Feb 2025 10:00:18 +0800
 Subject: [PATCH 18/37] BACKPORT: FROMLIST: drm/xe/bo: fix alignment with
@@ -129,5 +129,5 @@ index e2e28ff73925..277c00d43c15 100644
  	if (resv) {
  		ctx.allow_res_evict = !(flags & XE_BO_FLAG_NO_RESV_EVICT);
 -- 
-2.52.0
+2.53.0
 

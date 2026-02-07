@@ -1,4 +1,4 @@
-From 5e3ee21eb5d9ddff077a946eadb9e1541b752a48 Mon Sep 17 00:00:00 2001
+From b344b1a884202afd443da5dcd061f6fe7b9d4b9a Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <uwu@icenowy.me>
 Date: Mon, 24 Nov 2025 18:52:26 +0800
 Subject: [PATCH 27/37] FROMLIST: mailmap: map all Icenowy Zheng's mail
@@ -34,5 +34,5 @@ index fffbfd413474..0c80b8eaab67 100644
  J. Bruce Fields <bfields@fieldses.org> <bfields@redhat.com>
  J. Bruce Fields <bfields@fieldses.org> <bfields@citi.umich.edu>
 -- 
-2.52.0
+2.53.0
 

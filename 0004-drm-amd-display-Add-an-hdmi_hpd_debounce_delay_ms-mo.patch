@@ -1,4 +1,4 @@
-From 76e1a6d3c1300c9f9f50e483ba6ff19afb5ff99a Mon Sep 17 00:00:00 2001
+From e84b931ed9387a08fbb213c2c7fdc839e5b9940a Mon Sep 17 00:00:00 2001
 From: Ivan Lipski <ivan.lipski@amd.com>
 Date: Tue, 13 Jan 2026 17:29:59 -0500
 Subject: [PATCH 04/37] drm/amd/display: Add an hdmi_hpd_debounce_delay_ms
@@ -111,5 +111,5 @@ index 8ca738957598..adcd7ea69671 100644
  #include "include/amdgpu_dal_power_if.h"
  #include "amdgpu_dm_irq.h"
 -- 
-2.52.0
+2.53.0
 

@@ -1,4 +1,4 @@
-From 00994d5782d7f7b216c8f74881c0ddff5799b57a Mon Sep 17 00:00:00 2001
+From bede2bb47674fd11c4f9f40a2fc57c8845f80f21 Mon Sep 17 00:00:00 2001
 From: Bibo Mao <maobibo@loongson.cn>
 Date: Tue, 30 Sep 2025 17:37:41 +0800
 Subject: [PATCH 25/37] FROMLIST: LoongArch: KVM: Get VM PMU capability from HW
@@ -124,5 +124,5 @@ index a49b1c1a3dd1..d8c813e2d72e 100644
  		return -ENXIO;
  	case KVM_LOONGARCH_VM_FEAT_PTW:
 -- 
-2.52.0
+2.53.0
 

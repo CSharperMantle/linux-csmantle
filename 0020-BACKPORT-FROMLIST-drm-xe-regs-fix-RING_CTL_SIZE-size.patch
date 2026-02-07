@@ -1,4 +1,4 @@
-From 11bc28ac82492510b2e335f75c7989709ff1367d Mon Sep 17 00:00:00 2001
+From 8e60ba4da9216678226816c2738b7b7cda2f2d34 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 26 Feb 2025 10:00:20 +0800
 Subject: [PATCH 20/37] BACKPORT: FROMLIST: drm/xe/regs: fix
@@ -99,5 +99,5 @@ index f4c3e1187a00..5b978ad19663 100644
  #define RING_START_UDW(base)			XE_REG((base) + 0x48)
  
 -- 
-2.52.0
+2.53.0
 

@@ -1,4 +1,4 @@
-From 61f61c099b70aa26f6517ff2386a10227a15a970 Mon Sep 17 00:00:00 2001
+From 4af37517159cba7fe064bd9b6a7a5feb2e6491a7 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <baimingcong@uniontech.com>
 Date: Sun, 22 Sep 2024 01:07:11 +0800
 Subject: [PATCH 31/37] AOSCOS: drm: amdgpu: radeon: disable cache flush
@@ -99,5 +99,5 @@ index 0b804e951b7b..7e7f6248b63a 100644
  	/* Then send the real EOP event down the pipe. */
  	radeon_ring_write(ring, PACKET3(PACKET3_EVENT_WRITE_EOP, 4));
 -- 
-2.52.0
+2.53.0
 

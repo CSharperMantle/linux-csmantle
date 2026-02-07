@@ -1,4 +1,4 @@
-From eac171a8335ef40ae72da73838033fc003b97112 Mon Sep 17 00:00:00 2001
+From fa2638e3279f7589c7ee4991b9966b4df573bb44 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Sat, 11 Oct 2025 15:16:48 +0800
 Subject: [PATCH 16/37] FROMLIST: serial: 8250: Add Loongson uart driver
@@ -305,5 +305,5 @@ index 9ec4d5fe64de..672f895d61f9 100644
  obj-$(CONFIG_SERIAL_8250_LPSS)		+= 8250_lpss.o
  obj-$(CONFIG_SERIAL_8250_MEN_MCB)	+= 8250_men_mcb.o
 -- 
-2.52.0
+2.53.0
 

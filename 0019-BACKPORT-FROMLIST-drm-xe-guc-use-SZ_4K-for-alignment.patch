@@ -1,4 +1,4 @@
-From f779eaf89857290f6a41d517ad980f82159b6f8f Mon Sep 17 00:00:00 2001
+From 20a1f8c935b2d676957c64704621811d58cb1e5e Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 26 Feb 2025 10:00:19 +0800
 Subject: [PATCH 19/37] BACKPORT: FROMLIST: drm/xe/guc: use SZ_4K for alignment
@@ -306,5 +306,5 @@ index 53fdf59524c4..3be137b914fb 100644
  
  	if (xe->info.skip_guc_pc)
 -- 
-2.52.0
+2.53.0
 

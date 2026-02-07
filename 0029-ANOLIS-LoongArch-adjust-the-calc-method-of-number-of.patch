@@ -1,4 +1,4 @@
-From 548b37c883c025c47c2c767395ca4e31e46cbb10 Mon Sep 17 00:00:00 2001
+From 9cd2f022081a1c54a0f934191b7e28684382d946 Mon Sep 17 00:00:00 2001
 From: wanghongliang <wanghongliang@loongson.cn>
 Date: Thu, 19 Dec 2024 14:27:28 +0800
 Subject: [PATCH 29/37] ANOLIS: LoongArch: adjust the calc method of number of
@@ -76,5 +76,5 @@ index 93a05993745a..57e771f39781 100644
  	cpu_hwmon_dev = hwmon_device_register_with_groups(NULL, "cpu_hwmon",
  							  NULL, cpu_hwmon_groups);
 -- 
-2.52.0
+2.53.0
 

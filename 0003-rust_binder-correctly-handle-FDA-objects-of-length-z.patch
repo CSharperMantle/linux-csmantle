@@ -1,4 +1,4 @@
-From 66aeab84c1ff784b107058164c764423fcdc328d Mon Sep 17 00:00:00 2001
+From 47983247935f48bce58fb0ba5bede6355a4b1113 Mon Sep 17 00:00:00 2001
 From: Alice Ryhl <aliceryhl@google.com>
 Date: Mon, 29 Dec 2025 15:38:14 +0000
 Subject: [PATCH 03/37] rust_binder: correctly handle FDA objects of length
@@ -148,5 +148,5 @@ index 7e34ccd394f8..33a9053b6adf 100644
                          pr_warn!("Failed copying ptr into alloc: {:?}", err);
                          return Err(err.into());
 -- 
-2.52.0
+2.53.0
 

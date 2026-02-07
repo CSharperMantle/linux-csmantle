@@ -1,4 +1,4 @@
-From 3b0056842d998445c352c9c326a052bea47db654 Mon Sep 17 00:00:00 2001
+From 81903a7e45ea2b5a33bf1865134b943041143a83 Mon Sep 17 00:00:00 2001
 From: Xi Ruoyao <xry111@xry111.site>
 Date: Tue, 26 Aug 2025 19:01:09 +0800
 Subject: [PATCH 37/37] AOSCOS: ast: Drop drm_gem_vram_{,un}pin calls
@@ -35,5 +35,5 @@ index 54c0d4e3ed81..9921bd6c0d28 100644
  		offset = drm_gem_vram_offset(gbo);
  		ast_cursor_plane->base.gbo = gbo;
 -- 
-2.52.0
+2.53.0
 

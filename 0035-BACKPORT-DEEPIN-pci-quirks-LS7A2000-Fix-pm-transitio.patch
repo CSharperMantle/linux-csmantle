@@ -1,4 +1,4 @@
-From 4c47a0fc336df95c6363415a5a6b82022e6a576e Mon Sep 17 00:00:00 2001
+From d1960c0667146112f364e9b45a02d51563aafc15 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Fri, 14 Feb 2025 17:48:41 +0800
 Subject: [PATCH 35/37] BACKPORT: DEEPIN: pci/quirks: LS7A2000: Fix pm
@@ -73,5 +73,5 @@ index bf97d49c23cf..0f74d06a92cc 100644
  
  enum pci_irq_reroute_variant {
 -- 
-2.52.0
+2.53.0
 

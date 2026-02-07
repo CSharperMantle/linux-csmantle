@@ -1,4 +1,4 @@
-From 673f54e24553e77768118186c9d4a989bc2a524f Mon Sep 17 00:00:00 2001
+From 189b611d7ec0c858bc13813618b85ac90851234c Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 26 Feb 2025 10:00:21 +0800
 Subject: [PATCH 21/37] FROMLIST: drm/xe: use 4K alignment for cursor jumps
@@ -117,5 +117,5 @@ index b6905f35d6c8..4990c8f3c394 100644
  		}
  	}
 -- 
-2.52.0
+2.53.0
 

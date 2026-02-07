@@ -1,4 +1,4 @@
-From 1b53b31b71acfd95df2b5506b82e38d6bafb2816 Mon Sep 17 00:00:00 2001
+From 5d7b28feb2224be05eb7069f399a27e9ecdcff4f Mon Sep 17 00:00:00 2001
 From: Rong Bao <rong.bao@csmantle.top>
 Date: Fri, 23 Jan 2026 22:10:23 +0800
 Subject: [PATCH 34/37] FROMLIST: loongarch: retrieve CPU package ID from PPTT
@@ -93,5 +93,5 @@ index 405670e3f1fc..f41fe011a6e1 100644
  	cpu_data[cpu].core = pptt_enabled ? cpu_data[cpu].core :
  		     cpu_logical_map(cpu) % loongson_sysconf.cores_per_package;
 -- 
-2.52.0
+2.53.0
 

@@ -1,4 +1,4 @@
-From 7ca9489b41b7ad19bbc36a62639420bee025cd67 Mon Sep 17 00:00:00 2001
+From bf1c7e39fae7d19954670335592ec2f95e8d0de2 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Sat, 11 Oct 2025 15:16:47 +0800
 Subject: [PATCH 17/37] FROMLIST: dt-bindings: serial: 8250: Add Loongson uart
@@ -52,5 +52,5 @@ index b243afa69a1a..167ddcbd8800 100644
    reg:
      maxItems: 1
 -- 
-2.52.0
+2.53.0
 

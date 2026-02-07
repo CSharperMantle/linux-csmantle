@@ -1,4 +1,4 @@
-From c858e4683a6c2222e232c5e62a1045a46df2befc Mon Sep 17 00:00:00 2001
+From 21420ef048e29246edecaa9c3e0511ea174f50cc Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Sun, 22 Sep 2024 00:57:24 +0800
 Subject: [PATCH 30/37] AOSCOS: drm: amdgpu: use amdgpu by default for si/cik
@@ -74,5 +74,5 @@ index 9c8907bc61d9..8ed93481f714 100644
  
  static const struct pci_device_id pciidlist[] = {
 -- 
-2.52.0
+2.53.0
 

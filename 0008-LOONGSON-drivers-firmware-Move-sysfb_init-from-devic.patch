@@ -1,4 +1,4 @@
-From 2ab71133e3aa138048a9929c718ff3b4c0238428 Mon Sep 17 00:00:00 2001
+From 7e9e3ac740cb5971922ebc87e39bf55df9c6ca7d Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Sun, 28 Jan 2024 14:07:46 +0800
 Subject: [PATCH 08/37] LOONGSON: drivers/firmware: Move sysfb_init() from
@@ -53,5 +53,5 @@ index 889e5b05c739..8988df462ef0 100644
 -device_initcall(sysfb_init);
 +fs_initcall(sysfb_init);
 -- 
-2.52.0
+2.53.0
 

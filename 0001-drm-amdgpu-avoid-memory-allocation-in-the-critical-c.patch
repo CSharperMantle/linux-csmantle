@@ -1,4 +1,4 @@
-From f22e7e37d6734ca3cc8ed0afe79e325cfea56848 Mon Sep 17 00:00:00 2001
+From b8d3429618a76ced4676cfd55a13e6c39754212b Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Christian=20K=C3=B6nig?= <christian.koenig@amd.com>
 Date: Wed, 29 Oct 2025 15:36:32 +0100
 Subject: [PATCH 01/37] drm/amdgpu: avoid memory allocation in the critical
@@ -148,5 +148,5 @@ index cf0ec94e8a07..15d757c016cb 100644
  	uint32_t				num_level;
  	uint32_t				block_size;
 -- 
-2.52.0
+2.53.0
 

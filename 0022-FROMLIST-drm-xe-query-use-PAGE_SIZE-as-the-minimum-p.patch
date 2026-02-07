@@ -1,4 +1,4 @@
-From 7db52143493ae15730a301e04575797f67237a00 Mon Sep 17 00:00:00 2001
+From b506f282a206a539e4b1fe6dae92b51ac1a08aa8 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 26 Feb 2025 10:00:22 +0800
 Subject: [PATCH 22/37] FROMLIST: drm/xe/query: use PAGE_SIZE as the minimum
@@ -55,5 +55,5 @@ index 400555a8af18..a9ffdea312a0 100644
   *  - %DRM_XE_QUERY_CONFIG_MAX_EXEC_QUEUE_PRIORITY - Value of the highest
   *    available exec queue priority
 -- 
-2.52.0
+2.53.0
 

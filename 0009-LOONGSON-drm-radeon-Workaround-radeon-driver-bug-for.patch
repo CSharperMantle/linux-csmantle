@@ -1,4 +1,4 @@
-From 9901d4a900cf2321da21f9c369832881b0bf19a8 Mon Sep 17 00:00:00 2001
+From 7becc27742285a88cebaf732057edfd2079007e0 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Mon, 22 Feb 2021 10:53:47 +0800
 Subject: [PATCH 09/37] LOONGSON: drm/radeon: Workaround radeon driver bug for
@@ -69,5 +69,5 @@ index 26197aceb001..2d7eeb781969 100644
  
  	/* make sure wptr hasn't changed while processing */
 -- 
-2.52.0
+2.53.0
 

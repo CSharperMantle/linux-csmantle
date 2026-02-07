@@ -1,4 +1,4 @@
-From 8d4c81cac149749008d3f117479d494224e21aad Mon Sep 17 00:00:00 2001
+From a74926a6e01fadd2c049027f423264ea5e440084 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Thu, 29 May 2025 20:08:26 +0800
 Subject: [PATCH 10/37] LOONGSON: drm/ast: Restore vaddr field to struct
@@ -157,5 +157,5 @@ index 30b011ed0a05..85defef6862f 100644
  			     ast_primary_plane_formats, ARRAY_SIZE(ast_primary_plane_formats),
  			     NULL, DRM_PLANE_TYPE_PRIMARY);
 -- 
-2.52.0
+2.53.0
 

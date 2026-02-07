@@ -1,4 +1,4 @@
-From d8a2de11df31e705d728af4c88703f4310db31d7 Mon Sep 17 00:00:00 2001
+From f22b1ff1b3ee6528a7dc03e04b60a7f819c502c4 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Fri, 28 Feb 2025 20:28:08 +0800
 Subject: [PATCH 11/37] LOONGSON: drm/ast: Support both SHMEM helper and VRAM
@@ -455,5 +455,5 @@ index 85defef6862f..0059dd3da61f 100644
  	if (ast->support_fullhd) {
  		dev->mode_config.max_width = 1920;
 -- 
-2.52.0
+2.53.0
 

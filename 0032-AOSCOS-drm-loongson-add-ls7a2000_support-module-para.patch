@@ -1,4 +1,4 @@
-From 3c4ae090aa344ee19d0c6ba612d1fdc36c146ec6 Mon Sep 17 00:00:00 2001
+From 5f8914c37b4e6c8a14034165e9993b0896197c61 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Sun, 19 Jan 2025 12:53:05 +0800
 Subject: [PATCH 32/37] AOSCOS: drm: loongson: add ls7a2000_support module
@@ -75,5 +75,5 @@ index 12193d2a301a..2a20db342b5a 100644
  		return -ENODEV;
  
 -- 
-2.52.0
+2.53.0
 

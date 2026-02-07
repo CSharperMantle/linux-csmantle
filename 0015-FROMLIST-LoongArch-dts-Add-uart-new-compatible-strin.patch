@@ -1,4 +1,4 @@
-From 00197e5ef44ecdc9194bea66cb600b56f34f2091 Mon Sep 17 00:00:00 2001
+From d0fcc8ff4d5834fe648f1e39d14b99ff134d08a8 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Sat, 11 Oct 2025 15:16:49 +0800
 Subject: [PATCH 15/37] FROMLIST: LoongArch: dts: Add uart new compatible
@@ -58,5 +58,5 @@ index ff094e60af1c..3678c084adf7 100644
  			clock-frequency = <100000000>;
  			interrupt-parent = <&liointc>;
 -- 
-2.52.0
+2.53.0
 
