@@ -1,0 +1,25 @@
+From 142d20cc5ac38b9dcf50eb5ea0ca6c89c0e8f09b Mon Sep 17 00:00:00 2001
+From: Rong Bao <rong.bao@csmantle.top>
+Date: Wed, 11 Feb 2026 15:06:17 +0800
+Subject: [PATCH 02/70] Arch Linux kernel v6.19-arch0
+
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index d3a8482bdbd0..e7a5a44601bb 100644
+--- a/Makefile
++++ b/Makefile
+@@ -2,7 +2,7 @@
+ VERSION = 6
+ PATCHLEVEL = 19
+ SUBLEVEL = 0
+-EXTRAVERSION =
++EXTRAVERSION = -arch0
+ NAME = Baby Opossum Posse
+ 
+ # *DOCUMENTATION*
+-- 
+2.53.0
+
