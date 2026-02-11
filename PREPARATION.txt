@@ -1,0 +1,1 @@
+Use `./scripts/diffconfig -m` to generate config fragments.

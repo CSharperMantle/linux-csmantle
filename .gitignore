@@ -2,4 +2,6 @@
 /*.orig
 /*.rej
 
-loong-addition.config
+config.16k
+/*.config
+!/*.frag.config

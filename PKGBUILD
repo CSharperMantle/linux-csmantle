@@ -4,7 +4,7 @@
 
 pkgbase=linux-csmantle
 pkgver=6.18.9.arch1
-pkgrel=1
+pkgrel=2
 pkgdesc='Linux'
 url='https://github.com/archlinux/linux'
 arch=(loong64)
@@ -51,8 +51,9 @@ sha256sums=('030115ff8fb4cb536d8449dc40ebc3e314e86ba1b316a6ae21091a11cc930578'
             'SKIP'
             '4815407239a6df15f8e0362ff652f9faf2e558fd774b08645e80ca664128e390'
             'SKIP'
-            '505d823490e964e66ebe5889a3701347b4e4e2faf1772b3964f0360a176eadf8'
-            '60e26da620d96a7c0fad031d25b11b7d02a809d558b819bef2b10575f96e8195'
+            '9fed188f89847418aaf6416b64457a30bee34dcd0fa42a84dbd0f4dfca063402'
+            '157126a09f9a0db855ccada3d560c5a2e469c91186596b7f6b15afd2b983b67f'
+            '7ce5553af968b2dd7fe098905014a7bc04b8b140a9a78745647f00ba8cbd09af'
             'b94581a5c8ca354a3a2a8999669783da01e3b859d5d8771e4d6022f7ccfa0ca7'
             '66b318aac598dd62d21ddc80dfd301e3416d621ed2f59119c2d450636546361a'
             '36d6843af31fc08cabe402ed15e49a23fb65c1f4ad910cb5908dc2939e165bbf'
@@ -89,8 +90,9 @@ b2sums=('9aed902e41583597cb7595efe77504630a621993d20f89365a93cf2ea4d9790a6361d93
         'SKIP'
         '0e9a6bbc9baf4e6706699257e811dcdb7d7e6c946a45f660ee56c564d907efaaac53387b29668ca3fc3082c5badc30ee082dac9d8de2bde72c79365af4050b47'
         'SKIP'
-        'f31d83e1e10bb901d0d25c1db0ad2844584ff1014c8bf36f342fcf1999f41e5e2d5ddfa20a5a23d4626c6b35005c7e01ebe8ae7f3de3d4b61a189a49add3a158'
-        'b8c684b5baf73e687d8bb3379a757ec25d788b512b01fc10fc601930f087c7d411d338026ace88df603b201f512ce57bff28a2b646ddbf9e8ed9f65fba10681d'
+        'bef3377ad86440af76e9dde4c29c9f4aaad42f5fe343f7d31f5eb537d6d358602f996f5d63986af275f2e92f94e71dc28c320edc8c03d05bd64dbd8ed23d75dc'
+        'dfd366b283243f95c318471fe35e3a36646a38388dd6c4d9746bc981985a02ea303d75127244e9feac14564a8f49385483dfb56a8842814bdf97ca747bc2a4d5'
+        'ec78b98591f7cad155b4d36e52ff98b5fc0ff736debbd285d6d392ce9b488fbdba06587e1617357d60e2f51aee50c8e87ab6ede8a691cd079b6facd20d593eff'
         '75764b3a67a9527171052faeedd427b1a14637b9033ff3d9b45bfa118528353dca7aa3d098f1d6b62dd431881549abec579956f936b870758c116e8e30c52ad5'
         '6082ddbd40a8cb7b6ce3f64aaa52ed11f3ade6ecb647a8ea4558bfa93e8e01ec12372a0fe1b0d19534654894fdc9d53521c9b59c8f9e2a006da45892a0736f7f'
         '7fc6e534d0654e295d1e224b96634cf27b296d297cd0978034bfbd2615fba86b0dd2484a92c2b3a757f37bb158804a106e93df9c3dcba1edb4a98645c8fd050b'
@@ -153,16 +155,18 @@ prepare() {
   }' drivers/gpu/drm/amd/amdkfd/Kconfig
 
   echo "Setting config..."
-  cp ../config .config
   if [ $CARCH == loong64 ]; then
-    make savedefconfig
-    cat defconfig ../loong-config.16k > .config
+    ./scripts/kconfig/merge_config.sh \
+      "$srcdir"/config \
+      "$srcdir"/001-aosc-loongarch64-16k.frag.config \
+      "$srcdir"/002-local.frag.config
+  else
+    cp ../config .config
   fi
-  # make olddefconfig
-  make menuconfig
+  make olddefconfig
+  make listnewconfig
+  # make menuconfig
   make prepare
-
-  diff -u ../config .config || :
 
   make -s kernelrelease > version
   echo "Prepared $pkgbase version $(<version)"
@@ -352,7 +356,8 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-source+=('loong-config.16k'
+source+=('001-aosc-loongarch64-16k.frag.config'
+         '002-local.frag.config'
          '0001-LOONGSON-irqchip-loongson-eiointc-Improve-IRQ-affini.patch'
          '0002-LOONGSON-LoongArch-Add-CPU-HWMon-platform-driver.patch'
          '0003-LOONGSON-drivers-firmware-Move-sysfb_init-from-devic.patch'
