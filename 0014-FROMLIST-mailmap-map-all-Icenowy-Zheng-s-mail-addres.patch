@@ -1,4 +1,4 @@
-From 193272045b14d62049a3448416c21c356bd7aba1 Mon Sep 17 00:00:00 2001
+From ab2bba5b1b25f137b37d76a4e6fb230ace6e87ca Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <uwu@icenowy.me>
 Date: Mon, 24 Nov 2025 18:52:26 +0800
 Subject: [PATCH 14/70] FROMLIST: mailmap: map all Icenowy Zheng's mail
@@ -20,7 +20,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 4 insertions(+)
 
 diff --git a/.mailmap b/.mailmap
-index da4afd2b2415..7ee67f13c28b 100644
+index da4afd2b24152..7ee67f13c28b4 100644
 --- a/.mailmap
 +++ b/.mailmap
 @@ -320,6 +320,10 @@ Henrik Rydberg <rydberg@bitmath.org>

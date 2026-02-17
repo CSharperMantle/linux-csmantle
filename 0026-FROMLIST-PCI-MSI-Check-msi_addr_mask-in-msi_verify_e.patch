@@ -1,4 +1,4 @@
-From 441b1af64cde6b8a55352de485b5f2fb9e3d6ab2 Mon Sep 17 00:00:00 2001
+From 46fdadaddc64cb1f04051c49ee89b50a9f34b72a Mon Sep 17 00:00:00 2001
 From: Vivian Wang <wangruikang@iscas.ac.cn>
 Date: Fri, 23 Jan 2026 14:07:29 +0800
 Subject: [PATCH 26/70] FROMLIST: PCI/MSI: Check msi_addr_mask in
@@ -20,7 +20,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 6 insertions(+), 3 deletions(-)
 
 diff --git a/drivers/pci/msi/msi.c b/drivers/pci/msi/msi.c
-index 48f5f03d1479..77713f89a10b 100644
+index 48f5f03d14798..77713f89a10b7 100644
 --- a/drivers/pci/msi/msi.c
 +++ b/drivers/pci/msi/msi.c
 @@ -321,14 +321,17 @@ static int msi_setup_msi_desc(struct pci_dev *dev, int nvec,

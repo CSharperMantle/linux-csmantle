@@ -1,4 +1,4 @@
-From ee2211e9a733fedac6b894639176cc4033c01172 Mon Sep 17 00:00:00 2001
+From eddc091e615ddb0db5a890d44ca0f56d7626fd20 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Tue, 27 Jan 2026 16:46:17 +0800
 Subject: [PATCH 37/70] FROMLIST: LoongArch: Prefer top-down allocation after
@@ -32,7 +32,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 1 insertion(+)
 
 diff --git a/arch/loongarch/kernel/setup.c b/arch/loongarch/kernel/setup.c
-index 20cb6f306456..2b260d15b2e2 100644
+index 20cb6f3064568..2b260d15b2e25 100644
 --- a/arch/loongarch/kernel/setup.c
 +++ b/arch/loongarch/kernel/setup.c
 @@ -421,6 +421,7 @@ static void __init arch_mem_init(char **cmdline_p)

@@ -1,4 +1,4 @@
-From 7953726f46ddca8486007de654a13f6ea6e1d3fc Mon Sep 17 00:00:00 2001
+From ce70e1650cd59162f754e023c191d84ea5c232ca Mon Sep 17 00:00:00 2001
 From: Tiezhu Yang <yangtiezhu@loongson.cn>
 Date: Tue, 27 Jan 2026 16:46:18 +0800
 Subject: [PATCH 38/70] FROMLIST: LoongArch: Disable instrumentation for
@@ -35,7 +35,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/arch/loongarch/mm/tlb.c b/arch/loongarch/mm/tlb.c
-index 6a3c91b9cacd..8734767904ea 100644
+index 6a3c91b9cacdc..8734767904ea9 100644
 --- a/arch/loongarch/mm/tlb.c
 +++ b/arch/loongarch/mm/tlb.c
 @@ -202,7 +202,7 @@ void __update_tlb(struct vm_area_struct *vma, unsigned long address, pte_t *ptep

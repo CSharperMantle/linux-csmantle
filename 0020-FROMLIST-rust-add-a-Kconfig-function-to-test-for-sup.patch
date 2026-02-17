@@ -1,4 +1,4 @@
-From 306c4e9d15b97879f9660c5c641ae2040bdcaedd Mon Sep 17 00:00:00 2001
+From 2d69d414e09bb7150e9642a61869da0e35c45ef7 Mon Sep 17 00:00:00 2001
 From: Asuna Yang <spriteovo@gmail.com>
 Date: Thu, 4 Dec 2025 08:54:53 +0100
 Subject: [PATCH 20/70] FROMLIST: rust: add a Kconfig function to test for
@@ -19,7 +19,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 5 insertions(+)
 
 diff --git a/scripts/Kconfig.include b/scripts/Kconfig.include
-index d42042b6c9e2..5d4d29eed0b3 100644
+index d42042b6c9e24..5d4d29eed0b31 100644
 --- a/scripts/Kconfig.include
 +++ b/scripts/Kconfig.include
 @@ -78,3 +78,8 @@ rustc-llvm-version := $(shell,$(srctree)/scripts/rustc-llvm-version.sh $(RUSTC))

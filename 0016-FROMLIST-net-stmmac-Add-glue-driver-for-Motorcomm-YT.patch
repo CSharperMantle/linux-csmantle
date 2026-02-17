@@ -1,4 +1,4 @@
-From f9336de9aa406a95e4cab3791308f07adcf4db51 Mon Sep 17 00:00:00 2001
+From 9e5c3f4411bdeab68f0db401f26dc5fd0b917879 Mon Sep 17 00:00:00 2001
 From: Yao Zi <ziyao@disroot.org>
 Date: Mon, 24 Nov 2025 16:32:10 +0000
 Subject: [PATCH 16/70] FROMLIST: net: stmmac: Add glue driver for Motorcomm
@@ -28,7 +28,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  create mode 100644 drivers/net/ethernet/stmicro/stmmac/dwmac-motorcomm.c
 
 diff --git a/drivers/net/ethernet/stmicro/stmmac/Kconfig b/drivers/net/ethernet/stmicro/stmmac/Kconfig
-index 907fe2e927f0..07088d03dbab 100644
+index 907fe2e927f01..07088d03dbab5 100644
 --- a/drivers/net/ethernet/stmicro/stmmac/Kconfig
 +++ b/drivers/net/ethernet/stmicro/stmmac/Kconfig
 @@ -374,6 +374,15 @@ config DWMAC_LOONGSON
@@ -48,7 +48,7 @@ index 907fe2e927f0..07088d03dbab 100644
  	tristate "STMMAC PCI bus support"
  	depends on PCI
 diff --git a/drivers/net/ethernet/stmicro/stmmac/Makefile b/drivers/net/ethernet/stmicro/stmmac/Makefile
-index 7bf528731034..c9263987ef8d 100644
+index 7bf528731034b..c9263987ef8d2 100644
 --- a/drivers/net/ethernet/stmicro/stmmac/Makefile
 +++ b/drivers/net/ethernet/stmicro/stmmac/Makefile
 @@ -48,4 +48,5 @@ obj-$(CONFIG_STMMAC_LIBPCI)	+= stmmac_libpci.o
@@ -59,7 +59,7 @@ index 7bf528731034..c9263987ef8d 100644
  stmmac-pci-objs:= stmmac_pci.o
 diff --git a/drivers/net/ethernet/stmicro/stmmac/dwmac-motorcomm.c b/drivers/net/ethernet/stmicro/stmmac/dwmac-motorcomm.c
 new file mode 100644
-index 000000000000..fc87192af446
+index 0000000000000..fc87192af4467
 --- /dev/null
 +++ b/drivers/net/ethernet/stmicro/stmmac/dwmac-motorcomm.c
 @@ -0,0 +1,378 @@

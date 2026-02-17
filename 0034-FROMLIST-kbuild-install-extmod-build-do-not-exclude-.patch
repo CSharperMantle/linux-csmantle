@@ -1,4 +1,4 @@
-From 298ebfd933e7e8253af4667dec9e12979a50ecf2 Mon Sep 17 00:00:00 2001
+From a712262e55d087613757de3844d7da938b0b3f46 Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Sun, 1 Feb 2026 20:39:30 +0800
 Subject: [PATCH 34/70] FROMLIST: kbuild: install-extmod-build: do not exclude
@@ -20,7 +20,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/scripts/package/install-extmod-build b/scripts/package/install-extmod-build
-index 2576cf7902db..d1e448d7f59f 100755
+index 2576cf7902dbb..d1e448d7f59f6 100755
 --- a/scripts/package/install-extmod-build
 +++ b/scripts/package/install-extmod-build
 @@ -11,7 +11,8 @@ is_enabled() {

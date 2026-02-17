@@ -1,4 +1,4 @@
-From 2c8d42f4ef59b371426564856144f7bfb93403bf Mon Sep 17 00:00:00 2001
+From ce5cd392cd5908f99a924e371f73a87db6a45961 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 26 Nov 2025 22:21:05 +0800
 Subject: [PATCH 52/70] AOSCOS: loongarch: re-introduce add_numamem_region(),
@@ -16,7 +16,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 67 insertions(+)
 
 diff --git a/arch/loongarch/kernel/numa.c b/arch/loongarch/kernel/numa.c
-index 8b89898e20df..3efd2b4fe37b 100644
+index 8b89898e20df1..3efd2b4fe37bb 100644
 --- a/arch/loongarch/kernel/numa.c
 +++ b/arch/loongarch/kernel/numa.c
 @@ -158,8 +158,75 @@ static void __init node_mem_init(unsigned int node)

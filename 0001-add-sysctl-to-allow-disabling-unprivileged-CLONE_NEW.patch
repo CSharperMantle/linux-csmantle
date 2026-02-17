@@ -1,4 +1,4 @@
-From bdf16fae3dd39760213919973613c656185611eb Mon Sep 17 00:00:00 2001
+From e21d78ed2c87abc80a83db8767fe9c2a4268120b Mon Sep 17 00:00:00 2001
 From: Serge Hallyn <serge.hallyn@canonical.com>
 Date: Fri, 31 May 2013 19:12:12 +0100
 Subject: [PATCH 01/70] add sysctl to allow disabling unprivileged
@@ -18,7 +18,7 @@ issues are found, we have a fail-safe.
  1 file changed, 24 insertions(+)
 
 diff --git a/kernel/fork.c b/kernel/fork.c
-index b1f3915d5f8e..72a734fc50ae 100644
+index b1f3915d5f8ec..72a734fc50ae8 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
 @@ -123,6 +123,12 @@

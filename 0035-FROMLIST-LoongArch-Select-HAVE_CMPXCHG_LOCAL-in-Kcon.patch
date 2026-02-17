@@ -1,4 +1,4 @@
-From cf7d8a6a80050661e82a135e2e4d32809ea45569 Mon Sep 17 00:00:00 2001
+From 985d123e1c07d845cbeac8efbe0b16459b154fd9 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Tue, 23 Dec 2025 16:12:28 +0800
 Subject: [PATCH 35/70] FROMLIST: LoongArch: Select HAVE_CMPXCHG_LOCAL in
@@ -18,7 +18,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 1 insertion(+)
 
 diff --git a/arch/loongarch/Kconfig b/arch/loongarch/Kconfig
-index 730f34214519..ae9d954aa052 100644
+index 730f342145197..ae9d954aa0525 100644
 --- a/arch/loongarch/Kconfig
 +++ b/arch/loongarch/Kconfig
 @@ -130,6 +130,7 @@ config LOONGARCH

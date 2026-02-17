@@ -1,4 +1,4 @@
-From 8516a814054a0bbb13fc668a9dcbb1d28e7cfca3 Mon Sep 17 00:00:00 2001
+From 3316042cc5ee9e67124fa1ad21105f7481d4bfaf Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Fri, 14 Feb 2025 17:48:41 +0800
 Subject: [PATCH 50/70] BACKPORT: DEEPIN: pci/quirks: LS7A2000: Fix pm
@@ -21,7 +21,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  2 files changed, 31 insertions(+)
 
 diff --git a/drivers/pci/quirks.c b/drivers/pci/quirks.c
-index 0ccf923c8053..b27a7dce78a9 100644
+index 0ccf923c8053c..b27a7dce78a9b 100644
 --- a/drivers/pci/quirks.c
 +++ b/drivers/pci/quirks.c
 @@ -399,6 +399,36 @@ static void quirk_tigerpoint_bm_sts(struct pci_dev *dev)
@@ -62,7 +62,7 @@ index 0ccf923c8053..b27a7dce78a9 100644
  static void quirk_nopcipci(struct pci_dev *dev)
  {
 diff --git a/include/linux/pci.h b/include/linux/pci.h
-index 519d6072b181..7fd9ab75cf18 100644
+index 519d6072b1819..7fd9ab75cf185 100644
 --- a/include/linux/pci.h
 +++ b/include/linux/pci.h
 @@ -248,6 +248,7 @@ enum pci_dev_flags {

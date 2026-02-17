@@ -1,4 +1,4 @@
-From 881e5f22d74c8852c99b1babf2980dec1ab5f7f9 Mon Sep 17 00:00:00 2001
+From 5d24cd55fe66db99380d1776cc1882fd95225afc Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Fri, 16 Jan 2026 01:41:50 +0800
 Subject: [PATCH 32/70] FROMLIST: irqchip/loongson-pch-lpc: add OF init code
@@ -16,7 +16,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 28 insertions(+)
 
 diff --git a/drivers/irqchip/irq-loongson-pch-lpc.c b/drivers/irqchip/irq-loongson-pch-lpc.c
-index 96489e031d34..0baa93028abf 100644
+index 96489e031d34e..0baa93028abf4 100644
 --- a/drivers/irqchip/irq-loongson-pch-lpc.c
 +++ b/drivers/irqchip/irq-loongson-pch-lpc.c
 @@ -13,6 +13,8 @@

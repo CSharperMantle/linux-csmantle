@@ -1,4 +1,4 @@
-From 980b0842de2f1fba933982bf82682fec99e6392b Mon Sep 17 00:00:00 2001
+From 4077dfa722fe7c68f6cb3b5969d25133d6dc2496 Mon Sep 17 00:00:00 2001
 From: Asuna Yang <spriteovo@gmail.com>
 Date: Thu, 4 Dec 2025 08:54:52 +0100
 Subject: [PATCH 19/70] FROMLIST: rust: generate a fatal error if
@@ -36,7 +36,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 4 insertions(+)
 
 diff --git a/scripts/Makefile.rust b/scripts/Makefile.rust
-index 5c12b4b8c8b6..b219244cd051 100644
+index 5c12b4b8c8b65..b219244cd0510 100644
 --- a/scripts/Makefile.rust
 +++ b/scripts/Makefile.rust
 @@ -6,4 +6,8 @@ BINDGEN_TARGET_loongarch	:= loongarch64-linux-gnusf

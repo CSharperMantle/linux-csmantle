@@ -1,4 +1,4 @@
-From 946cdd3fe0b12f93829b4e2df8dda0b656693ca4 Mon Sep 17 00:00:00 2001
+From 7267a710a075ae5bbfd17fd92885d65e66b13e4d Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Sun, 1 Feb 2026 10:37:00 +0800
 Subject: [PATCH 36/70] FROMLIST: net: stmmac: dwmac-loongson: Set clk_csr_i to
@@ -21,7 +21,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/net/ethernet/stmicro/stmmac/dwmac-loongson.c b/drivers/net/ethernet/stmicro/stmmac/dwmac-loongson.c
-index 107a7c84ace8..c05e3e7a539c 100644
+index 107a7c84ace80..c05e3e7a539cf 100644
 --- a/drivers/net/ethernet/stmicro/stmmac/dwmac-loongson.c
 +++ b/drivers/net/ethernet/stmicro/stmmac/dwmac-loongson.c
 @@ -91,8 +91,8 @@ static void loongson_default_data(struct pci_dev *pdev,

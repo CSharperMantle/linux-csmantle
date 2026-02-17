@@ -1,4 +1,4 @@
-From 0f0636c0f1af7a19f51a3caafa34940e63420e25 Mon Sep 17 00:00:00 2001
+From 5249ce268195d05fb2e5f40b1041af6eec452e94 Mon Sep 17 00:00:00 2001
 From: Vivian Wang <wangruikang@iscas.ac.cn>
 Date: Fri, 23 Jan 2026 14:07:30 +0800
 Subject: [PATCH 27/70] FROMLIST: drm/radeon: Raise msi_addr_mask to dma_bits
@@ -22,7 +22,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  2 files changed, 1 insertion(+), 10 deletions(-)
 
 diff --git a/drivers/gpu/drm/radeon/radeon_device.c b/drivers/gpu/drm/radeon/radeon_device.c
-index 60afaa8e56b4..5faae0361361 100644
+index 60afaa8e56b4b..5faae03613619 100644
 --- a/drivers/gpu/drm/radeon/radeon_device.c
 +++ b/drivers/gpu/drm/radeon/radeon_device.c
 @@ -1374,6 +1374,7 @@ int radeon_device_init(struct radeon_device *rdev,
@@ -34,7 +34,7 @@ index 60afaa8e56b4..5faae0361361 100644
  
  	/* Registers mapping */
 diff --git a/drivers/gpu/drm/radeon/radeon_irq_kms.c b/drivers/gpu/drm/radeon/radeon_irq_kms.c
-index d550554a6f3f..839d619e5602 100644
+index d550554a6f3f2..839d619e5602b 100644
 --- a/drivers/gpu/drm/radeon/radeon_irq_kms.c
 +++ b/drivers/gpu/drm/radeon/radeon_irq_kms.c
 @@ -245,16 +245,6 @@ static bool radeon_msi_ok(struct radeon_device *rdev)

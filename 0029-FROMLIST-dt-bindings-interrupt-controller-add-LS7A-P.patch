@@ -1,4 +1,4 @@
-From 545be5e9da1d75c4cd7f7a150e25c8509ff00290 Mon Sep 17 00:00:00 2001
+From dabc54f0f3b9313f3e5cb3c142e74e73ac85cffd Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Fri, 16 Jan 2026 01:59:33 +0800
 Subject: [PATCH 29/70] FROMLIST: dt-bindings: interrupt-controller: add LS7A
@@ -18,7 +18,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
 
 diff --git a/Documentation/devicetree/bindings/interrupt-controller/loongson,pch-lpc.yaml b/Documentation/devicetree/bindings/interrupt-controller/loongson,pch-lpc.yaml
 new file mode 100644
-index 000000000000..c00fbf31f47f
+index 0000000000000..c00fbf31f47f0
 --- /dev/null
 +++ b/Documentation/devicetree/bindings/interrupt-controller/loongson,pch-lpc.yaml
 @@ -0,0 +1,52 @@

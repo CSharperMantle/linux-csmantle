@@ -1,4 +1,4 @@
-From 781b1294724c49b756b18670881efb2bb25e3ca5 Mon Sep 17 00:00:00 2001
+From ce32e1938f75b19c328f8e454db2c9ed61f24a02 Mon Sep 17 00:00:00 2001
 From: Yanteng Si <siyanteng@loongson.cn>
 Date: Mon, 27 May 2024 10:20:21 +0800
 Subject: [PATCH 49/70] DEEPIN: net: stmmac: fix potential double free of dma
@@ -31,7 +31,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 11 insertions(+)
 
 diff --git a/drivers/net/ethernet/stmicro/stmmac/stmmac_main.c b/drivers/net/ethernet/stmicro/stmmac/stmmac_main.c
-index a379221b96a3..dedd54b2ef02 100644
+index a379221b96a34..dedd54b2ef021 100644
 --- a/drivers/net/ethernet/stmicro/stmmac/stmmac_main.c
 +++ b/drivers/net/ethernet/stmicro/stmmac/stmmac_main.c
 @@ -2046,13 +2046,18 @@ static void __free_dma_rx_desc_resources(struct stmmac_priv *priv,

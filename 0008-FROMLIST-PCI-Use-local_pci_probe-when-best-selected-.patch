@@ -1,4 +1,4 @@
-From 61ed9dd1a47ccd6d25646d26eb5499ebedb5947f Mon Sep 17 00:00:00 2001
+From 7f19e550e70f39006b22459b81f350692ea36d3f Mon Sep 17 00:00:00 2001
 From: Hongchen Zhang <zhanghongchen@loongson.cn>
 Date: Sun, 11 May 2025 16:34:12 +0800
 Subject: [PATCH 08/70] FROMLIST: PCI: Use local_pci_probe() when best selected
@@ -21,7 +21,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/pci/pci-driver.c b/drivers/pci/pci-driver.c
-index 7c2d9d596258..5ebe0bfc0545 100644
+index 7c2d9d5962586..5ebe0bfc05457 100644
 --- a/drivers/pci/pci-driver.c
 +++ b/drivers/pci/pci-driver.c
 @@ -386,7 +386,7 @@ static int pci_call_probe(struct pci_driver *drv, struct pci_dev *dev,

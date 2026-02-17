@@ -1,4 +1,4 @@
-From f6b21a76964b1b7b43ac1a6804cbe0caea7219ed Mon Sep 17 00:00:00 2001
+From 34c6cd84b9f130c683e1e6543821f0937185dbf5 Mon Sep 17 00:00:00 2001
 From: Tiezhu Yang <yangtiezhu@loongson.cn>
 Date: Tue, 27 Jan 2026 16:46:19 +0800
 Subject: [PATCH 39/70] FROMLIST: LoongArch: Rework KASAN initialization for
@@ -44,7 +44,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 41 insertions(+), 39 deletions(-)
 
 diff --git a/arch/loongarch/mm/kasan_init.c b/arch/loongarch/mm/kasan_init.c
-index 170da98ad4f5..0fc02ca06457 100644
+index 170da98ad4f55..0fc02ca064573 100644
 --- a/arch/loongarch/mm/kasan_init.c
 +++ b/arch/loongarch/mm/kasan_init.c
 @@ -40,39 +40,43 @@ static pgd_t kasan_pg_dir[PTRS_PER_PGD] __initdata __aligned(PAGE_SIZE);

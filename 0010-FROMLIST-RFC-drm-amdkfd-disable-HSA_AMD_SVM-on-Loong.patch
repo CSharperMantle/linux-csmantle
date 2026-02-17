@@ -1,4 +1,4 @@
-From 4aad5df6bf80e667a400baa0cb0c8ecd4b1c1c4a Mon Sep 17 00:00:00 2001
+From 96f4e7d34168c8d88d6c2d9c130b4cf241c52e5e Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Thu, 14 Aug 2025 11:21:36 +0800
 Subject: [PATCH 10/70] FROMLIST: RFC: drm/amdkfd: disable HSA_AMD_SVM on
@@ -132,7 +132,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/gpu/drm/amd/amdkfd/Kconfig b/drivers/gpu/drm/amd/amdkfd/Kconfig
-index 16e12c9913f9..5d2fa86f60bf 100644
+index 16e12c9913f94..5d2fa86f60bf8 100644
 --- a/drivers/gpu/drm/amd/amdkfd/Kconfig
 +++ b/drivers/gpu/drm/amd/amdkfd/Kconfig
 @@ -14,7 +14,7 @@ config HSA_AMD
