@@ -1,7 +1,7 @@
 From 34c6cd84b9f130c683e1e6543821f0937185dbf5 Mon Sep 17 00:00:00 2001
 From: Tiezhu Yang <yangtiezhu@loongson.cn>
 Date: Tue, 27 Jan 2026 16:46:19 +0800
-Subject: [PATCH 39/70] FROMLIST: LoongArch: Rework KASAN initialization for
+Subject: [PATCH 39/71] FROMLIST: LoongArch: Rework KASAN initialization for
  PTW-enabled systems
 
 kasan_init_generic() indicates that kasan is fully initialized, so it

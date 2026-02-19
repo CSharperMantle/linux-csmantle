@@ -1,7 +1,7 @@
 From 9ba9f5651745cd2299743bd69e47c657e9506f40 Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Fri, 16 Jan 2026 01:22:40 +0800
-Subject: [PATCH 30/70] BACKPORT: FROMLIST: irqchip/loongson-pch-lpc: extract
+Subject: [PATCH 30/71] BACKPORT: FROMLIST: irqchip/loongson-pch-lpc: extract
  non-ACPI-related code from ACPI init
 
 A lot of code could be shared between the current ACPI init flow with

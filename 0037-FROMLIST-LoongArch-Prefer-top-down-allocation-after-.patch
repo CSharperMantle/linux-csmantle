@@ -1,7 +1,7 @@
 From eddc091e615ddb0db5a890d44ca0f56d7626fd20 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Tue, 27 Jan 2026 16:46:17 +0800
-Subject: [PATCH 37/70] FROMLIST: LoongArch: Prefer top-down allocation after
+Subject: [PATCH 37/71] FROMLIST: LoongArch: Prefer top-down allocation after
  arch_mem_init()
 
 Currently we use bottom-up allocation after sparse_init(), the reason is

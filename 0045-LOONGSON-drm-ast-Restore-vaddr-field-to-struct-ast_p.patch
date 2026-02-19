@@ -1,7 +1,7 @@
 From caaef77bbef5199b5541c3999e839e794925a965 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Thu, 29 May 2025 20:08:26 +0800
-Subject: [PATCH 45/70] LOONGSON: drm/ast: Restore vaddr field to struct
+Subject: [PATCH 45/71] LOONGSON: drm/ast: Restore vaddr field to struct
  ast_plane
 
 Revert "drm/ast: Remove vaddr field from struct ast_plane".

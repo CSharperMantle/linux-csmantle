@@ -1,7 +1,7 @@
 From ce70e1650cd59162f754e023c191d84ea5c232ca Mon Sep 17 00:00:00 2001
 From: Tiezhu Yang <yangtiezhu@loongson.cn>
 Date: Tue, 27 Jan 2026 16:46:18 +0800
-Subject: [PATCH 38/70] FROMLIST: LoongArch: Disable instrumentation for
+Subject: [PATCH 38/71] FROMLIST: LoongArch: Disable instrumentation for
  setup_ptwalker()
 
 According to Documentation/dev-tools/kasan.rst, software KASAN modes use

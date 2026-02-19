@@ -1,7 +1,7 @@
 From e4ebd05f179771bff59326f602e1563c2ebbb8f4 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Sat, 18 Oct 2025 12:46:21 +0800
-Subject: [PATCH 47/70] LOONGSON: dmaengine: loongson2-mcdma: New driver for
+Subject: [PATCH 47/71] LOONGSON: dmaengine: loongson2-mcdma: New driver for
  the Loongson Multi-Channel DMA controller
 
 This DMA controller appears in Loongson-2K0300 and Loongson-2K3000.

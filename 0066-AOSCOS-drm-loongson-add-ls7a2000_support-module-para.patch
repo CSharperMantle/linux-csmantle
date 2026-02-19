@@ -1,7 +1,7 @@
 From d774bc330e37e5aeb0f6d9a07c7f0fd3be51fc00 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Sun, 19 Jan 2025 12:53:05 +0800
-Subject: [PATCH 66/70] AOSCOS: drm: loongson: add ls7a2000_support module
+Subject: [PATCH 66/71] AOSCOS: drm: loongson: add ls7a2000_support module
  parameter
 
 The loongson DRM driver does not implement userspace acceleration,

@@ -1,7 +1,7 @@
 From a712262e55d087613757de3844d7da938b0b3f46 Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Sun, 1 Feb 2026 20:39:30 +0800
-Subject: [PATCH 34/70] FROMLIST: kbuild: install-extmod-build: do not exclude
+Subject: [PATCH 34/71] FROMLIST: kbuild: install-extmod-build: do not exclude
  scripts/dtc/libfdt/
 
 There exists a header file in include/linux/ called libfdt.h that is
