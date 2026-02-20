@@ -1,7 +1,7 @@
-From 361a9de515decfcb28bca7ddbf5493b983e0f3eb Mon Sep 17 00:00:00 2001
+From 6801e2cf5029452269b8010934f3c07215ff3e3c Mon Sep 17 00:00:00 2001
 From: Ziyao Li <liziyao@uniontech.com>
 Date: Wed, 21 Jan 2026 16:22:40 +0800
-Subject: [PATCH 21/71] FROMLIST: PCI: loongson: Override PCIe bridge supported
+Subject: [PATCH 21/70] FROMLIST: PCI: loongson: Override PCIe bridge supported
  speeds for Loongson-3C6000 series
 
 Older steppings of the Loongson-3C6000 series incorrectly report the

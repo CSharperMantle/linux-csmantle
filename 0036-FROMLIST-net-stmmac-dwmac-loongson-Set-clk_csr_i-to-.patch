@@ -1,7 +1,7 @@
-From 7267a710a075ae5bbfd17fd92885d65e66b13e4d Mon Sep 17 00:00:00 2001
+From c67166c2c9d3b890ef943008d510719a99fd7aa0 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Sun, 1 Feb 2026 10:37:00 +0800
-Subject: [PATCH 36/71] FROMLIST: net: stmmac: dwmac-loongson: Set clk_csr_i to
+Subject: [PATCH 36/70] FROMLIST: net: stmmac: dwmac-loongson: Set clk_csr_i to
  100-150MHz
 
 Current clk_csr_i setting of Loongson STMMAC (including LS7A1000/2000

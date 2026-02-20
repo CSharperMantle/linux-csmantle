@@ -1,7 +1,7 @@
-From 9ed63cbf27d905f117993e2f141e25f97fb9a5be Mon Sep 17 00:00:00 2001
+From 271abb74b8681a58e717bbb1652dabad90bf4232 Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Sat, 31 Jan 2026 16:51:42 +0800
-Subject: [PATCH 28/71] FROMLIST: genirq: reserve NR_IRQS_LEGACY IRQs in dynirq
+Subject: [PATCH 28/70] FROMLIST: genirq: reserve NR_IRQS_LEGACY IRQs in dynirq
  by default
 
 Several architectures define NR_IRQS_LEGACY to reserve a low range of IRQ
