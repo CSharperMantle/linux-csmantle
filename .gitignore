@@ -5,3 +5,7 @@
 config.16k
 /*.config
 !/*.frag.config
+*.tar
+*.tar.*
+*.patch.zst
+*.patch.zst.sig
