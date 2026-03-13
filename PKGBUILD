@@ -228,8 +228,8 @@ prepare() {
     cp ../config .config
   fi
   make olddefconfig
-  make listnewconfig
-  # make menuconfig
+  #make listnewconfig
+  #make menuconfig
   make prepare
 
   make -s kernelrelease > version
