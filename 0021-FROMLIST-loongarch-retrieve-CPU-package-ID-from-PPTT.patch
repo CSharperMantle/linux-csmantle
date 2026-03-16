@@ -1,4 +1,4 @@
-From 8a1fac5ae39c4545a2f0e63d18c5eb4c43aedeb2 Mon Sep 17 00:00:00 2001
+From a505875fd199850750dbf06fb0cf5f9c7c2e33a2 Mon Sep 17 00:00:00 2001
 From: Rong Bao <rong.bao@csmantle.top>
 Date: Fri, 23 Jan 2026 23:56:06 +0800
 Subject: [PATCH 21/64] FROMLIST: loongarch: retrieve CPU package ID from PPTT

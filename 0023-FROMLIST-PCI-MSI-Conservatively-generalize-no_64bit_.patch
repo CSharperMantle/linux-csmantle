@@ -1,4 +1,4 @@
-From 21974e7ef39daba5232f6be1eef3d2e111cae355 Mon Sep 17 00:00:00 2001
+From 0dc2020525c6404ff9ba49326a6f70fb05829f34 Mon Sep 17 00:00:00 2001
 From: Vivian Wang <wangruikang@iscas.ac.cn>
 Date: Fri, 23 Jan 2026 14:07:28 +0800
 Subject: [PATCH 23/64] FROMLIST: PCI/MSI: Conservatively generalize
@@ -179,10 +179,10 @@ index e958ff744335..973dfba3e91b 100644
  	unsigned int	broken_parity_status:1;	/* Generates false positive parity */
  	unsigned int	irq_reroute_variant:2;	/* Needs IRQ rerouting variant */
 diff --git a/sound/hda/controllers/intel.c b/sound/hda/controllers/intel.c
-index 1b365e077297..6109a345b514 100644
+index f8919cb521a1..9aea3fbc22cf 100644
 --- a/sound/hda/controllers/intel.c
 +++ b/sound/hda/controllers/intel.c
-@@ -1905,7 +1905,7 @@ static int azx_first_init(struct azx *chip)
+@@ -1907,7 +1907,7 @@ static int azx_first_init(struct azx *chip)
  
  	if (chip->msi && chip->driver_caps & AZX_DCAPS_NO_MSI64) {
  		dev_dbg(card->dev, "Disabling 64bit MSI\n");

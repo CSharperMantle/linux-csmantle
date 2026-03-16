@@ -1,4 +1,4 @@
-From 06dd119ae6402d9b798156a5f60c8108e1d2d616 Mon Sep 17 00:00:00 2001
+From 311081dca5be7b1f714e3c75d4b698d4df72c5af Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Ilpo=20J=C3=A4rvinen?= <ilpo.jarvinen@linux.intel.com>
 Date: Thu, 18 Sep 2025 13:58:56 -0700
 Subject: [PATCH 11/64] FROMLIST: PCI: Release BAR0 of an integrated bridge to

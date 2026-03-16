@@ -1,4 +1,4 @@
-From d16dee61a9f1afa8519b4d1d118bf43b6201f5df Mon Sep 17 00:00:00 2001
+From 4caa07bfb8ea228376e889bdc8fce897acf5c92d Mon Sep 17 00:00:00 2001
 From: Hongchen Zhang <zhanghongchen@loongson.cn>
 Date: Sun, 11 May 2025 16:34:12 +0800
 Subject: [PATCH 06/64] FROMLIST: PCI: Use local_pci_probe() when best selected

@@ -9,3 +9,6 @@ config.16k
 *.tar.*
 *.patch.zst
 *.patch.zst.sig
+
+/src
+/pkg

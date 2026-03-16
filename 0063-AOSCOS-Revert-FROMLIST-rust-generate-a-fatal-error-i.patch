@@ -1,4 +1,4 @@
-From 5323dc9dbe65a7e569782f7ed2f8f11d76ab1fa2 Mon Sep 17 00:00:00 2001
+From cfed973b6c36baf89a0e50abfa415d600b1cb7eb Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Tue, 23 Dec 2025 20:08:10 +0800
 Subject: [PATCH 63/64] AOSCOS: Revert "FROMLIST: rust: generate a fatal error

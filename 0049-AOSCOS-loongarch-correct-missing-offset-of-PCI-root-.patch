@@ -1,4 +1,4 @@
-From ddf030f9bac807596de19d24d3175f0ac3e7ae00 Mon Sep 17 00:00:00 2001
+From d5cd2149f07bc08d5c0201aace83df30822df47c Mon Sep 17 00:00:00 2001
 From: Miao Wang <shankerwangmiao@gmail.com>
 Date: Wed, 24 Jul 2024 09:06:27 +0800
 Subject: [PATCH 49/64] AOSCOS: loongarch: correct missing offset of PCI root

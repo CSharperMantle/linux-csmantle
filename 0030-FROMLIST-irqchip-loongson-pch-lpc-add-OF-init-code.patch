@@ -1,4 +1,4 @@
-From a36b3c4220e169fd1eb50a4660d661eb523eef10 Mon Sep 17 00:00:00 2001
+From b59d30e31b6e3b3710041f9c5618ee7189520f21 Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Fri, 16 Jan 2026 01:41:50 +0800
 Subject: [PATCH 30/64] FROMLIST: irqchip/loongson-pch-lpc: add OF init code

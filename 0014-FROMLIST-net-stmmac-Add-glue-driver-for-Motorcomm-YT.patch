@@ -1,4 +1,4 @@
-From 9e46dae3cfa24f824c45fe30aed4d21cb0ee4da6 Mon Sep 17 00:00:00 2001
+From e1bc1681d6b30a39d029d59433ef6473d5951b25 Mon Sep 17 00:00:00 2001
 From: Yao Zi <ziyao@disroot.org>
 Date: Mon, 24 Nov 2025 16:32:10 +0000
 Subject: [PATCH 14/64] FROMLIST: net: stmmac: Add glue driver for Motorcomm

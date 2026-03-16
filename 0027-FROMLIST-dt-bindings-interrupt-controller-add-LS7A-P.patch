@@ -1,4 +1,4 @@
-From 27827af6c76216d58db697c57f0951d54fabab30 Mon Sep 17 00:00:00 2001
+From 16a4195c24747899b316849e18ef3ca30862f946 Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Fri, 16 Jan 2026 01:59:33 +0800
 Subject: [PATCH 27/64] FROMLIST: dt-bindings: interrupt-controller: add LS7A

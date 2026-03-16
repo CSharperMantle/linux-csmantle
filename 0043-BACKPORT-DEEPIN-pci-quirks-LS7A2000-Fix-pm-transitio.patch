@@ -1,4 +1,4 @@
-From 2b890218c76317bc423bd6de67f6a3ec8f0d563e Mon Sep 17 00:00:00 2001
+From f2656ab0c64edf6a1e44b2876580a8a5f38c9515 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Fri, 14 Feb 2025 17:48:41 +0800
 Subject: [PATCH 43/64] BACKPORT: DEEPIN: pci/quirks: LS7A2000: Fix pm

@@ -1,4 +1,4 @@
-From eef476dc82adb8b545d54d14937a536e0fbc2d1d Mon Sep 17 00:00:00 2001
+From f99595dba2ce7350ea20152f72c325b19a7000c7 Mon Sep 17 00:00:00 2001
 From: Vivian Wang <wangruikang@iscas.ac.cn>
 Date: Fri, 23 Jan 2026 14:07:30 +0800
 Subject: [PATCH 25/64] FROMLIST: drm/radeon: Raise msi_addr_mask to dma_bits

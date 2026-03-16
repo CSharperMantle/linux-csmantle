@@ -1,4 +1,4 @@
-From 78029cf51c47b46f0201a37aa54a3828308dd104 Mon Sep 17 00:00:00 2001
+From 0ca7a55b7b798cc310a6efb568724e7aed95ae07 Mon Sep 17 00:00:00 2001
 From: WangYuli <wangyuli@uniontech.com>
 Date: Tue, 18 Mar 2025 14:11:25 +0800
 Subject: [PATCH 05/64] FROMLIST: scsi: Bypass certain SCSI commands on disks

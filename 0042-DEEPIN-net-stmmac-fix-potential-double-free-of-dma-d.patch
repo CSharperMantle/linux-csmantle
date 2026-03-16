@@ -1,4 +1,4 @@
-From 0390b9204c6b3f0b180031c3fd33b36ac3b36a4a Mon Sep 17 00:00:00 2001
+From aefb2a000f06ec978753721e814864e03a167721 Mon Sep 17 00:00:00 2001
 From: Yanteng Si <siyanteng@loongson.cn>
 Date: Mon, 27 May 2024 10:20:21 +0800
 Subject: [PATCH 42/64] DEEPIN: net: stmmac: fix potential double free of dma
@@ -31,10 +31,10 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 11 insertions(+)
 
 diff --git a/drivers/net/ethernet/stmicro/stmmac/stmmac_main.c b/drivers/net/ethernet/stmicro/stmmac/stmmac_main.c
-index f98fd254315f..11d3ac9ef351 100644
+index 01ede5148163..acb0a479a64f 100644
 --- a/drivers/net/ethernet/stmicro/stmmac/stmmac_main.c
 +++ b/drivers/net/ethernet/stmicro/stmmac/stmmac_main.c
-@@ -2046,13 +2046,18 @@ static void __free_dma_rx_desc_resources(struct stmmac_priv *priv,
+@@ -2047,13 +2047,18 @@ static void __free_dma_rx_desc_resources(struct stmmac_priv *priv,
  		dma_free_coherent(priv->device, dma_conf->dma_rx_size *
  				  sizeof(struct dma_extended_desc),
  				  rx_q->dma_erx, rx_q->dma_rx_phy);
@@ -53,7 +53,7 @@ index f98fd254315f..11d3ac9ef351 100644
  }
  
  static void free_dma_rx_desc_resources(struct stmmac_priv *priv,
-@@ -2098,8 +2103,14 @@ static void __free_dma_tx_desc_resources(struct stmmac_priv *priv,
+@@ -2099,8 +2104,14 @@ static void __free_dma_tx_desc_resources(struct stmmac_priv *priv,
  
  	dma_free_coherent(priv->device, size, addr, tx_q->dma_tx_phy);
  

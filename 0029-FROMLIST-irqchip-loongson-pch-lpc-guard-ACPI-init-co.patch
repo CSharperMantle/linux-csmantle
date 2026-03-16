@@ -1,4 +1,4 @@
-From dbf0d5ce6d338e9006ce2a823e15971eb47ee3cc Mon Sep 17 00:00:00 2001
+From d52a35615d4ca06ed375076ddbf7fa340a34ce83 Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Fri, 16 Jan 2026 01:27:26 +0800
 Subject: [PATCH 29/64] FROMLIST: irqchip/loongson-pch-lpc: guard ACPI init
