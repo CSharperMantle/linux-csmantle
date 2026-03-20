@@ -1,4 +1,4 @@
-From 41e6815ceaa15c9f2f5ec755f687467e1b1a9716 Mon Sep 17 00:00:00 2001
+From 195162856b21f9894c7b76646adccfb492eac2b4 Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Fri, 16 Jan 2026 01:45:01 +0800
 Subject: [PATCH 31/64] FROMLIST: irqchip/loongson-pch-lpc: enable building on

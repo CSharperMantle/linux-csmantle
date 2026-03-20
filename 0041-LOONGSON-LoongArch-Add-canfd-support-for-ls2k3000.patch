@@ -1,4 +1,4 @@
-From f2c3381e723e4058d3dfa3d245386c707f7ae0d5 Mon Sep 17 00:00:00 2001
+From deadeeb4f816ba306ed8618f6200a9192d74f495 Mon Sep 17 00:00:00 2001
 From: libingxiong <libingxiong@loongson.cn>
 Date: Fri, 30 May 2025 14:22:46 +0800
 Subject: [PATCH 41/64] LOONGSON: LoongArch: Add canfd support for ls2k3000
@@ -94,7 +94,7 @@ index 8f82418230ce..0ece04d75d08 100644
  	return 0;
  }
 diff --git a/drivers/net/can/dev/calc_bittiming.c b/drivers/net/can/dev/calc_bittiming.c
-index cc4022241553..59482206e6b0 100644
+index 42498e9d3f38..a05b3313bc48 100644
 --- a/drivers/net/can/dev/calc_bittiming.c
 +++ b/drivers/net/can/dev/calc_bittiming.c
 @@ -127,8 +127,22 @@ int can_calc_bittiming(const struct net_device *dev, struct can_bittiming *bt,

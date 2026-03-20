@@ -1,4 +1,4 @@
-From a309c4a39fd246634326e002eaa8e953aaf73716 Mon Sep 17 00:00:00 2001
+From 9854e22a054b0ef9e4ec6d3f08029fc93ef802f7 Mon Sep 17 00:00:00 2001
 From: Asuna Yang <spriteovo@gmail.com>
 Date: Thu, 4 Dec 2025 08:54:51 +0100
 Subject: [PATCH 16/64] FROMLIST: rust: export BINDGEN_TARGET from a separate
@@ -30,10 +30,10 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  create mode 100644 scripts/Makefile.rust
 
 diff --git a/Makefile b/Makefile
-index 038db89b5671..4eebad56018d 100644
+index 9bf3d5f0ee72..ae97f14e2eb8 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -718,9 +718,10 @@ ifneq ($(findstring clang,$(CC_VERSION_TEXT)),)
+@@ -719,9 +719,10 @@ ifneq ($(findstring clang,$(CC_VERSION_TEXT)),)
  include $(srctree)/scripts/Makefile.clang
  endif
  
@@ -46,7 +46,7 @@ index 038db89b5671..4eebad56018d 100644
  endif
  
 diff --git a/rust/Makefile b/rust/Makefile
-index 725158740fc6..b1487021a910 100644
+index 066c194c23b9..0639b7630dd1 100644
 --- a/rust/Makefile
 +++ b/rust/Makefile
 @@ -386,14 +386,6 @@ bindgen_skip_c_flags := -mno-fp-ret-in-387 -mpreferred-stack-boundary=% \

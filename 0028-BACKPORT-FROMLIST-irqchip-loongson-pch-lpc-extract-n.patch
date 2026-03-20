@@ -1,4 +1,4 @@
-From 9b7fa638c4424661e5fa54321d27ff5c6fdc397b Mon Sep 17 00:00:00 2001
+From 97ebbf01e33e28cfbdaff07699f7f2220e11811a Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Fri, 16 Jan 2026 01:22:40 +0800
 Subject: [PATCH 28/64] BACKPORT: FROMLIST: irqchip/loongson-pch-lpc: extract

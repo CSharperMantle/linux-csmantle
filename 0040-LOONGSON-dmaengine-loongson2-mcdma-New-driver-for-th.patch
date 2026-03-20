@@ -1,4 +1,4 @@
-From 5729af540095fb90b8536a5af2f4974d4fbbf949 Mon Sep 17 00:00:00 2001
+From 1671f0b5a1d354817f98b53a9d97b90634b6bc77 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Sat, 18 Oct 2025 12:46:21 +0800
 Subject: [PATCH 40/64] LOONGSON: dmaengine: loongson2-mcdma: New driver for

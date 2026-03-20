@@ -1,4 +1,4 @@
-From c790e4a363b5c0511cdcf02a5b2230a0a87cf823 Mon Sep 17 00:00:00 2001
+From 870475c0a9a26617386c86a72386b25bfb39b29f Mon Sep 17 00:00:00 2001
 From: Vivian Wang <wangruikang@iscas.ac.cn>
 Date: Fri, 23 Jan 2026 14:07:29 +0800
 Subject: [PATCH 24/64] FROMLIST: PCI/MSI: Check msi_addr_mask in

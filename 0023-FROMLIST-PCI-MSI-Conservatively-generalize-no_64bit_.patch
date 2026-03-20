@@ -1,4 +1,4 @@
-From 0dc2020525c6404ff9ba49326a6f70fb05829f34 Mon Sep 17 00:00:00 2001
+From 4759630131bcbf8c38e292c9a37cc9eecc8ecf50 Mon Sep 17 00:00:00 2001
 From: Vivian Wang <wangruikang@iscas.ac.cn>
 Date: Fri, 23 Jan 2026 14:07:28 +0800
 Subject: [PATCH 23/64] FROMLIST: PCI/MSI: Conservatively generalize
@@ -61,7 +61,7 @@ index b0c1d9d16fb5..1c78fdfb7b03 100644
  
  	/* Assign XIVE to PE */
 diff --git a/arch/powerpc/platforms/pseries/msi.c b/arch/powerpc/platforms/pseries/msi.c
-index edc30cda5dbc..4cd70a8201f1 100644
+index 56f17296545a..67bc001688c6 100644
 --- a/arch/powerpc/platforms/pseries/msi.c
 +++ b/arch/powerpc/platforms/pseries/msi.c
 @@ -388,7 +388,7 @@ static int rtas_prepare_msi_irqs(struct pci_dev *pdev, int nvec_in, int type,

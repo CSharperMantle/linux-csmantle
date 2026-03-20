@@ -1,4 +1,4 @@
-From 9c2385430050351149075cf498a542d2072aeb35 Mon Sep 17 00:00:00 2001
+From 9c2823631d0448cc74f68403b7aedace5e9ebce7 Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Sat, 31 Jan 2026 16:51:42 +0800
 Subject: [PATCH 26/64] FROMLIST: genirq: reserve NR_IRQS_LEGACY IRQs in dynirq

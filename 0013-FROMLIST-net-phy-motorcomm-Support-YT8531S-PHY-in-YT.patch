@@ -1,4 +1,4 @@
-From 83a5e1acbafa2b0bd51b85b8ffab8fa93db1dac8 Mon Sep 17 00:00:00 2001
+From 1044795483f832588697235c5381584b840ccbaa Mon Sep 17 00:00:00 2001
 From: Yao Zi <ziyao@disroot.org>
 Date: Mon, 24 Nov 2025 16:32:09 +0000
 Subject: [PATCH 13/64] FROMLIST: net: phy: motorcomm: Support YT8531S PHY in

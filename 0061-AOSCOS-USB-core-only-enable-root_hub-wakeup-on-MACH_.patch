@@ -1,4 +1,4 @@
-From e665acb69e513294e636fadfb224ed538fb62759 Mon Sep 17 00:00:00 2001
+From 60d4a2d6f715a9f2d592ecaa4a0ee769855a4eb4 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 26 Feb 2025 11:43:02 +0800
 Subject: [PATCH 61/64] AOSCOS: USB: core: only enable root_hub wakeup on
