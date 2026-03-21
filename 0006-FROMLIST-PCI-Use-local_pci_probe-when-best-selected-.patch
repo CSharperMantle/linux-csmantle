@@ -1,7 +1,7 @@
 From f97131def5974e7852cfd40955c4dd761337e466 Mon Sep 17 00:00:00 2001
 From: Hongchen Zhang <zhanghongchen@loongson.cn>
 Date: Sun, 11 May 2025 16:34:12 +0800
-Subject: [PATCH 06/64] FROMLIST: PCI: Use local_pci_probe() when best selected
+Subject: [PATCH 06/65] FROMLIST: PCI: Use local_pci_probe() when best selected
  cpu is offline
 
 When the best selected CPU is offline, work_on_cpu() will stuck forever.

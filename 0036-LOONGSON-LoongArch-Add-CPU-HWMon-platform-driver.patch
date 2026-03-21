@@ -1,7 +1,7 @@
 From 26b1713f5cbe073665cbf01118972cd7010732d2 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Thu, 29 Oct 2020 16:29:11 +0800
-Subject: [PATCH 36/64] LOONGSON: LoongArch: Add CPU HWMon platform driver
+Subject: [PATCH 36/65] LOONGSON: LoongArch: Add CPU HWMon platform driver
 
 This add CPU HWMon (temperature sensor) platform driver for Loongson-3.
 

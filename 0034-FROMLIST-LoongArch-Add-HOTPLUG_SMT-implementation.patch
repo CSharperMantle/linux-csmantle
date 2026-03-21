@@ -1,7 +1,7 @@
 From a283d99f9ba282bb589d0c6a4687e291ad262729 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Mon, 2 Feb 2026 18:09:43 +0800
-Subject: [PATCH 34/64] FROMLIST: LoongArch: Add HOTPLUG_SMT implementation
+Subject: [PATCH 34/65] FROMLIST: LoongArch: Add HOTPLUG_SMT implementation
 
 For benchmarking or debugging purpose, we usually want to control SMT
 via boot parameter and sysfs knobs. So add HOTPLUG_SMT implementation.
