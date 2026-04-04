@@ -1,4 +1,4 @@
-From bebbe4eca4b539c9bd6617c99a1e8d32bbd1d062 Mon Sep 17 00:00:00 2001
+From 0d9d9ee765c2c13dbf996c0941c26545b6f807d6 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Thu, 23 Oct 2025 20:27:08 +0800
 Subject: [PATCH 39/65] LOONGSON: dt-bindings: dmaengine: Add Loongson
@@ -27,7 +27,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
 
 diff --git a/Documentation/devicetree/bindings/dma/loongson,ls2k0300-dma.yaml b/Documentation/devicetree/bindings/dma/loongson,ls2k0300-dma.yaml
 new file mode 100644
-index 000000000000..d5316885ca85
+index 0000000000000..d5316885ca858
 --- /dev/null
 +++ b/Documentation/devicetree/bindings/dma/loongson,ls2k0300-dma.yaml
 @@ -0,0 +1,78 @@
@@ -110,7 +110,7 @@ index 000000000000..d5316885ca85
 +    };
 +...
 diff --git a/MAINTAINERS b/MAINTAINERS
-index 869c5991bb8d..d0bf62ed22b9 100644
+index 869c5991bb8da..d0bf62ed22b92 100644
 --- a/MAINTAINERS
 +++ b/MAINTAINERS
 @@ -14788,10 +14788,11 @@ S:	Maintained

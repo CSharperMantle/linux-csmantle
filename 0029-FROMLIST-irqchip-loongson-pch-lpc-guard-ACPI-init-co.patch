@@ -1,4 +1,4 @@
-From 963878599aca320775f7f0af0c9b7599229168fd Mon Sep 17 00:00:00 2001
+From 718200c7353ff5f2d02b8d800f5a81de6cf2da56 Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Fri, 16 Jan 2026 01:27:26 +0800
 Subject: [PATCH 29/65] FROMLIST: irqchip/loongson-pch-lpc: guard ACPI init
@@ -16,7 +16,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 2 insertions(+)
 
 diff --git a/drivers/irqchip/irq-loongson-pch-lpc.c b/drivers/irqchip/irq-loongson-pch-lpc.c
-index 4507000b991a..96489e031d34 100644
+index 4507000b991a6..96489e031d34e 100644
 --- a/drivers/irqchip/irq-loongson-pch-lpc.c
 +++ b/drivers/irqchip/irq-loongson-pch-lpc.c
 @@ -225,6 +225,7 @@ static int __init pch_lpc_init(phys_addr_t addr, unsigned long size,

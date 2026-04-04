@@ -1,4 +1,4 @@
-From f677a478c7e1f91e98dc906d4838ffefdfc483e0 Mon Sep 17 00:00:00 2001
+From 77c2e40a199d40ccbddc8586ffe012e2e8361ea4 Mon Sep 17 00:00:00 2001
 From: Yao Zi <ziyao@disroot.org>
 Date: Mon, 24 Nov 2025 16:32:11 +0000
 Subject: [PATCH 15/65] FROMLIST: MAINTAINERS: Assign myself as maintainer of
@@ -16,7 +16,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 6 insertions(+)
 
 diff --git a/MAINTAINERS b/MAINTAINERS
-index e08767323763..869c5991bb8d 100644
+index e087673237636..869c5991bb8da 100644
 --- a/MAINTAINERS
 +++ b/MAINTAINERS
 @@ -17674,6 +17674,12 @@ F:	drivers/most/

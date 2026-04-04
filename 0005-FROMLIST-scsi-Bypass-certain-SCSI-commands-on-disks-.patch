@@ -1,4 +1,4 @@
-From f6bb54a2af08ca709c432e20a8a37b0cdaaa58bc Mon Sep 17 00:00:00 2001
+From 56115c3bbb8b43ee95f78f554592e835aba1f8b5 Mon Sep 17 00:00:00 2001
 From: WangYuli <wangyuli@uniontech.com>
 Date: Tue, 18 Mar 2025 14:11:25 +0800
 Subject: [PATCH 05/65] FROMLIST: scsi: Bypass certain SCSI commands on disks
@@ -123,7 +123,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 12 insertions(+)
 
 diff --git a/drivers/scsi/scsi_lib.c b/drivers/scsi/scsi_lib.c
-index 4a902c9dfd8b..ad15129c9b48 100644
+index 4a902c9dfd8b4..ad15129c9b48a 100644
 --- a/drivers/scsi/scsi_lib.c
 +++ b/drivers/scsi/scsi_lib.c
 @@ -1588,6 +1588,7 @@ static void scsi_complete(struct request *rq)

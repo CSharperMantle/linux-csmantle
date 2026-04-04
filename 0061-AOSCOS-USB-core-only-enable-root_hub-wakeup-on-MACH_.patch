@@ -1,4 +1,4 @@
-From 60d4a2d6f715a9f2d592ecaa4a0ee769855a4eb4 Mon Sep 17 00:00:00 2001
+From 789dc92196f38da5b3e607a44ef614f457a3750b Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 26 Feb 2025 11:43:02 +0800
 Subject: [PATCH 61/65] AOSCOS: USB: core: only enable root_hub wakeup on
@@ -28,7 +28,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 4 insertions(+)
 
 diff --git a/drivers/usb/core/hub.c b/drivers/usb/core/hub.c
-index daebe2147fd3..1bd23101201d 100644
+index daebe2147fd35..1bd23101201d1 100644
 --- a/drivers/usb/core/hub.c
 +++ b/drivers/usb/core/hub.c
 @@ -3523,7 +3523,9 @@ int usb_port_suspend(struct usb_device *udev, pm_message_t msg)

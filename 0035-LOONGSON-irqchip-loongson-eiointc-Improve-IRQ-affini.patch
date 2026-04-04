@@ -1,4 +1,4 @@
-From e96be48e2b8ee574b60fa42a2f62a810d59c01a0 Mon Sep 17 00:00:00 2001
+From 0e5a76e9a9e72e090e8d3b29ac78e48e38272761 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Wed, 9 Nov 2022 17:24:11 +0800
 Subject: [PATCH 35/65] LOONGSON: irqchip/loongson-eiointc: Improve IRQ
@@ -31,7 +31,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 27 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/irqchip/irq-loongson-eiointc.c b/drivers/irqchip/irq-loongson-eiointc.c
-index ad2105685b48..55c5c09c7b47 100644
+index ad2105685b48b..55c5c09c7b475 100644
 --- a/drivers/irqchip/irq-loongson-eiointc.c
 +++ b/drivers/irqchip/irq-loongson-eiointc.c
 @@ -140,21 +140,46 @@ static void veiointc_set_irq_route(unsigned int vector, unsigned int cpu)

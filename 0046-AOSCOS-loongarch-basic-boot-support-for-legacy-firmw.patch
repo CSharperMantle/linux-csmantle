@@ -1,4 +1,4 @@
-From 56617da5a880b79d71f9f8fa93b04a090ab89187 Mon Sep 17 00:00:00 2001
+From 8e34735e37a84d602e46144fe2681cda86f9bdc5 Mon Sep 17 00:00:00 2001
 From: Miao Wang <shankerwangmiao@gmail.com>
 Date: Wed, 17 Jul 2024 09:03:32 +0800
 Subject: [PATCH 46/65] AOSCOS: loongarch: basic boot support for legacy
@@ -32,7 +32,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  3 files changed, 37 insertions(+)
 
 diff --git a/arch/loongarch/kernel/efi.c b/arch/loongarch/kernel/efi.c
-index 52c21c895318..5cecd604df32 100644
+index 52c21c8953189..5cecd604df327 100644
 --- a/arch/loongarch/kernel/efi.c
 +++ b/arch/loongarch/kernel/efi.c
 @@ -98,6 +98,23 @@ static void __init init_screen_info(void)
@@ -68,7 +68,7 @@ index 52c21c895318..5cecd604df32 100644
  	early_memunmap(config_tables, efi_nr_tables * size);
  
 diff --git a/arch/loongarch/kernel/mem.c b/arch/loongarch/kernel/mem.c
-index 8ab1ffedc52c..d870e9e18973 100644
+index 8ab1ffedc52c5..d870e9e189736 100644
 --- a/arch/loongarch/kernel/mem.c
 +++ b/arch/loongarch/kernel/mem.c
 @@ -19,6 +19,7 @@ void __init memblock_init(void)
@@ -80,7 +80,7 @@ index 8ab1ffedc52c..d870e9e18973 100644
  		mem_size = md->num_pages << EFI_PAGE_SHIFT;
  
 diff --git a/drivers/firmware/efi/libstub/loongarch.c b/drivers/firmware/efi/libstub/loongarch.c
-index 9825f5218137..b24132f36a2b 100644
+index 9825f5218137f..b24132f36a2bb 100644
 --- a/drivers/firmware/efi/libstub/loongarch.c
 +++ b/drivers/firmware/efi/libstub/loongarch.c
 @@ -23,6 +23,8 @@ struct exit_boot_struct {

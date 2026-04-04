@@ -1,4 +1,4 @@
-From 4729242239da47f5d2de0fdbb757c2c2435e17b7 Mon Sep 17 00:00:00 2001
+From 053bdd272966885be041db2af2626a469efbbf34 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Ilpo=20J=C3=A4rvinen?= <ilpo.jarvinen@linux.intel.com>
 Date: Thu, 18 Sep 2025 13:58:56 -0700
 Subject: [PATCH 11/65] FROMLIST: PCI: Release BAR0 of an integrated bridge to
@@ -49,7 +49,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 23 insertions(+)
 
 diff --git a/drivers/pci/quirks.c b/drivers/pci/quirks.c
-index fd86f72f54ae..611babf1f49c 100644
+index fd86f72f54aef..611babf1f49c2 100644
 --- a/drivers/pci/quirks.c
 +++ b/drivers/pci/quirks.c
 @@ -6377,3 +6377,26 @@ static void pci_mask_replay_timer_timeout(struct pci_dev *pdev)

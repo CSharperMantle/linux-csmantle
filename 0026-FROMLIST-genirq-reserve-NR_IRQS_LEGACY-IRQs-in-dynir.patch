@@ -1,4 +1,4 @@
-From 9c2823631d0448cc74f68403b7aedace5e9ebce7 Mon Sep 17 00:00:00 2001
+From 06985686b39382a0e1197b871d292a31a9c0975d Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Sat, 31 Jan 2026 16:51:42 +0800
 Subject: [PATCH 26/65] FROMLIST: genirq: reserve NR_IRQS_LEGACY IRQs in dynirq
@@ -34,7 +34,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/kernel/softirq.c b/kernel/softirq.c
-index 77198911b8dd..cdc77d52c36b 100644
+index 77198911b8dd4..cdc77d52c36b2 100644
 --- a/kernel/softirq.c
 +++ b/kernel/softirq.c
 @@ -1184,5 +1184,5 @@ int __init __weak arch_early_irq_init(void)

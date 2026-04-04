@@ -1,4 +1,4 @@
-From 1044795483f832588697235c5381584b840ccbaa Mon Sep 17 00:00:00 2001
+From cd104d640ef1ad218ff0c09fcda5e9f2b69e3a6d Mon Sep 17 00:00:00 2001
 From: Yao Zi <ziyao@disroot.org>
 Date: Mon, 24 Nov 2025 16:32:09 +0000
 Subject: [PATCH 13/65] FROMLIST: net: phy: motorcomm: Support YT8531S PHY in
@@ -21,7 +21,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 4 insertions(+)
 
 diff --git a/drivers/net/phy/motorcomm.c b/drivers/net/phy/motorcomm.c
-index 42d46b5758fc..41c6b97badaf 100644
+index 42d46b5758fc5..41c6b97badafb 100644
 --- a/drivers/net/phy/motorcomm.c
 +++ b/drivers/net/phy/motorcomm.c
 @@ -910,6 +910,10 @@ static int ytphy_rgmii_clk_delay_config(struct phy_device *phydev)

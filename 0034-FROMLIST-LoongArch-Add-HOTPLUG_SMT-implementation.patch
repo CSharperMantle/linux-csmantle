@@ -1,4 +1,4 @@
-From a283d99f9ba282bb589d0c6a4687e291ad262729 Mon Sep 17 00:00:00 2001
+From 69cdea530a9547a950922b5df0c634fd3840fa8d Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Mon, 2 Feb 2026 18:09:43 +0800
 Subject: [PATCH 34/65] FROMLIST: LoongArch: Add HOTPLUG_SMT implementation
@@ -27,7 +27,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  3 files changed, 15 insertions(+), 1 deletion(-)
 
 diff --git a/Documentation/admin-guide/kernel-parameters.txt b/Documentation/admin-guide/kernel-parameters.txt
-index aa0031108bc1..674ad1f3bf55 100644
+index f31e9e4c598fc..068581588c93e 100644
 --- a/Documentation/admin-guide/kernel-parameters.txt
 +++ b/Documentation/admin-guide/kernel-parameters.txt
 @@ -4585,7 +4585,7 @@ Kernel parameters
@@ -40,7 +40,7 @@ index aa0031108bc1..674ad1f3bf55 100644
  				     via the sysfs control file.
  
 diff --git a/arch/loongarch/Kconfig b/arch/loongarch/Kconfig
-index ae9d954aa052..9f91f884b84e 100644
+index ae9d954aa0525..9f91f884b84ef 100644
 --- a/arch/loongarch/Kconfig
 +++ b/arch/loongarch/Kconfig
 @@ -184,6 +184,7 @@ config LOONGARCH
@@ -52,7 +52,7 @@ index ae9d954aa052..9f91f884b84e 100644
  	select IRQ_LOONGARCH_CPU
  	select LOCK_MM_AND_FIND_VMA
 diff --git a/arch/loongarch/kernel/smp.c b/arch/loongarch/kernel/smp.c
-index 409e49d4da37..5cb98d3621fb 100644
+index 409e49d4da371..5cb98d3621fba 100644
 --- a/arch/loongarch/kernel/smp.c
 +++ b/arch/loongarch/kernel/smp.c
 @@ -365,16 +365,29 @@ void __init loongson_smp_setup(void)

@@ -1,4 +1,4 @@
-From d2841855bdf4f679daae18cddcf97f12e4f68b1e Mon Sep 17 00:00:00 2001
+From 0722cee06600d1dbac2393cb283d79281eea8184 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Tue, 23 Dec 2025 20:08:10 +0800
 Subject: [PATCH 63/65] AOSCOS: Revert "FROMLIST: rust: generate a fatal error
@@ -14,7 +14,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 4 deletions(-)
 
 diff --git a/scripts/Makefile.rust b/scripts/Makefile.rust
-index b219244cd051..5c12b4b8c8b6 100644
+index b219244cd0510..5c12b4b8c8b65 100644
 --- a/scripts/Makefile.rust
 +++ b/scripts/Makefile.rust
 @@ -6,8 +6,4 @@ BINDGEN_TARGET_loongarch	:= loongarch64-linux-gnusf
