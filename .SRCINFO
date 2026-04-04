@@ -205,3 +205,4 @@ pkgname = linux-csmantle-headers
 	depends = xxhash
 	depends = zlib
 	depends = zstd
+	provides = LINUX-HEADERS

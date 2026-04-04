@@ -234,6 +234,7 @@ _package-headers() {
     zlib
     zstd
   )
+  provides=(LINUX-HEADERS)
 
   cd $_srcname
   local builddir="$pkgdir/usr/lib/modules/$(<version)/build"
