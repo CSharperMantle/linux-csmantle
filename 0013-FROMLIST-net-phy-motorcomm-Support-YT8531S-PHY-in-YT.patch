@@ -1,7 +1,7 @@
-From cd104d640ef1ad218ff0c09fcda5e9f2b69e3a6d Mon Sep 17 00:00:00 2001
+From 2351e1f0a166fe2272ed996b04224bf892918327 Mon Sep 17 00:00:00 2001
 From: Yao Zi <ziyao@disroot.org>
 Date: Mon, 24 Nov 2025 16:32:09 +0000
-Subject: [PATCH 13/65] FROMLIST: net: phy: motorcomm: Support YT8531S PHY in
+Subject: [PATCH 13/66] FROMLIST: net: phy: motorcomm: Support YT8531S PHY in
  YT6801 Ethernet controller
 
 YT6801's internal PHY is confirmed as a GMII-capable variant of YT8531S

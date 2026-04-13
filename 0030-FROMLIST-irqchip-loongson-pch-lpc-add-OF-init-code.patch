@@ -1,7 +1,7 @@
-From 0bd4ffb6d902f21d4b206e2c4fab53719e19292c Mon Sep 17 00:00:00 2001
+From 73ffda39deaf3bfe859038270047a77b40857ada Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Fri, 16 Jan 2026 01:41:50 +0800
-Subject: [PATCH 30/65] FROMLIST: irqchip/loongson-pch-lpc: add OF init code
+Subject: [PATCH 30/66] FROMLIST: irqchip/loongson-pch-lpc: add OF init code
 
 As the (kernel-internally) OF-based MIPS Loongson-3 systems can also
 have PCH LPC interrupt controller, add OF-based initialization code for

@@ -1,7 +1,7 @@
-From 8a4c86a7f0ad8e24542259c663069096839bec2a Mon Sep 17 00:00:00 2001
+From d311f491a77ffcf16b2678b48e244ad06cdf3901 Mon Sep 17 00:00:00 2001
 From: Yao Zi <ziyao@disroot.org>
 Date: Mon, 24 Nov 2025 16:32:10 +0000
-Subject: [PATCH 14/65] FROMLIST: net: stmmac: Add glue driver for Motorcomm
+Subject: [PATCH 14/66] FROMLIST: net: stmmac: Add glue driver for Motorcomm
  YT6801 ethernet controller
 
 Motorcomm YT6801 is a PCIe ethernet controller based on DWMAC4 IP. It

@@ -1,7 +1,7 @@
-From 123e20893a0d4b3f39651e51e2ba62c5a7c2678a Mon Sep 17 00:00:00 2001
+From af71fc666a3947c5336ca193b52a573c339cade3 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Mon, 22 Feb 2021 10:53:47 +0800
-Subject: [PATCH 38/65] LOONGSON: drm/radeon: Workaround radeon driver bug for
+Subject: [PATCH 38/66] LOONGSON: drm/radeon: Workaround radeon driver bug for
  Loongson
 
 Radeon driver can not handle the interrupt is faster than DMA data, so

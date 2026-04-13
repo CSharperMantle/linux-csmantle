@@ -1,7 +1,7 @@
-From 452b52eb016087f7876505c0cbbc66730a6dfcca Mon Sep 17 00:00:00 2001
+From 96b2c0a0c9673e7fcf31210225092723f4c6b1e1 Mon Sep 17 00:00:00 2001
 From: Xi Ruoyao <xry111@xry111.site>
 Date: Sat, 16 Aug 2025 09:50:44 +0800
-Subject: [PATCH 62/65] AOSCOS: ACPI / scan: Add pwm_lookup_entry for PWM3 on
+Subject: [PATCH 62/66] AOSCOS: ACPI / scan: Add pwm_lookup_entry for PWM3 on
  LS7A
 
 On LoongArch laptops using LG110 GPU for display, LS7A PWM3 is used for

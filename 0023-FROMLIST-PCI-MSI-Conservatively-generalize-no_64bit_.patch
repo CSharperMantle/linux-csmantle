@@ -1,7 +1,7 @@
-From 44d9cb95d25875ea073ae2d2148acc7e544bb0f6 Mon Sep 17 00:00:00 2001
+From 0498cbb0ab3adde6480223d0c8514daf1ae398e6 Mon Sep 17 00:00:00 2001
 From: Vivian Wang <wangruikang@iscas.ac.cn>
 Date: Fri, 23 Jan 2026 14:07:28 +0800
-Subject: [PATCH 23/65] FROMLIST: PCI/MSI: Conservatively generalize
+Subject: [PATCH 23/66] FROMLIST: PCI/MSI: Conservatively generalize
  no_64bit_msi into msi_addr_mask
 
 Some PCI devices have PCI_MSI_FLAGS_64BIT in the MSI capability, but

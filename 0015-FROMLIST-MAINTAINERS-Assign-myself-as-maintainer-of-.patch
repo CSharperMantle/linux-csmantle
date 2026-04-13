@@ -1,7 +1,7 @@
-From 77c2e40a199d40ccbddc8586ffe012e2e8361ea4 Mon Sep 17 00:00:00 2001
+From 484dcf0eaac19c57d99cfbe26d000722d49290f7 Mon Sep 17 00:00:00 2001
 From: Yao Zi <ziyao@disroot.org>
 Date: Mon, 24 Nov 2025 16:32:11 +0000
-Subject: [PATCH 15/65] FROMLIST: MAINTAINERS: Assign myself as maintainer of
+Subject: [PATCH 15/66] FROMLIST: MAINTAINERS: Assign myself as maintainer of
  Motorcomm DWMAC glue driver
 
 I volunteer to maintain the DWMAC glue driver for Motorcomm ethernet

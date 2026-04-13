@@ -1,7 +1,7 @@
-From cd68277617e627deb090af6fdaba9018fb8a6a3a Mon Sep 17 00:00:00 2001
+From 50991bacb29ab21ff2dff53edec550ecab788b25 Mon Sep 17 00:00:00 2001
 From: libingxiong <libingxiong@loongson.cn>
 Date: Fri, 30 May 2025 14:22:46 +0800
-Subject: [PATCH 41/65] LOONGSON: LoongArch: Add canfd support for ls2k3000
+Subject: [PATCH 41/66] LOONGSON: LoongArch: Add canfd support for ls2k3000
 
 Add new canfd controller and dma controller driver support for ls2k3000
 

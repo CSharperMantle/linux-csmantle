@@ -1,7 +1,7 @@
-From 5936a834b011600fbc8b8308739b80f422852a6a Mon Sep 17 00:00:00 2001
+From 88ea54ca84740dd5f373d80b76724f9051e48d27 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 26 Nov 2025 22:21:05 +0800
-Subject: [PATCH 45/65] AOSCOS: loongarch: re-introduce add_numamem_region(),
+Subject: [PATCH 45/66] AOSCOS: loongarch: re-introduce add_numamem_region(),
  init_node_memblock()
 
 This is a partial revert for commit acf5de1b23b0 ("LoongArch: Fix NUMA

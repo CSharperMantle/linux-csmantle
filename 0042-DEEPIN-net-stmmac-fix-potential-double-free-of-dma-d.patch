@@ -1,7 +1,7 @@
-From 969b80be91110e21f9cd47a8df95bbcf018b5524 Mon Sep 17 00:00:00 2001
+From 1e48b9d1bbc1d5bcb81719d9535b3bc1d32b0714 Mon Sep 17 00:00:00 2001
 From: Yanteng Si <siyanteng@loongson.cn>
 Date: Mon, 27 May 2024 10:20:21 +0800
-Subject: [PATCH 42/65] DEEPIN: net: stmmac: fix potential double free of dma
+Subject: [PATCH 42/66] DEEPIN: net: stmmac: fix potential double free of dma
  descriptor resources
 
 reset the dma descriptor related resource's pointer to NULL,otherwise
@@ -31,7 +31,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 11 insertions(+)
 
 diff --git a/drivers/net/ethernet/stmicro/stmmac/stmmac_main.c b/drivers/net/ethernet/stmicro/stmmac/stmmac_main.c
-index 01ede5148163e..acb0a479a64f4 100644
+index cfe47a8e2c6d5..488ed54c727ad 100644
 --- a/drivers/net/ethernet/stmicro/stmmac/stmmac_main.c
 +++ b/drivers/net/ethernet/stmicro/stmmac/stmmac_main.c
 @@ -2047,13 +2047,18 @@ static void __free_dma_rx_desc_resources(struct stmmac_priv *priv,

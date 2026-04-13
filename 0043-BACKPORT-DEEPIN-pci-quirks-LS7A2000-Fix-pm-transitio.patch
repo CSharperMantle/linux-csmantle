@@ -1,7 +1,7 @@
-From 52ce4cf277e846e24b8605b5fc4324c2367c47a5 Mon Sep 17 00:00:00 2001
+From c595d6b5a96643314853137f2ffd7cc2ddf4edbf Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Fri, 14 Feb 2025 17:48:41 +0800
-Subject: [PATCH 43/65] BACKPORT: DEEPIN: pci/quirks: LS7A2000: Fix pm
+Subject: [PATCH 43/66] BACKPORT: DEEPIN: pci/quirks: LS7A2000: Fix pm
  transition of devices under pcie port
 
 The CPU may not be able to access the PCI header of the device if

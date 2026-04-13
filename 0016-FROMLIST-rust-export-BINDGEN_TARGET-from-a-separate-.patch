@@ -1,7 +1,7 @@
-From 91e86b1e3fe2dda3c0eac7c50d3fa8c19f22ec0c Mon Sep 17 00:00:00 2001
+From a5be13fa58f05496fb675fdd35894492c6d40066 Mon Sep 17 00:00:00 2001
 From: Asuna Yang <spriteovo@gmail.com>
 Date: Thu, 4 Dec 2025 08:54:51 +0100
-Subject: [PATCH 16/65] FROMLIST: rust: export BINDGEN_TARGET from a separate
+Subject: [PATCH 16/66] FROMLIST: rust: export BINDGEN_TARGET from a separate
  Makefile
 
 A subsequent commit will add a new function `bindgen-option` to
@@ -30,7 +30,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  create mode 100644 scripts/Makefile.rust
 
 diff --git a/Makefile b/Makefile
-index 50c61f9711e79..eb9f7795ba5f4 100644
+index 2fb7677240094..3fad84878122a 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -719,9 +719,10 @@ ifneq ($(findstring clang,$(CC_VERSION_TEXT)),)

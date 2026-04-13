@@ -1,7 +1,7 @@
-From e8b31b4dbcb6e6276dc564593efccc4501f164a2 Mon Sep 17 00:00:00 2001
+From 948205e89e5404e71ef48e4aebfcc93c03a50bb2 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Sun, 12 Jan 2025 15:43:08 +0800
-Subject: [PATCH 58/65] AOSCOS: kvm: disable enable_virt_at_load by default
+Subject: [PATCH 58/66] AOSCOS: kvm: disable enable_virt_at_load by default
 
 Disable enable_virt_at_load, a >= 6.12 on-by-default parameter introduced
 with commit b4886fab6fb6 ("KVM: Add a module param to allow enabling

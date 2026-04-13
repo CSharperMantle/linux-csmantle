@@ -1,7 +1,7 @@
-From 718200c7353ff5f2d02b8d800f5a81de6cf2da56 Mon Sep 17 00:00:00 2001
+From 45d08af03425ea7408ffb71d772c71cc2edd741f Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Fri, 16 Jan 2026 01:27:26 +0800
-Subject: [PATCH 29/65] FROMLIST: irqchip/loongson-pch-lpc: guard ACPI init
+Subject: [PATCH 29/66] FROMLIST: irqchip/loongson-pch-lpc: guard ACPI init
  code with CONFIG_ACPI
 
 As OF-based initialization is going to be added to the driver, guard the

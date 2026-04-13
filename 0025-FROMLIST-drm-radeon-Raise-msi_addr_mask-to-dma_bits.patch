@@ -1,7 +1,7 @@
-From 6709dce61d3ba02532c75d45973d784de761baf5 Mon Sep 17 00:00:00 2001
+From 567dfacdc86907b67972bc4b3e2d2c973fe45587 Mon Sep 17 00:00:00 2001
 From: Vivian Wang <wangruikang@iscas.ac.cn>
 Date: Fri, 23 Jan 2026 14:07:30 +0800
-Subject: [PATCH 25/65] FROMLIST: drm/radeon: Raise msi_addr_mask to dma_bits
+Subject: [PATCH 25/66] FROMLIST: drm/radeon: Raise msi_addr_mask to dma_bits
 
 The code was originally written using no_64bit_msi, which restricts the
 device to 32-bit MSI addresses.
