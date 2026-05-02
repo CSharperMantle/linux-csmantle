@@ -2,8 +2,8 @@
 /*.orig
 /*.rej
 
-config.16k
 /*.config
+!config.x86_64
 !/*.frag.config
 *.tar
 *.tar.*
