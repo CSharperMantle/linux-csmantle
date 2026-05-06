@@ -17,6 +17,11 @@ This repo is for personal use, so the patches and tunes are cherry-picked for my
   * MEDIATEK Corp. MT7925 (RZ717) Wi-Fi 7 160MHz
   * Motorcomm Microelectronics. YT6801 Gigabit Ethernet Controller (rev 01) *(MB mounted)*
 
+## Variants
+
+* **16kB (3 level) paging:** <https://github.com/CSharperMantle/linux-csmantle/tree/csmantle>
+* **4kB (4 level) paging:** <https://github.com/CSharperMantle/linux-csmantle/tree/csmantle-4k>
+
 ## Acknowledgements
 
 * <https://gitlab.archlinux.org/archlinux/packaging/packages/linux.git>
