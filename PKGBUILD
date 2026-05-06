@@ -2,7 +2,7 @@
 # Contributor: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 # shellcheck shell=bash disable=SC2034,SC2154,SC2164
 
-pkgbase=linux-csmantle
+pkgbase=linux-csmantle-4k
 pkgver=7.0.3.arch1
 pkgrel=1
 pkgdesc='Linux'
@@ -59,7 +59,7 @@ b2sums=('51eebd3aa3c64779308b0781818fd91921c1a7b0c3ffd361dbff01f8853f1cea7d4c70f
         'SKIP'
         'dafee1f25d231199834869a5ce76a85eebb3c1ceac86f604270e93a40a22f29bcf797822481aff5aa5020c12359b9ad87ad8e0d36727166522510a07539d69d4'
         '652069e50060a3d84530f004f7064d98d6ac9bb02e690a3510d092d0df17598c9b3d564ae07fdb0dbbecc68d2d12d58c4c78c02cc08fbcbb8c01ba6e6256d922'
-        'e31028c4d808982740991d450b7dfd77e36bfbb620205ee7a34b3c6937dcf75202d77a136e58ffaa325995d929f8a1095b6f6467992174d2b9c5fad034eee418'
+        '065eef2408012384acc23218f18df069470d927f0bd8610f221ddeb49e341f595d758dbed49155b8b375bd249e553b8e9c98373ade55ea4f6e831c80582b78cf'
         'fa656e5f44c069d93baafd37e4a947ca90aa9805c391b963d5ad2cfee99f75e620d6c86587a1f07fb3640a94f6f84917626cea5e901ef0db00da2c275630645a'
         '91c07e2dfb04c1137638f291397fe23fa45bcbff7c54bb3ac2ccf636e4e7e946f6bcfa655b0d395f97f398edac485b6d0f83cbbebfb65c0dd80a11c1c357e66b'
         '28c6585debbbe7331161459ba74e611d62d6b326ab4dce0324ff51c6c8020526739d575fd10589f6a2a921d58d3d401b8b1ad2943eee6c1457b5260373deeaef'
@@ -164,7 +164,7 @@ prepare() {
     ./scripts/kconfig/merge_config.sh \
       "$srcdir"/config.x86_64 \
       "$srcdir"/001-arch4loong64-addition.frag.config \
-      "$srcdir"/002-aosc-loongarch64-16k.frag.config \
+      "$srcdir"/002-aosc-loongarch64-4k.frag.config \
       "$srcdir"/003-local.frag.config
   else
     cp ../config.x86_64 .config
@@ -374,7 +374,7 @@ for _p in "${pkgname[@]}"; do
 done
 
 source+=('001-arch4loong64-addition.frag.config'
-         '002-aosc-loongarch64-16k.frag.config'
+         '002-aosc-loongarch64-4k.frag.config'
          '003-local.frag.config'
          '0001-UPSTREAM-perf-loongarch-Fix-build-failure-with-CONFI.patch'
          '0002-UPSTREAM-LoongArch-Override-arch_dynirq_lower_bound-.patch'
