@@ -1,0 +1,37 @@
+From a42962dc67602d15510177acd8801234e8c563e6 Mon Sep 17 00:00:00 2001
+From: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+Date: Tue, 24 Mar 2026 17:30:57 +0100
+Subject: [PATCH 27/65] FROMLIST: LoongArch: add spectre boundry for syscall
+ dispatch table
+
+The LoongArch syscall number is directly controlled by userspace, but
+does not have a array_index_nospec() boundry to prevent access past the
+syscall function pointer tables.
+
+Cc: Huacai Chen <chenhuacai@kernel.org>
+Cc: WANG Xuerui <kernel@xen0n.name>
+Assisted-by: gkh_clanker_2000
+Cc: stable <stable@kernel.org>
+Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+Link: https://lore.kernel.org/loongarch/2026032456-crinkle-washable-96ea@gregkh/
+Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
+---
+ arch/loongarch/kernel/syscall.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/arch/loongarch/kernel/syscall.c b/arch/loongarch/kernel/syscall.c
+index dac435c327433793e94fa3dc0d1b9b9fdbe10f46..a2bec36fc52248bb798dea65dec5291741ad615f 100644
+--- a/arch/loongarch/kernel/syscall.c
++++ b/arch/loongarch/kernel/syscall.c
+@@ -8,6 +8,7 @@
+ #include <linux/capability.h>
+ #include <linux/entry-common.h>
+ #include <linux/errno.h>
++#include <linux/nospec.h>
+ #include <linux/linkage.h>
+ #include <linux/nospec.h>
+ #include <linux/objtool.h>
+-- 
+2.54.0
+
