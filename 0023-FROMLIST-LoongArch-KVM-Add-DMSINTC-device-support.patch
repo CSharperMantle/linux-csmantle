@@ -1,4 +1,4 @@
-From ccfc4b7e4c4cee81ba289c19d5de116b72d29f79 Mon Sep 17 00:00:00 2001
+From ab6afa55fc3426b4fb8e10a388fcd707af56623d Mon Sep 17 00:00:00 2001
 From: Song Gao <gaosong@loongson.cn>
 Date: Thu, 9 Apr 2026 10:42:14 +0800
 Subject: [PATCH 23/65] FROMLIST: LoongArch: KVM: Add DMSINTC device support

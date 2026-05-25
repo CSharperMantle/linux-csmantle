@@ -1,4 +1,4 @@
-From d8450f380460e3e7a452c0a4f3a80d729dc252c1 Mon Sep 17 00:00:00 2001
+From da83803fb5e197884cd83f2cb3dd26a9f17a7dfe Mon Sep 17 00:00:00 2001
 From: Youling Tang <tangyouling@kylinos.cn>
 Date: Sun, 5 Apr 2026 10:12:26 +0800
 Subject: [PATCH 21/65] FROMLIST: LoongArch: Add

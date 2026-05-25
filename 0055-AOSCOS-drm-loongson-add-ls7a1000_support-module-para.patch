@@ -1,4 +1,4 @@
-From 482bd0f7fc0b3f44df8a29695d7e547a30e3b7c8 Mon Sep 17 00:00:00 2001
+From 6a2944964272cfd52c8ce8479788e3270960cb93 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Tue, 29 Oct 2024 23:17:28 +0800
 Subject: [PATCH 55/65] AOSCOS: drm: loongson: add ls7a1000_support module
@@ -51,7 +51,7 @@ index 931c17521bf017d65422cea1a2e18f9ece1bfb6e..0dcc9646d2ff13f2e629d1e3dc799531
  
  #endif
 diff --git a/drivers/gpu/drm/loongson/lsdc_drv.c b/drivers/gpu/drm/loongson/lsdc_drv.c
-index abf5bf68eec210507294f82d799c7c4c1e4c9ef8..3a525bcd28eca8fe79f2bf1e8dedc117bd037b64 100644
+index 4b97750897dcf26a65fc0d12c5e0489d59e45882..06746c7c1f76d62d2a10ec50b8129a4b2c3a1323 100644
 --- a/drivers/gpu/drm/loongson/lsdc_drv.c
 +++ b/drivers/gpu/drm/loongson/lsdc_drv.c
 @@ -266,6 +266,14 @@ static int lsdc_pci_probe(struct pci_dev *pdev, const struct pci_device_id *ent)

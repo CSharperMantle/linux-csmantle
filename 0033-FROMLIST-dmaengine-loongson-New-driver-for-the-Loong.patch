@@ -1,4 +1,4 @@
-From a1faa83bccf68915623ecf3893a3c767778074af Mon Sep 17 00:00:00 2001
+From d67fcf8b9b0ef5d1248c914ed083e5a4445949b5 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Sat, 7 Mar 2026 11:25:37 +0800
 Subject: [PATCH 33/65] FROMLIST: dmaengine: loongson: New driver for the

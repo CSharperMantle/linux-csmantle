@@ -1,4 +1,4 @@
-From 7794219be0e456977a00cee179a247742f8f0d13 Mon Sep 17 00:00:00 2001
+From 1bf1ca42760119cf683bfa48a75e851f4f8158fe Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Fri, 14 Feb 2025 17:48:41 +0800
 Subject: [PATCH 42/65] BACKPORT: DEEPIN: pci/quirks: LS7A2000: Fix pm
@@ -66,7 +66,7 @@ index d09d94a1b73435a461b8e304162d6753ea9069d2..ba2ab0303c24b4dc2c83d61e36a0c397
  static void quirk_nopcipci(struct pci_dev *dev)
  {
 diff --git a/include/linux/pci.h b/include/linux/pci.h
-index 1c270f1d512301de4d462fe7e5097c32af5c6f8d..6fafccf5663573669fcf8495dfd3f13cff75a2fd 100644
+index 57e9463e4347bc1398f51bbaede8f1b738342e8b..b7a471f9b8ebdd4b9c57f37d8f7db13050403388 100644
 --- a/include/linux/pci.h
 +++ b/include/linux/pci.h
 @@ -253,6 +253,7 @@ enum pci_dev_flags {
