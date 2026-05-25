@@ -1,4 +1,4 @@
-From 8463bad6406d31e0a4ad4e88fe89af7f7306c7a4 Mon Sep 17 00:00:00 2001
+From 48fac22c7603e3a75579687b9fa22b52b43c97ff Mon Sep 17 00:00:00 2001
 From: Xi Ruoyao <xry111@xry111.site>
 Date: Sat, 16 Aug 2025 09:50:44 +0800
 Subject: [PATCH 62/65] AOSCOS: ACPI / scan: Add pwm_lookup_entry for PWM3 on
@@ -104,7 +104,7 @@ index 0000000000000000000000000000000000000000..5363747cd3a7f0f6c598c1faba2fa170
 +	acpi_scan_add_handler(&ls7a_pwm_handler);
 +}
 diff --git a/drivers/acpi/scan.c b/drivers/acpi/scan.c
-index e8cdbdb46fdb46e989ff2f6045904e456c219f8d..0bfb58c8135a72b2440b188dfdc5550d3696ad9b 100644
+index 530547cda8b2866ad1aa39dc3a26a66d8ffa3df1..fb6233514299eb6ef92f30eabbfa455b0c54e131 100644
 --- a/drivers/acpi/scan.c
 +++ b/drivers/acpi/scan.c
 @@ -2834,6 +2834,7 @@ void __init acpi_scan_init(void)

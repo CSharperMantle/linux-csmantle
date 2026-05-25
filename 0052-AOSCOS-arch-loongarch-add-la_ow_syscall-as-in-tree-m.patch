@@ -1,4 +1,4 @@
-From 753c2f107c5233c372dbb77f7ec83a244b521ff9 Mon Sep 17 00:00:00 2001
+From 07f3e0c4597eb71ed4aa28b6a317552211f82114 Mon Sep 17 00:00:00 2001
 From: Miao Wang <shankerwangmiao@gmail.com>
 Date: Wed, 28 Aug 2024 03:09:24 +0800
 Subject: [PATCH 52/65] AOSCOS: arch/loongarch: add la_ow_syscall as in-tree
@@ -41,10 +41,10 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  create mode 100644 arch/loongarch/ow_syscall/systable.h
 
 diff --git a/arch/loongarch/Kbuild b/arch/loongarch/Kbuild
-index beb8499dd8ed84330beecbcd61977df0aa3474f8..42a6b4c6adbe3c25cd59260cf3fa8779fa3bf185 100644
+index 1c7a0dbe5e72f211f40ec4622d40ac01749d5c53..c0857841e3d197468eaee792a6d049251deb9d91 100644
 --- a/arch/loongarch/Kbuild
 +++ b/arch/loongarch/Kbuild
-@@ -7,3 +7,5 @@ obj-$(CONFIG_KVM) += kvm/
+@@ -7,3 +7,5 @@ obj-$(subst m,y,$(CONFIG_KVM)) += kvm/
  
  # for cleaning
  subdir- += boot

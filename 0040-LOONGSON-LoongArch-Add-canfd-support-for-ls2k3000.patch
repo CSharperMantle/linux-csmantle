@@ -1,4 +1,4 @@
-From 4579d35b631817ec6f395967267336af33a38e69 Mon Sep 17 00:00:00 2001
+From 4c466af19ca56f18f48aee6ea242f55cb89d1f75 Mon Sep 17 00:00:00 2001
 From: libingxiong <libingxiong@loongson.cn>
 Date: Fri, 30 May 2025 14:22:46 +0800
 Subject: [PATCH 40/65] LOONGSON: LoongArch: Add canfd support for ls2k3000

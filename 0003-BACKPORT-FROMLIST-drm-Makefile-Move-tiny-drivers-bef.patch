@@ -1,4 +1,4 @@
-From 95bbad7f9c81ba543909b9fe4f2f047bc5fffe8c Mon Sep 17 00:00:00 2001
+From 4e9b4b9517effc042f5e1a160c6ea4f418113f4e Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Wed, 8 Nov 2023 10:46:13 +0800
 Subject: [PATCH 03/65] BACKPORT: FROMLIST: drm/Makefile: Move tiny drivers

@@ -1,4 +1,4 @@
-From e5a7a2448072aaaa99bc1975b860428ed738faa2 Mon Sep 17 00:00:00 2001
+From 40b67ef4036958958cbbfbd846f4b6abb9a6fe7d Mon Sep 17 00:00:00 2001
 From: Asuna Yang <spriteovo@gmail.com>
 Date: Thu, 4 Dec 2025 08:54:52 +0100
 Subject: [PATCH 14/65] FROMLIST: rust: generate a fatal error if

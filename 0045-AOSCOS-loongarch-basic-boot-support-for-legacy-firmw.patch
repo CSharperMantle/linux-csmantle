@@ -1,4 +1,4 @@
-From 1144f450a9972edd036156f4e9ff9a6644772ca9 Mon Sep 17 00:00:00 2001
+From 5f8dcc5c7421bd771a559a65f60d9347b1e5bc13 Mon Sep 17 00:00:00 2001
 From: Miao Wang <shankerwangmiao@gmail.com>
 Date: Wed, 17 Jul 2024 09:03:32 +0800
 Subject: [PATCH 45/65] AOSCOS: loongarch: basic boot support for legacy

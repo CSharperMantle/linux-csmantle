@@ -1,4 +1,4 @@
-From 4c2a7c725545042963db4b267fb20b6cc389777a Mon Sep 17 00:00:00 2001
+From 6725876badf4f3ef2ab2522734db6bd0a6e3f195 Mon Sep 17 00:00:00 2001
 From: Masahito S <firelzrd@gmail.com>
 Date: Fri, 10 Apr 2026 05:55:15 +0900
 Subject: [PATCH 64/65] BORE: linux7.0-rc2-bore-6.6.3
@@ -23,7 +23,7 @@ Signed-off-by: Rong Bao <rong.bao@csmantle.top>
  create mode 100644 kernel/sched/bore.c
 
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index 007a0b61856d4c1ff11c9c6584d439af5573c280..b20b45c6e0d55be6c1d32b2cbd66bcdad2517e7f 100644
+index d41e7a8f9c85f6f08e99ac405bb048def3a48e48..967e4883f400533434b7ee713ea310c40f1c277d 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -817,6 +817,37 @@ struct kmap_ctrl {
@@ -175,7 +175,7 @@ index ce1435cb08b1ecd7f800442e886c2d8270afeb18..9eee2005e25f07dd94248feab6788e79
 +	 an unnecessarily large base slice, resulting in high scheduling
 +	 latency and poor system responsiveness.
 diff --git a/kernel/exit.c b/kernel/exit.c
-index ede3117fa7d413a40105af85be6da21583cbaa88..3f3af470d5cb6ee7633a88659dde4f7ff1c4f2d2 100644
+index e2b63696125422050e714ec522c5ccfadc984442..e073fb0908c2a6b44ccd1fd33376232691e56d31 100644
 --- a/kernel/exit.c
 +++ b/kernel/exit.c
 @@ -147,7 +147,11 @@ static void __unhash_process(struct release_task_post *post, struct task_struct
