@@ -1,4 +1,4 @@
-From 16792f388c8392b7c39776032aa2ae0ab2a697ec Mon Sep 17 00:00:00 2001
+From b1961dbb1ce7bcac649bed670874f0e6508ad412 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Wed, 9 Nov 2022 17:24:11 +0800
 Subject: [PATCH 36/65] LOONGSON: irqchip/loongson-eiointc: Improve IRQ

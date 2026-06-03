@@ -1,4 +1,4 @@
-From 7580103993f6377c9b41853bc5701c66b8d073e0 Mon Sep 17 00:00:00 2001
+From 9627ada6dc9e673a49d401b5fab2ba4536f18c49 Mon Sep 17 00:00:00 2001
 From: Song Gao <gaosong@loongson.cn>
 Date: Thu, 9 Apr 2026 10:42:15 +0800
 Subject: [PATCH 24/65] FROMLIST: LoongArch: KVM: Add dmsintc inject msi to the

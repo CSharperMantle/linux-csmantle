@@ -1,4 +1,4 @@
-From 6a2944964272cfd52c8ce8479788e3270960cb93 Mon Sep 17 00:00:00 2001
+From 9cda701bb334ab02cc5419b97ecce4141ca5fe5b Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Tue, 29 Oct 2024 23:17:28 +0800
 Subject: [PATCH 55/65] AOSCOS: drm: loongson: add ls7a1000_support module

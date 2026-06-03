@@ -1,4 +1,4 @@
-From 2f101e18e9c474bcb1bed3f6725559754b315d74 Mon Sep 17 00:00:00 2001
+From db6dcc5119710b6393e4eb9a895a3dbf0ea335b4 Mon Sep 17 00:00:00 2001
 From: Youling Tang <tangyouling@kylinos.cn>
 Date: Sun, 5 Apr 2026 10:12:27 +0800
 Subject: [PATCH 22/65] FROMLIST: LoongArch: Batch icache maintenance for

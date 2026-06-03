@@ -1,4 +1,4 @@
-From 02f111d53a614b87ea59204dcfb438e64aefb3c6 Mon Sep 17 00:00:00 2001
+From 99c82f43b1b994d4aa48f8c96f3a19f71a191fae Mon Sep 17 00:00:00 2001
 From: Yuqian Yang <yangyuqian@uniontech.com>
 Date: Mon, 13 Apr 2026 11:12:36 +0800
 Subject: [PATCH 20/65] FROMLIST: LoongArch: improve logging of disabling KASLR

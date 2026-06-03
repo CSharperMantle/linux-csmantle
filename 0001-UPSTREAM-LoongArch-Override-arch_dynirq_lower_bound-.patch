@@ -1,4 +1,4 @@
-From 32df9c71f21265f17c132e5c29e3bdb791791370 Mon Sep 17 00:00:00 2001
+From 6721ac94dcae2352dafa8602067d2c41358330e5 Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Sat, 21 Mar 2026 17:20:28 +0800
 Subject: [PATCH 01/65] UPSTREAM: LoongArch: Override arch_dynirq_lower_bound
@@ -55,7 +55,7 @@ index 80946cafaec1b29b0a86ad2f7cea6058f951e059..7bf68a7a5f4b38780ecdc6f00c8f6ba5
  {
  	int i;
 
-base-commit: 28fec2e1f44a5259d1e34331ad847083dbed03a2
+base-commit: 1d78f385ca1f31e069a27f933ca3da6a61661229
 -- 
 2.54.0
 
