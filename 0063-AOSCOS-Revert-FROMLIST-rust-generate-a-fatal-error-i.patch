@@ -1,7 +1,7 @@
-From 5fc94ce0787faf1038c601ce834450f9ad113444 Mon Sep 17 00:00:00 2001
+From 60a9818b19ffc54dbb3fd683252c9d46f531f784 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Tue, 23 Dec 2025 20:08:10 +0800
-Subject: [PATCH 63/65] AOSCOS: Revert "FROMLIST: rust: generate a fatal error
+Subject: [PATCH 63/66] AOSCOS: Revert "FROMLIST: rust: generate a fatal error
  if BINDGEN_TARGET is undefined"
 
 This reverts "FROMLIST: rust: generate a fatal error if BINDGEN_TARGET is

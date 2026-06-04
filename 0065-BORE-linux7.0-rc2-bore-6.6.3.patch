@@ -1,7 +1,7 @@
-From 9e72aad98772b7d2f12df41e837a1b82ea4d1f6f Mon Sep 17 00:00:00 2001
+From 5837e0f1eda369eaf03d6be37e7f74528da074ce Mon Sep 17 00:00:00 2001
 From: Masahito S <firelzrd@gmail.com>
 Date: Fri, 10 Apr 2026 05:55:15 +0900
-Subject: [PATCH 64/65] BORE: linux7.0-rc2-bore-6.6.3
+Subject: [PATCH 65/66] BORE: linux7.0-rc2-bore-6.6.3
 
 Signed-off-by: Rong Bao <rong.bao@csmantle.top>
 ---

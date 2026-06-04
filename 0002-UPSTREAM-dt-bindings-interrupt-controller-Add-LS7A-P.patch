@@ -1,7 +1,7 @@
 From 408107e3b54e2bc346cc46dd061d300eff89ab76 Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Sat, 21 Mar 2026 17:20:29 +0800
-Subject: [PATCH 02/65] UPSTREAM: dt-bindings: interrupt-controller: Add LS7A
+Subject: [PATCH 02/66] UPSTREAM: dt-bindings: interrupt-controller: Add LS7A
  PCH LPC
 
 Loongson 7A series PCH contains an LPC controller with an interrupt

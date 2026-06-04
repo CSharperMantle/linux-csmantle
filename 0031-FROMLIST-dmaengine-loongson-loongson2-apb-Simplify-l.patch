@@ -1,7 +1,7 @@
 From 44bb69e6520abcec84d81f0bda5b6c67c9ad2196 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Sat, 7 Mar 2026 11:25:35 +0800
-Subject: [PATCH 31/65] FROMLIST: dmaengine: loongson: loongson2-apb: Simplify
+Subject: [PATCH 31/66] FROMLIST: dmaengine: loongson: loongson2-apb: Simplify
  locking with guard() and scoped_guard()
 
 Use guard() and scoped_guard() infrastructure instead of explicitly

@@ -1,7 +1,7 @@
 From 57b104a116bf7bbc00380d1c2d4d6b9839da1f97 Mon Sep 17 00:00:00 2001
 From: Song Gao <gaosong@loongson.cn>
 Date: Thu, 9 Apr 2026 10:42:14 +0800
-Subject: [PATCH 23/65] FROMLIST: LoongArch: KVM: Add DMSINTC device support
+Subject: [PATCH 23/66] FROMLIST: LoongArch: KVM: Add DMSINTC device support
 
 Add device model for DMSINTC interrupt controller, implement basic
 create/destroy/set_attr interfaces, and register device model to kvm

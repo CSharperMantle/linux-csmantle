@@ -1,7 +1,7 @@
-From 6729f3c67d03e7f37e8dbfcd8ba39e3fa3e29eb7 Mon Sep 17 00:00:00 2001
+From 0a09e308a299105ae2b7dc1cee70747ecbf4a8a2 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Mon, 24 Feb 2025 14:01:03 +0800
-Subject: [PATCH 59/65] AOSCOS: drm/radeon: limit mmiowb() hack for
+Subject: [PATCH 59/66] AOSCOS: drm/radeon: limit mmiowb() hack for
  radeon_ring_commit() to MACH_LOONGSON64
 
 As mentioned in the previous patch ("LOONGARCH64: FROMLIST: drm/radeon:

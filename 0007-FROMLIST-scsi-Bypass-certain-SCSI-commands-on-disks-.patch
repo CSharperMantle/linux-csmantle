@@ -1,7 +1,7 @@
 From e7ea80f4c21807fcdcbc94d1aa4f160685a18109 Mon Sep 17 00:00:00 2001
 From: WangYuli <wangyuli@uniontech.com>
 Date: Tue, 18 Mar 2025 14:11:25 +0800
-Subject: [PATCH 07/65] FROMLIST: scsi: Bypass certain SCSI commands on disks
+Subject: [PATCH 07/66] FROMLIST: scsi: Bypass certain SCSI commands on disks
  with "use_192_bytes_for_3f" attribute
 
 On some external USB hard drives, mounting can fail if "lshw" is

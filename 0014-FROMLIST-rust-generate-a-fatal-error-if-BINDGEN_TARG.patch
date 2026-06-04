@@ -1,7 +1,7 @@
 From e7d6a7c2996698220b2787053ffe72412501474c Mon Sep 17 00:00:00 2001
 From: Asuna Yang <spriteovo@gmail.com>
 Date: Thu, 4 Dec 2025 08:54:52 +0100
-Subject: [PATCH 14/65] FROMLIST: rust: generate a fatal error if
+Subject: [PATCH 14/66] FROMLIST: rust: generate a fatal error if
  BINDGEN_TARGET is undefined
 
 Generate a friendly fatal error if the target triplet is undefined for

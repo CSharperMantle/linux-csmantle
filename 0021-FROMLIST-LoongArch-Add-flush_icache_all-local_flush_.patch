@@ -1,7 +1,7 @@
 From 4977fa5e37cf676491facae252e3cfff600d977f Mon Sep 17 00:00:00 2001
 From: Youling Tang <tangyouling@kylinos.cn>
 Date: Sun, 5 Apr 2026 10:12:26 +0800
-Subject: [PATCH 21/65] FROMLIST: LoongArch: Add
+Subject: [PATCH 21/66] FROMLIST: LoongArch: Add
  flush_icache_all()/local_flush_icache_all()
 
 LoongArch maintains ICache/DCache coherency by hardware,
