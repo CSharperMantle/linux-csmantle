@@ -1,4 +1,4 @@
-From 937784b9cbb04d1a421c3a15d1bf8546e5b94828 Mon Sep 17 00:00:00 2001
+From e090e01903202e9289e5ab0bc927621061d78f2f Mon Sep 17 00:00:00 2001
 From: Alex Hung <alex.hung@canonical.com>
 Date: Mon, 22 Mar 2021 01:11:21 -0600
 Subject: [PATCH 35/66] FROMLIST: iwlwifi: add new pci id for 6235

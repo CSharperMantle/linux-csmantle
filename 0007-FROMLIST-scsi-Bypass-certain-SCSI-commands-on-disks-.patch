@@ -1,4 +1,4 @@
-From e7ea80f4c21807fcdcbc94d1aa4f160685a18109 Mon Sep 17 00:00:00 2001
+From 77123b7990f2b08eb61be895bd6543964ed6029b Mon Sep 17 00:00:00 2001
 From: WangYuli <wangyuli@uniontech.com>
 Date: Tue, 18 Mar 2025 14:11:25 +0800
 Subject: [PATCH 07/66] FROMLIST: scsi: Bypass certain SCSI commands on disks
@@ -123,10 +123,10 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 12 insertions(+)
 
 diff --git a/drivers/scsi/scsi_lib.c b/drivers/scsi/scsi_lib.c
-index d3a8cd4166f92fc87ccbc3c49125cae8f5b51512..deb9e4b04dd388332a7392b6ccf04937735143c7 100644
+index 1da52f07d299b56c7fb38bcf27f9eb02e0d6b92e..8473d14f03e46ec46cfd3f2d59f7ec726151f8e2 100644
 --- a/drivers/scsi/scsi_lib.c
 +++ b/drivers/scsi/scsi_lib.c
-@@ -1589,6 +1589,7 @@ static void scsi_complete(struct request *rq)
+@@ -1612,6 +1612,7 @@ static void scsi_complete(struct request *rq)
  static enum scsi_qc_status scsi_dispatch_cmd(struct scsi_cmnd *cmd)
  {
  	struct Scsi_Host *host = cmd->device->host;
@@ -134,7 +134,7 @@ index d3a8cd4166f92fc87ccbc3c49125cae8f5b51512..deb9e4b04dd388332a7392b6ccf04937
  	int rtn = 0;
  
  	atomic_inc(&cmd->device->iorequest_cnt);
-@@ -1637,6 +1638,17 @@ static enum scsi_qc_status scsi_dispatch_cmd(struct scsi_cmnd *cmd)
+@@ -1660,6 +1661,17 @@ static enum scsi_qc_status scsi_dispatch_cmd(struct scsi_cmnd *cmd)
  		goto done;
  	}
  

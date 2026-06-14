@@ -1,4 +1,4 @@
-From 9ee8776c075d51cb937cf6ca6ac42fbd95c6ccba Mon Sep 17 00:00:00 2001
+From a25894b4c923da9711a8cbcc905ecaebcf4fe52a Mon Sep 17 00:00:00 2001
 From: Asuna Yang <spriteovo@gmail.com>
 Date: Thu, 4 Dec 2025 08:54:51 +0100
 Subject: [PATCH 13/66] FROMLIST: rust: export BINDGEN_TARGET from a separate
@@ -30,7 +30,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  create mode 100644 scripts/Makefile.rust
 
 diff --git a/Makefile b/Makefile
-index 3c5ad091c82dee8e4d13dcd6997586f0178e552e..97efedecaed90679d780179aa50d2337bd44990e 100644
+index ad60cbbafa6c92858353c22ac018695dfaefc76b..a18b81ffc486f0dcc67f4c264c7ec0cd450a0a98 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -728,9 +728,10 @@ ifneq ($(findstring clang,$(CC_VERSION_TEXT)),)

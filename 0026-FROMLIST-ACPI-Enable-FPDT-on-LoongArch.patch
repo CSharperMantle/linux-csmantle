@@ -1,4 +1,4 @@
-From f3832296498cd2fe47a58b58b102546bba660796 Mon Sep 17 00:00:00 2001
+From 35af564593d3478331284f2cea63cea2795a63c7 Mon Sep 17 00:00:00 2001
 From: Xi Ruoyao <xry111@xry111.site>
 Date: Wed, 1 Apr 2026 21:53:12 +0800
 Subject: [PATCH 26/66] FROMLIST: ACPI: Enable FPDT on LoongArch

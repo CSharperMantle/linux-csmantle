@@ -1,4 +1,4 @@
-From 9f4b247cd0107a700e1a920248eab4b9228adb7c Mon Sep 17 00:00:00 2001
+From ec6c7c4044d1e1127d11c7e99ed967190a0f2a83 Mon Sep 17 00:00:00 2001
 From: Miao Wang <shankerwangmiao@gmail.com>
 Date: Thu, 25 Jul 2024 16:09:19 +0800
 Subject: [PATCH 49/66] AOSCOS: loongarch: fix missing dependency info in DSDT
