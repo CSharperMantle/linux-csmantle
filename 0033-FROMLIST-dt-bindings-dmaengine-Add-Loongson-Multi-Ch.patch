@@ -1,4 +1,4 @@
-From 705fde43f5c36861079ccdbb154e743fc572e598 Mon Sep 17 00:00:00 2001
+From f353dbcda8f4fa296f43ec61cd2f50a42ff8ebd1 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Sat, 7 Mar 2026 11:25:36 +0800
 Subject: [PATCH 33/71] FROMLIST: dt-bindings: dmaengine: Add Loongson

@@ -1,4 +1,4 @@
-From 4b021d9ec384e531db4f9b84552e9f3cf661ff0a Mon Sep 17 00:00:00 2001
+From 6598c3587cb97f7d4815776df87a800e6ab94150 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Sat, 7 Mar 2026 11:25:10 +0800
 Subject: [PATCH 29/71] FROMLIST: dmaengine: loongson: New directory for

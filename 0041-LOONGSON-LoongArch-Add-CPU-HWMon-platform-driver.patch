@@ -1,4 +1,4 @@
-From 0b1b10428c51b8cb06142f90f63f3db7079c5078 Mon Sep 17 00:00:00 2001
+From 471ff7faafda908363ba4fc5d03c31a1f62f7e40 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Thu, 29 Oct 2020 16:29:11 +0800
 Subject: [PATCH 41/71] LOONGSON: LoongArch: Add CPU HWMon platform driver

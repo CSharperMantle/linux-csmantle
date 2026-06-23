@@ -1,4 +1,4 @@
-From 8c9f13e5987bce5a574e5ec98e20f1aeb1e8e21a Mon Sep 17 00:00:00 2001
+From 5b78840f9a556d09325080c258a66aef9a9862a7 Mon Sep 17 00:00:00 2001
 From: WANG Rui <r@hev.cc>
 Date: Mon, 11 May 2026 18:45:53 +0800
 Subject: [PATCH 38/71] FROMLIST: efi/loongarch: Randomize kernel preferred

@@ -1,4 +1,4 @@
-From f27eb5a7859e83814ef31e2501460c5ecbddb759 Mon Sep 17 00:00:00 2001
+From d43abcaeca4572668861e6affd86d33a3ece0b04 Mon Sep 17 00:00:00 2001
 From: WANG Rui <r@hev.cc>
 Date: Mon, 11 May 2026 18:45:54 +0800
 Subject: [PATCH 39/71] FROMLIST: LoongArch: Skip relocation-time KASLR if

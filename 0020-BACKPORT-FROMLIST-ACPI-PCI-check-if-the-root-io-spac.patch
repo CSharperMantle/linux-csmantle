@@ -1,4 +1,4 @@
-From 8b4ed451d5f672e753cf6f8f9bd35c4d344125fd Mon Sep 17 00:00:00 2001
+From 6cfd6d9ad19861e7d64484855f3f283545451fcb Mon Sep 17 00:00:00 2001
 From: Miao Wang <shankerwangmiao@gmail.com>
 Date: Wed, 14 Aug 2024 20:09:15 +0800
 Subject: [PATCH 20/71] BACKPORT: FROMLIST: ACPI: PCI: check if the root io

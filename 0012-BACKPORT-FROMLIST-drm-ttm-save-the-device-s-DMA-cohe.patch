@@ -1,4 +1,4 @@
-From 6cf17b7fd69677340bd20bf222cf2e1666ecdd83 Mon Sep 17 00:00:00 2001
+From 1e47a7ece829033319b08967dded67f28646ce69 Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <uwu@icenowy.me>
 Date: Sat, 29 Jun 2024 13:22:46 +0800
 Subject: [PATCH 12/71] BACKPORT: FROMLIST: drm/ttm: save the device's DMA

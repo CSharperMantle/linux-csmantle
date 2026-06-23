@@ -1,4 +1,4 @@
-From 6399eb2855dd93c9a984867f686ee5dd74ceecd5 Mon Sep 17 00:00:00 2001
+From 2b11712485f225b02e1ef54d834f4bd86dbde6a5 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Sat, 7 Mar 2026 11:25:35 +0800
 Subject: [PATCH 32/71] FROMLIST: dmaengine: loongson: loongson2-apb: Simplify

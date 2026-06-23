@@ -1,4 +1,4 @@
-From e9ff8af073565c5d84dacaa439f61c7fc6a14f40 Mon Sep 17 00:00:00 2001
+From 30e709f8cda86aeec868add152c7ede746d0f502 Mon Sep 17 00:00:00 2001
 From: Xi Ruoyao <xry111@xry111.site>
 Date: Wed, 27 May 2026 14:16:36 +0800
 Subject: [PATCH 69/71] AOSCOS: LoongArch: Canonicalize the CPU package ID from

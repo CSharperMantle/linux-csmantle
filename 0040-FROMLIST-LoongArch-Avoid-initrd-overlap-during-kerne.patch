@@ -1,4 +1,4 @@
-From 8a4e058b68138aa50ee5555617ca28612358ed7d Mon Sep 17 00:00:00 2001
+From 491a19a7045fa1433da30c73f5377da2a0fdbbc8 Mon Sep 17 00:00:00 2001
 From: WANG Rui <r@hev.cc>
 Date: Mon, 11 May 2026 18:45:55 +0800
 Subject: [PATCH 40/71] FROMLIST: LoongArch: Avoid initrd overlap during kernel

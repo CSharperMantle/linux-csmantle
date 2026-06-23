@@ -1,4 +1,4 @@
-From c9c24e863bc56a03bf3a51755842879783236883 Mon Sep 17 00:00:00 2001
+From 98094b9bd29030557a311c1031761fb94be484de Mon Sep 17 00:00:00 2001
 From: WANG Rui <r@hev.cc>
 Date: Mon, 27 Apr 2026 16:47:20 +0800
 Subject: [PATCH 04/71] UPSTREAM: efi/loongarch: Implement

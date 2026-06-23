@@ -1,4 +1,4 @@
-From 952b12a1a374b6df0e12c40a8f0fed6cd52a14b1 Mon Sep 17 00:00:00 2001
+From fa4586657c9571d641172d8a2439ea5a63ec28ca Mon Sep 17 00:00:00 2001
 From: Xi Ruoyao <xry111@xry111.site>
 Date: Sat, 21 Jun 2025 16:01:27 +0800
 Subject: [PATCH 66/71] AOSCOS: gpio: loongson-64bit: Add LS7A GPIO interrupt

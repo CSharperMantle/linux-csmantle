@@ -1,4 +1,4 @@
-From c26cef750c144c4b4e299855d5cec646eaa08ed0 Mon Sep 17 00:00:00 2001
+From 5e79bc3e515d25ad13fdbfa40e940e48979a4a1a Mon Sep 17 00:00:00 2001
 From: Xi Ruoyao <xry111@xry111.site>
 Date: Thu, 9 Apr 2026 20:19:34 +0800
 Subject: [PATCH 26/71] FROMLIST: LoongArch: detect and disable sc.q if erratic

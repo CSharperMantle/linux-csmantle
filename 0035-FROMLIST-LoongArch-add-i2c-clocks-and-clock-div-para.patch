@@ -1,4 +1,4 @@
-From c5065e2db912745b1d93f6fa0490ea462c9497a1 Mon Sep 17 00:00:00 2001
+From 5eaca2c440fdb0c5fdf27574c25ab16e609beb33 Mon Sep 17 00:00:00 2001
 From: Hongliang Wang <wanghongliang@loongson.cn>
 Date: Wed, 11 Feb 2026 10:50:57 +0800
 Subject: [PATCH 35/71] FROMLIST: LoongArch: add i2c clocks and clock-div
