@@ -1,4 +1,4 @@
-From b05091806ae95516ec4b9979758038a8881f2748 Mon Sep 17 00:00:00 2001
+From 9ca607e7ff0884483093a21f259e95c0b98618c4 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Thu, 14 Aug 2025 11:21:36 +0800
 Subject: [PATCH 11/71] FROMLIST: RFC: drm/amdkfd: disable HSA_AMD_SVM on

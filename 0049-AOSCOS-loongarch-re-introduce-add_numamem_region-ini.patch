@@ -1,4 +1,4 @@
-From d68332b76fc022a7acde7e0a663750a84b777252 Mon Sep 17 00:00:00 2001
+From 10bbb9c5f27b0c84bd043fd3bdaf5c892987c3d8 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 26 Nov 2025 22:21:05 +0800
 Subject: [PATCH 49/71] AOSCOS: loongarch: re-introduce add_numamem_region(),

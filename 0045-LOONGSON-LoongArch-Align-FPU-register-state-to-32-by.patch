@@ -1,4 +1,4 @@
-From ad493a0a8710e4edd07476cf0c9bee4e408dd015 Mon Sep 17 00:00:00 2001
+From 1e41cffcb2e349a8a806cfd69ce3ee9ae100bc5f Mon Sep 17 00:00:00 2001
 From: Lisa Robinson <lisa@bytefly.space>
 Date: Mon, 30 Mar 2026 17:48:45 +0800
 Subject: [PATCH 45/71] LOONGSON: LoongArch: Align FPU register state to 32

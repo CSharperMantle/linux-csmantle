@@ -1,4 +1,4 @@
-From 2ea7c53b9af8186740a923ddaa28e820358b8fb4 Mon Sep 17 00:00:00 2001
+From a04a99d23ebf7756dab68e2582ca3ae8fb781c5c Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Sat, 7 Mar 2026 11:25:12 +0800
 Subject: [PATCH 31/71] FROMLIST: dmaengine: loongson: loongson2-apb: Convert

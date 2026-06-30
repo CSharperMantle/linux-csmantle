@@ -1,4 +1,4 @@
-From 4613a8ff0cac8c4a03c54bcf1efc846cdf2e3c18 Mon Sep 17 00:00:00 2001
+From 3369627da8c60a28b95ebae505c2e73ac70911b5 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Fri, 31 Jan 2025 18:06:30 +0800
 Subject: [PATCH 08/71] FROMLIST: USB: core: Enable root_hub's remote wakeup

@@ -1,4 +1,4 @@
-From 78071ac10a26486d1bbf28b60e63234e464acf70 Mon Sep 17 00:00:00 2001
+From 32760d762b16a683a874ccf0d14181fed99a6a8a Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Sat, 21 Mar 2026 17:20:29 +0800
 Subject: [PATCH 02/71] UPSTREAM: dt-bindings: interrupt-controller: Add LS7A

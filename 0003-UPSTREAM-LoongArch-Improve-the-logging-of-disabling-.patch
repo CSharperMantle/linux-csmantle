@@ -1,4 +1,4 @@
-From 62027b89d6a155160b4d5e22fcb8968456028fc4 Mon Sep 17 00:00:00 2001
+From cc9ac4f7e85dba72a8ae963bf40dcf0023803378 Mon Sep 17 00:00:00 2001
 From: Yuqian Yang <yangyuqian@uniontech.com>
 Date: Wed, 22 Apr 2026 15:45:11 +0800
 Subject: [PATCH 03/71] UPSTREAM: LoongArch: Improve the logging of disabling

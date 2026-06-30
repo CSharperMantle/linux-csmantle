@@ -1,4 +1,4 @@
-From cadb19e7572d41eb6d9aa66f18318529591efc15 Mon Sep 17 00:00:00 2001
+From 09fa10c2f4652d0d71486b1612f576254af2f6ad Mon Sep 17 00:00:00 2001
 From: Bibo Mao <maobibo@loongson.cn>
 Date: Wed, 3 Jun 2026 10:34:30 +0800
 Subject: [PATCH 37/71] FROMLIST: LoongArch: KVM: Fix FPU register width issue

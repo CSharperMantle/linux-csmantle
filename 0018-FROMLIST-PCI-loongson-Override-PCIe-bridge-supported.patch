@@ -1,4 +1,4 @@
-From 11be815142879e891ec290cc87fd416f602de9f8 Mon Sep 17 00:00:00 2001
+From facb9754551c0841c284cd002b0258248066bfb1 Mon Sep 17 00:00:00 2001
 From: Ziyao Li <liziyao@uniontech.com>
 Date: Sun, 12 Apr 2026 18:17:31 +0800
 Subject: [PATCH 18/71] FROMLIST: PCI: loongson: Override PCIe bridge supported
