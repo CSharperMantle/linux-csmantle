@@ -1,7 +1,7 @@
-From d87dabcf51ff0330ed2db157a0fc86eed3f1a7e9 Mon Sep 17 00:00:00 2001
+From 1e1524f9c73909baf7dcf8153192428683c87966 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Sat, 7 Mar 2026 11:25:10 +0800
-Subject: [PATCH 29/71] FROMLIST: dmaengine: loongson: New directory for
+Subject: [PATCH 29/70] FROMLIST: dmaengine: loongson: New directory for
  Loongson DMA controllers drivers
 
 Gather the Loongson DMA controllers under drivers/dma/loongson/

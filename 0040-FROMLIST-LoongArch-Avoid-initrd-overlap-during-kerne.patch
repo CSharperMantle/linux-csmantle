@@ -1,7 +1,7 @@
-From aac52bcc1dfadd393f0cc5640ef896a9ecd2a34a Mon Sep 17 00:00:00 2001
+From 1762359cfc867eb38d774a3e3e262d8fff9d343a Mon Sep 17 00:00:00 2001
 From: WANG Rui <r@hev.cc>
 Date: Mon, 11 May 2026 18:45:55 +0800
-Subject: [PATCH 40/71] FROMLIST: LoongArch: Avoid initrd overlap during kernel
+Subject: [PATCH 40/70] FROMLIST: LoongArch: Avoid initrd overlap during kernel
  relocation
 
 Validate the relocation address against the initrd region specified via

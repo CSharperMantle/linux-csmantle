@@ -1,7 +1,7 @@
-From 223224f39190dcfab6e1ff0b14f30f842d7e1eae Mon Sep 17 00:00:00 2001
+From c8518619d9a3e22eaaead52f971809c8e6f3d837 Mon Sep 17 00:00:00 2001
 From: Miao Wang <shankerwangmiao@gmail.com>
 Date: Sat, 20 Jul 2024 06:32:15 +0800
-Subject: [PATCH 52/71] AOSCOS: loongarch: add MADT ACPI table conversion
+Subject: [PATCH 52/70] AOSCOS: loongarch: add MADT ACPI table conversion
 
 On machines with legacy firmware with BPI version BPI01000, i.e. the
 older version, the content of the MADT ACPI table is not following the

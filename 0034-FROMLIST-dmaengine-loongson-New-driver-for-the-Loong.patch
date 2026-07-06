@@ -1,7 +1,7 @@
-From ac5fe5c162ba3268efb67b43cdbe2fc521888f03 Mon Sep 17 00:00:00 2001
+From d97e6416298812caaff8bdd7928568da1ea7da42 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Sat, 7 Mar 2026 11:25:37 +0800
-Subject: [PATCH 34/71] FROMLIST: dmaengine: loongson: New driver for the
+Subject: [PATCH 34/70] FROMLIST: dmaengine: loongson: New driver for the
  Loongson Multi-Channel DMA controller
 
 This DMA controller appears in Loongson-2K0300 and Loongson-2K3000.

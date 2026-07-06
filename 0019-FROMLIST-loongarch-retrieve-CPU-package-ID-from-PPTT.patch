@@ -1,7 +1,7 @@
-From 2b935cd5b982b1e789d60ce1fce863b44e11f101 Mon Sep 17 00:00:00 2001
+From 9a85ff7ffe9ba5a572c1562b9397bd4402653475 Mon Sep 17 00:00:00 2001
 From: Rong Bao <rong.bao@csmantle.top>
-Date: Fri, 23 Jan 2026 23:56:06 +0800
-Subject: [PATCH 19/71] FROMLIST: loongarch: retrieve CPU package ID from PPTT
+Date: Sun, 5 Jul 2026 17:36:14 +0800
+Subject: [PATCH 19/70] FROMLIST: loongarch: retrieve CPU package ID from PPTT
  when available
 
 Currently, the LoongArch CPU topology initialization code calculates
@@ -11,7 +11,7 @@ cores_per_package counts in the same domain as physical IDs.
 
 On Loongson 3B6000 (XB612B0V_1.2), cores_per_package matches the visible
 core count -- 24 in this case. However, the physical IDs range from 0 to
-31 in a noncontiguous fashion:
+31 in a noncontinuous fashion:
 
         $ cat /proc/cpuinfo | grep -i -F 'global_id'
         global_id               : 0
@@ -44,40 +44,67 @@ style as retrieving the core ID and thread ID in parse_acpi_topology().
 Use this information in loongson_init_secondary() when PPTT readout is
 successful. The original division logic is kept as a fallback.
 
+Meanwhile, since some code paths like loongson3_cpufreq expect a
+continuous integer sequence of package IDs in [0, MAX_PACKAGES) when
+retrieving from cpu_data[], we also canonicalize the package ID to be
+filled in parse_acpi_topology() to meet such an expectation.
+
 Cc: stable@vger.kernel.org
+Co-developed-by: Xi Ruoyao <xry111@xry111.site>
+Signed-off-by: Xi Ruoyao <xry111@xry111.site>
 Signed-off-by: Rong Bao <rong.bao@csmantle.top>
 
-Link: https://lore.kernel.org/loongarch/e18efdbb.AXMAAIuqLC8AAAAAAAAAA-ma1qEAAYKJPtkAAAAAADNVAQBpc5ot@mailjet.com/
-Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
+Link: https://lore.kernel.org/loongarch/20260705093624.1079988-1-rong.bao@csmantle.top/
 ---
- arch/loongarch/kernel/acpi.c | 9 ++++++++-
- arch/loongarch/kernel/smp.c  | 2 +-
- 2 files changed, 9 insertions(+), 2 deletions(-)
+ arch/loongarch/kernel/acpi.c | 28 +++++++++++++++++++++++++++-
+ arch/loongarch/kernel/smp.c  |  2 +-
+ 2 files changed, 28 insertions(+), 2 deletions(-)
 
 diff --git a/arch/loongarch/kernel/acpi.c b/arch/loongarch/kernel/acpi.c
-index 1367ca759468f9c29460239353111874d05a8439..82c7ffd4f1ac683673f2ea6dbf2a5e4ab05f6f7f 100644
+index 1367ca759468f9c29460239353111874d05a8439..b25c46faabb465b1e0183a49b10fd7d80563614f 100644
 --- a/arch/loongarch/kernel/acpi.c
 +++ b/arch/loongarch/kernel/acpi.c
-@@ -176,7 +176,7 @@ int pptt_enabled;
+@@ -174,9 +174,12 @@ static void __init acpi_process_madt(void)
  
+ int pptt_enabled;
+ 
++static int acpi_package_ids[MAX_PACKAGES];
++static int acpi_nr_packages;
++
  int __init parse_acpi_topology(void)
  {
 -	int cpu, topology_id;
-+	int cpu, topology_id, package_id;
++	int cpu, topology_id, i;
  
  	for_each_possible_cpu(cpu) {
  		topology_id = find_acpi_cpu_topology(cpu, 0);
-@@ -194,6 +194,13 @@ int __init parse_acpi_topology(void)
+@@ -194,6 +197,29 @@ int __init parse_acpi_topology(void)
  
  			cpu_data[cpu].core = topology_id;
  		}
 +
-+		package_id = find_acpi_cpu_topology_package(cpu);
-+		if (package_id < 0) {
++		topology_id = find_acpi_cpu_topology_package(cpu);
++		if (topology_id < 0) {
 +			pr_warn("Invalid BIOS PPTT\n");
 +			return -ENOENT;
 +		}
-+		cpu_data[cpu].package = package_id;
++
++		for (i = 0; i < acpi_nr_packages; i++)
++			if (acpi_package_ids[i] == topology_id)
++				break;
++
++		if (i == acpi_nr_packages)
++			acpi_package_ids[acpi_nr_packages++] = topology_id;
++
++		cpu_data[cpu].package = topology_id;
++	}
++
++	for_each_possible_cpu(cpu) {
++		for (int i = 0; i < acpi_nr_packages; i++)
++			if (cpu_data[cpu].package == acpi_package_ids[i]) {
++				cpu_data[cpu].package = i;
++				break;
++			}
  	}
  
  	pptt_enabled = 1;

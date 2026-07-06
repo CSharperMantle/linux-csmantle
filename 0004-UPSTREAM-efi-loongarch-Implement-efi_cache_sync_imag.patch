@@ -1,7 +1,7 @@
 From d4cd00e4e48fd124598ad851889e2b983b974870 Mon Sep 17 00:00:00 2001
 From: WANG Rui <r@hev.cc>
 Date: Mon, 27 Apr 2026 16:47:20 +0800
-Subject: [PATCH 04/71] UPSTREAM: efi/loongarch: Implement
+Subject: [PATCH 04/70] UPSTREAM: efi/loongarch: Implement
  efi_cache_sync_image()
 
 Provide a LoongArch implementation of efi_cache_sync_image() to ensure

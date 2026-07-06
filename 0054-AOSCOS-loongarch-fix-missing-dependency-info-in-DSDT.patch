@@ -1,7 +1,7 @@
-From 0a3e0802016a73d44fd459e55115f192db420116 Mon Sep 17 00:00:00 2001
+From 2a4d317c983358dfdc202c463fa3a2cab9706d89 Mon Sep 17 00:00:00 2001
 From: Miao Wang <shankerwangmiao@gmail.com>
 Date: Thu, 25 Jul 2024 16:09:19 +0800
-Subject: [PATCH 54/71] AOSCOS: loongarch: fix missing dependency info in DSDT
+Subject: [PATCH 54/70] AOSCOS: loongarch: fix missing dependency info in DSDT
 
 On machines with legacy firmware with BPI01000 version, the devices on
 the LIO bus lackes the dependency on the PCI root controller, causing

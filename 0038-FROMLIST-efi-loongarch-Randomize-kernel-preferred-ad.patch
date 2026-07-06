@@ -1,7 +1,7 @@
-From 0c2297ff25dff24630fc6505a42a68a296a9c78b Mon Sep 17 00:00:00 2001
+From 530219f58a0dfa26b26eacef422c7698752ae8a8 Mon Sep 17 00:00:00 2001
 From: WANG Rui <r@hev.cc>
 Date: Mon, 11 May 2026 18:45:53 +0800
-Subject: [PATCH 38/71] FROMLIST: efi/loongarch: Randomize kernel preferred
+Subject: [PATCH 38/70] FROMLIST: efi/loongarch: Randomize kernel preferred
  address for KASLR
 
 Introduce efi_get_kimg_kaslr_address() helper to compute the preferred

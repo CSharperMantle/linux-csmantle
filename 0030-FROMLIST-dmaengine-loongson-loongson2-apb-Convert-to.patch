@@ -1,7 +1,7 @@
-From 70b855d7887b8d3b30f213fc2d7b0e4b2ee4fa41 Mon Sep 17 00:00:00 2001
+From 438cdf922a6f522cb8a3f9de62bce53e24820043 Mon Sep 17 00:00:00 2001
 From: Binbin Zhou <zhoubinbin@loongson.cn>
 Date: Sat, 7 Mar 2026 11:25:11 +0800
-Subject: [PATCH 30/71] FROMLIST: dmaengine: loongson: loongson2-apb: Convert
+Subject: [PATCH 30/70] FROMLIST: dmaengine: loongson: loongson2-apb: Convert
  to dmaenginem_async_device_register()
 
 Use the dmaenginem_async_device_register() helper function to simplify

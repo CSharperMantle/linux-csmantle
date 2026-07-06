@@ -1,7 +1,7 @@
-From da19219bea4e0e5c9a9aa19486df0c98d3dc3264 Mon Sep 17 00:00:00 2001
+From e65865b3bfa41a42bde47c0462903436706ccad1 Mon Sep 17 00:00:00 2001
 From: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
 Date: Tue, 24 Mar 2026 17:30:57 +0100
-Subject: [PATCH 28/71] FROMLIST: LoongArch: add spectre boundry for syscall
+Subject: [PATCH 28/70] FROMLIST: LoongArch: add spectre boundry for syscall
  dispatch table
 
 The LoongArch syscall number is directly controlled by userspace, but

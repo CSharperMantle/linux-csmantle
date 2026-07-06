@@ -1,7 +1,7 @@
-From 2436eaa5a2e9af24b2c6969e86e2ea99f1c1f3e3 Mon Sep 17 00:00:00 2001
+From e8c1c1a32081dca3782b9c91c85d1b88e3929d2d Mon Sep 17 00:00:00 2001
 From: Youling Tang <tangyouling@kylinos.cn>
 Date: Sun, 5 Apr 2026 10:12:27 +0800
-Subject: [PATCH 23/71] FROMLIST: LoongArch: Batch icache maintenance for
+Subject: [PATCH 23/70] FROMLIST: LoongArch: Batch icache maintenance for
  jump_label
 
 Switch to the batched version of the jump label update functions so

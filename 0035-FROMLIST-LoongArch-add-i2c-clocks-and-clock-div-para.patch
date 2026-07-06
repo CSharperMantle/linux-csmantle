@@ -1,7 +1,7 @@
-From 6dde38f88436595eaf4aae8809daed233a7e7551 Mon Sep 17 00:00:00 2001
+From 93125094f7b8c44b9ceaac87c687e243fbee8e95 Mon Sep 17 00:00:00 2001
 From: Hongliang Wang <wanghongliang@loongson.cn>
 Date: Wed, 11 Feb 2026 10:50:57 +0800
-Subject: [PATCH 35/71] FROMLIST: LoongArch: add i2c clocks and clock-div
+Subject: [PATCH 35/70] FROMLIST: LoongArch: add i2c clocks and clock-div
  parameter parsing.
 
 On 3A/7A/2K platform, i2c ref clocks and clock divisor maybe

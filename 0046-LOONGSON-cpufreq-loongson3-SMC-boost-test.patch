@@ -1,7 +1,7 @@
-From 6a7bc12ef12e3b327cf37ee315a351064a91fa23 Mon Sep 17 00:00:00 2001
+From 8fc7f4335b4fd989339e9e1115a1ec508bc9d70f Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Tue, 26 May 2026 18:49:37 +0800
-Subject: [PATCH 46/71] LOONGSON: cpufreq: loongson3: SMC boost test
+Subject: [PATCH 46/70] LOONGSON: cpufreq: loongson3: SMC boost test
 
 As instructed for testing. Upstreamable patch pending.
 

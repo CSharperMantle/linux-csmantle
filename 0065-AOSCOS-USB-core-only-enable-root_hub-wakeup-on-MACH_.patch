@@ -1,7 +1,7 @@
-From b43c756ba6c27d37172db52af4b7080c5006304f Mon Sep 17 00:00:00 2001
+From 2e9e947f982dd06e58087e9168e98e4262f4cfdd Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Wed, 26 Feb 2025 11:43:02 +0800
-Subject: [PATCH 65/71] AOSCOS: USB: core: only enable root_hub wakeup on
+Subject: [PATCH 65/70] AOSCOS: USB: core: only enable root_hub wakeup on
  MACH_LOONGSON64
 
 The previous attempt to fix USB remote wake on Loongson 7A platforms broke

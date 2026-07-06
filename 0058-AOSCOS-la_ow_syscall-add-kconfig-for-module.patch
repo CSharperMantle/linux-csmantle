@@ -1,7 +1,7 @@
-From 6fbac83a022b13b6a00526388f57f7c7c9e7d372 Mon Sep 17 00:00:00 2001
+From 4452e90c3573783ac96533197c09100160115b75 Mon Sep 17 00:00:00 2001
 From: Tianhao Chai <cth451@gmail.com>
 Date: Thu, 18 Jan 2024 18:07:58 -0500
-Subject: [PATCH 58/71] AOSCOS: la_ow_syscall: add kconfig for module
+Subject: [PATCH 58/70] AOSCOS: la_ow_syscall: add kconfig for module
 
 Signed-off-by: Tianhao Chai <cth451@gmail.com>
 [Xi Ruoyao: Select KALLSYMS and KPROBE]

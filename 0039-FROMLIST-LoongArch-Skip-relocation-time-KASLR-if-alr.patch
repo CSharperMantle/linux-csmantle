@@ -1,7 +1,7 @@
-From 915c5aa05a1328eb3bba2566b53a40cccf50ffda Mon Sep 17 00:00:00 2001
+From b0b3d6ae1f4ed098164bb0719a03b529b15c284b Mon Sep 17 00:00:00 2001
 From: WANG Rui <r@hev.cc>
 Date: Mon, 11 May 2026 18:45:54 +0800
-Subject: [PATCH 39/71] FROMLIST: LoongArch: Skip relocation-time KASLR if
+Subject: [PATCH 39/70] FROMLIST: LoongArch: Skip relocation-time KASLR if
  already applied
 
 When the kernel is relocated during early boot (efistub or kexec_file),

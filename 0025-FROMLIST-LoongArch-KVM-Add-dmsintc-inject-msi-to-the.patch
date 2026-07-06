@@ -1,7 +1,7 @@
-From fb6a564d4bb284bf3d4f521d895d81e350e4f44e Mon Sep 17 00:00:00 2001
+From ca2b2128766a480d3ec126606553221855adba36 Mon Sep 17 00:00:00 2001
 From: Song Gao <gaosong@loongson.cn>
 Date: Thu, 9 Apr 2026 10:42:15 +0800
-Subject: [PATCH 25/71] FROMLIST: LoongArch: KVM: Add dmsintc inject msi to the
+Subject: [PATCH 25/70] FROMLIST: LoongArch: KVM: Add dmsintc inject msi to the
  dest vcpu
 
 Implement irqfd deliver msi to vcpu and vcpu dmsintc inject irq.

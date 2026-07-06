@@ -1,7 +1,7 @@
-From 0f92b8651bc07463305c5b13dd29db99926e5847 Mon Sep 17 00:00:00 2001
+From cf15275f314a573b213048944d3b071e5bb36f82 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Tue, 15 Oct 2024 20:32:21 +0800
-Subject: [PATCH 59/71] AOSCOS: Revert "rcu: Fix rcu_barrier() VS post
+Subject: [PATCH 59/70] AOSCOS: Revert "rcu: Fix rcu_barrier() VS post
  CPUHP_TEARDOWN_CPU invocation"
 
 When this change was introduced between v6.10.4 and v6.10.5, the Broadcom

@@ -1,7 +1,7 @@
-From 1e41cffcb2e349a8a806cfd69ce3ee9ae100bc5f Mon Sep 17 00:00:00 2001
+From 369f7880f931672c132c69999ef24d9bc0ee588a Mon Sep 17 00:00:00 2001
 From: Lisa Robinson <lisa@bytefly.space>
 Date: Mon, 30 Mar 2026 17:48:45 +0800
-Subject: [PATCH 45/71] LOONGSON: LoongArch: Align FPU register state to 32
+Subject: [PATCH 45/70] LOONGSON: LoongArch: Align FPU register state to 32
  bytes
 
 Move fpr to the beginning of struct loongarch_fpu so it is naturally

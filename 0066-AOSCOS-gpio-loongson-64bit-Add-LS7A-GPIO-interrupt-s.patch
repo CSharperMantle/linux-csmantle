@@ -1,7 +1,7 @@
-From 28f7c431ac55d7dde95e4ffd21a572c69f5875cd Mon Sep 17 00:00:00 2001
+From 2ee31e1a25dd07e1a901ffaf2b23b47ef5a261a3 Mon Sep 17 00:00:00 2001
 From: Xi Ruoyao <xry111@xry111.site>
 Date: Sat, 21 Jun 2025 16:01:27 +0800
-Subject: [PATCH 66/71] AOSCOS: gpio: loongson-64bit: Add LS7A GPIO interrupt
+Subject: [PATCH 66/70] AOSCOS: gpio: loongson-64bit: Add LS7A GPIO interrupt
  support
 
 On IPASON NL38-N11 laptops, the touchpad device (a HID multitouch device
