@@ -1,7 +1,7 @@
-From 3a67ef243f9abdbcd3e3d71ff84400ce3366dc42 Mon Sep 17 00:00:00 2001
+From 789b0d2c4df8c47d48d7637fa9ed74021484a45f Mon Sep 17 00:00:00 2001
 From: Asuna Yang <spriteovo@gmail.com>
 Date: Thu, 4 Dec 2025 08:54:51 +0100
-Subject: [PATCH 10/49] BACKPORT: FROMLIST: rust: export BINDGEN_TARGET from a
+Subject: [PATCH 10/47] BACKPORT: FROMLIST: rust: export BINDGEN_TARGET from a
  separate Makefile
 
 A subsequent commit will add a new function `bindgen-option` to
@@ -35,7 +35,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  create mode 100644 scripts/Makefile.rust
 
 diff --git a/Makefile b/Makefile
-index 83fd4ee4f43dcad453f23d7f969b43577a58467f..df08393eb3076a9f753065c358429b3ebeb2eb79 100644
+index fbe52b9c970ada775ff4519d05a6de07cb4d1d09..aeb27c038079d48a2dace3144c9cf9e1b76f1ad9 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -734,9 +734,10 @@ ifneq ($(findstring clang,$(CC_VERSION_TEXT)),)
@@ -51,7 +51,7 @@ index 83fd4ee4f43dcad453f23d7f969b43577a58467f..df08393eb3076a9f753065c358429b3e
  endif
  
 diff --git a/rust/Makefile b/rust/Makefile
-index b9e9f512cec3143a9ed69cbb4fbb286ebaab5a3f..da5b2fb61c1838a36d73ac9f54f29292f7de69b5 100644
+index bec9726f256ce99677c78827bbb36ed1d01e1134..45078570e217dd5f488505f30e7fe868acec46f2 100644
 --- a/rust/Makefile
 +++ b/rust/Makefile
 @@ -398,16 +398,6 @@ bindgen_skip_c_flags := -mno-fp-ret-in-387 -mpreferred-stack-boundary=% \
