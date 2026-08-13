@@ -1,4 +1,4 @@
-From 3b0bcdcf2ee436ad9b594da02c395e9a7f4c2653 Mon Sep 17 00:00:00 2001
+From bec993f43f3fad16fa05f1bf02c8a35b83cd7a50 Mon Sep 17 00:00:00 2001
 From: Rong Bao <rong.bao@csmantle.top>
 Date: Fri, 17 Jul 2026 15:17:35 +0800
 Subject: [PATCH 44/47] CSMANTLE: Revert "FROMLIST: rust: generate a fatal

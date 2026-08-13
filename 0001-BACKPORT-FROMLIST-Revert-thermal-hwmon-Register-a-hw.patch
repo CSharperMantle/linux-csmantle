@@ -1,4 +1,4 @@
-From b57fd569857576befd80d936d556ddb6f46eaef4 Mon Sep 17 00:00:00 2001
+From 5efa9cb5f7f5318ae99a36a8de005a0da5124469 Mon Sep 17 00:00:00 2001
 From: "Rafael J. Wysocki" <rafael.j.wysocki@intel.com>
 Date: Fri, 31 Jul 2026 15:01:15 +0200
 Subject: [PATCH 01/47] BACKPORT: FROMLIST: Revert "thermal: hwmon: Register a
@@ -266,7 +266,7 @@ index 223ae1571655bd9ace2a224b1be5f2827ae31a66..597c33c8a55508e0aac8a288313624a8
  	kfree(hwmon);
  }
 
-base-commit: f033059542ed2a911a394191358a8cafe282efd4
+base-commit: 2268314c2cd88cb08fdb47b942923aea84ebccc2
 -- 
 2.55.0
 

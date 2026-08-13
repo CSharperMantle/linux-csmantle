@@ -1,4 +1,4 @@
-From 6d7ac2dd2a2272650c1689d431a6d1e1e27e004f Mon Sep 17 00:00:00 2001
+From a25eb1669debcc899a6599f2be580da33e35f75d Mon Sep 17 00:00:00 2001
 From: Hongliang Wang <wanghongliang@loongson.cn>
 Date: Mon, 8 Jun 2026 10:45:33 +0800
 Subject: [PATCH 17/47] FROMLIST: i2c: ls2x: Add clocks property parsing and

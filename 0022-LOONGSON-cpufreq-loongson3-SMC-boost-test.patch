@@ -1,4 +1,4 @@
-From dd6a6f928cc3ca83d25ed1a2c2a26ac0d87c115b Mon Sep 17 00:00:00 2001
+From f829907e5fc3f48b06fc8668fabd7e7883911d35 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Tue, 26 May 2026 18:49:37 +0800
 Subject: [PATCH 22/47] LOONGSON: cpufreq: loongson3: SMC boost test

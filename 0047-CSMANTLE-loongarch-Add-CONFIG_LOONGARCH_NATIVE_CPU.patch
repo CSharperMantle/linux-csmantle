@@ -1,4 +1,4 @@
-From 8294e8ed3886b8445c764aa5d8926c045d2390ff Mon Sep 17 00:00:00 2001
+From 1a5f465b45103a910b1233f23f5d83982e8356e8 Mon Sep 17 00:00:00 2001
 From: Rong Bao <rong.bao@csmantle.top>
 Date: Thu, 19 Feb 2026 21:32:17 +0800
 Subject: [PATCH 47/47] CSMANTLE: loongarch: Add CONFIG_LOONGARCH_NATIVE_CPU

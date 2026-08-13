@@ -1,4 +1,4 @@
-From 78900c55a8b2fbc7104785b0fd7c2e4478039b2b Mon Sep 17 00:00:00 2001
+From 5f1c0352f1a7d4c70168b1918eadfd54bd11f97d Mon Sep 17 00:00:00 2001
 From: Miao Wang <shankerwangmiao@gmail.com>
 Date: Tue, 30 Jun 2026 05:05:28 +0800
 Subject: [PATCH 42/47] FROMLIST: gpio: loongson-64bit: Add back the support
