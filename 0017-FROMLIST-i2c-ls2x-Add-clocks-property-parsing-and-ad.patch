@@ -1,7 +1,7 @@
 From a25eb1669debcc899a6599f2be580da33e35f75d Mon Sep 17 00:00:00 2001
 From: Hongliang Wang <wanghongliang@loongson.cn>
 Date: Mon, 8 Jun 2026 10:45:33 +0800
-Subject: [PATCH 17/47] FROMLIST: i2c: ls2x: Add clocks property parsing and
+Subject: [PATCH 17/51] FROMLIST: i2c: ls2x: Add clocks property parsing and
  adjust bus speed
 
 The i2c-ls2x driver supports dts and acpi parameter passing.

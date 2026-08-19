@@ -1,7 +1,7 @@
-From 5f1c0352f1a7d4c70168b1918eadfd54bd11f97d Mon Sep 17 00:00:00 2001
+From bcf7c70635d8a895d96f66e09e52bc3bc5e875b7 Mon Sep 17 00:00:00 2001
 From: Miao Wang <shankerwangmiao@gmail.com>
 Date: Tue, 30 Jun 2026 05:05:28 +0800
-Subject: [PATCH 42/47] FROMLIST: gpio: loongson-64bit: Add back the support
+Subject: [PATCH 46/51] FROMLIST: gpio: loongson-64bit: Add back the support
  for gsi_idx_map
 
 This patch adds back the support for gsi_idx_map, which is used in the

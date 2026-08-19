@@ -1,7 +1,7 @@
 From 10f645813b140344b26fb1b967ab33c3ea33ed04 Mon Sep 17 00:00:00 2001
 From: Alex Hung <alex.hung@canonical.com>
 Date: Mon, 22 Mar 2021 01:11:21 -0600
-Subject: [PATCH 18/47] FROMLIST: iwlwifi: add new pci id for 6235
+Subject: [PATCH 18/51] FROMLIST: iwlwifi: add new pci id for 6235
 
 lspci output:
 Network controller [0280]: Intel Corporation Centrino Advanced-N6235

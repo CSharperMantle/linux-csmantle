@@ -1,7 +1,7 @@
-From c03f765fbb21682cf2e24d8879d940cdf467b387 Mon Sep 17 00:00:00 2001
+From 07f167f0ab055b149be9415e5e2e9cd5fc2807f1 Mon Sep 17 00:00:00 2001
 From: Xi Ruoyao <xry111@xry111.site>
 Date: Fri, 12 Jun 2026 23:32:42 +0800
-Subject: [PATCH 45/47] AOSCOS: drm/ttm: fix incorrect caching type caused by a
+Subject: [PATCH 49/51] AOSCOS: drm/ttm: fix incorrect caching type caused by a
  previous AOSCOS patch
 
 The ttm_mem_io_reserve() function calls a driver-defined callback to set

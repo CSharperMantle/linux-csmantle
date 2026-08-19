@@ -1,7 +1,7 @@
 From 5efa9cb5f7f5318ae99a36a8de005a0da5124469 Mon Sep 17 00:00:00 2001
 From: "Rafael J. Wysocki" <rafael.j.wysocki@intel.com>
 Date: Fri, 31 Jul 2026 15:01:15 +0200
-Subject: [PATCH 01/47] BACKPORT: FROMLIST: Revert "thermal: hwmon: Register a
+Subject: [PATCH 01/51] BACKPORT: FROMLIST: Revert "thermal: hwmon: Register a
  hwmon device for each thermal zone"
 
 Revert commit d6323469bcfb ("thermal: hwmon: Register a hwmon device
