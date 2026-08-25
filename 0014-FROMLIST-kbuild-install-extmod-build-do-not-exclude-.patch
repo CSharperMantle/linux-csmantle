@@ -1,4 +1,4 @@
-From 3ab412b71625ea0a98e35e6a0f68e50126913114 Mon Sep 17 00:00:00 2001
+From c6cbd7d8973f33a8c8dcc37b142953af4b1adf92 Mon Sep 17 00:00:00 2001
 From: Icenowy Zheng <zhengxingda@iscas.ac.cn>
 Date: Sun, 1 Feb 2026 20:39:30 +0800
 Subject: [PATCH 14/50] FROMLIST: kbuild: install-extmod-build: do not exclude

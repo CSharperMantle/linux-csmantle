@@ -1,4 +1,4 @@
-From fd5845cd1c7eef51b5b8ab07b131bd15d09304db Mon Sep 17 00:00:00 2001
+From 23b84361823ba3e9fe17a781bd1ef067dbf1779f Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Tue, 18 Aug 2026 20:39:18 +0800
 Subject: [PATCH 19/50] FROMLIST: cpufreq: loongson3: Adjust the width of id

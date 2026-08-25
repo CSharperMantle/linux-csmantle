@@ -1,4 +1,4 @@
-From 02c09b2b42757caf55f35d74a862fa3e46244097 Mon Sep 17 00:00:00 2001
+From 17668339fe010aa037a85aadc3f43c364c0d8e0b Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Tue, 18 Aug 2026 20:39:21 +0800
 Subject: [PATCH 22/50] FROMLIST: cpufreq: loongson3: Replace IOCSR read/write

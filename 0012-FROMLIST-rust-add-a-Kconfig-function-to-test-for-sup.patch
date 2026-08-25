@@ -1,4 +1,4 @@
-From 0c77a758216e1b20cd64274b239b0b87b5f08354 Mon Sep 17 00:00:00 2001
+From f588a76fe3ed7e6f2c91970d18e47b153d0f1f54 Mon Sep 17 00:00:00 2001
 From: Asuna Yang <spriteovo@gmail.com>
 Date: Thu, 4 Dec 2025 08:54:53 +0100
 Subject: [PATCH 12/50] FROMLIST: rust: add a Kconfig function to test for

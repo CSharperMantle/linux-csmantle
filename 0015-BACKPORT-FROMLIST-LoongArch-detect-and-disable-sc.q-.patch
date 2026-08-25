@@ -1,4 +1,4 @@
-From a5228d63a1918c3c3306db155cab395f4669da40 Mon Sep 17 00:00:00 2001
+From e8ee960a9a973d47a246f716dc87316e8776f357 Mon Sep 17 00:00:00 2001
 From: Xi Ruoyao <xry111@xry111.site>
 Date: Thu, 9 Apr 2026 20:19:34 +0800
 Subject: [PATCH 15/50] BACKPORT: FROMLIST: LoongArch: detect and disable sc.q
