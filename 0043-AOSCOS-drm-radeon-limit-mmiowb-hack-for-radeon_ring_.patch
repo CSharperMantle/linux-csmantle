@@ -1,4 +1,4 @@
-From 00bbe5a340717f6c6afaa5ae10f658ae565137a5 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Mon, 24 Feb 2025 14:01:03 +0800
 Subject: [PATCH 43/50] AOSCOS: drm/radeon: limit mmiowb() hack for

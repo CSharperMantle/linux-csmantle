@@ -1,4 +1,4 @@
-From dd50ba3edf94f7b81f4b225f744ef8b197690e07 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Tue, 18 Aug 2026 20:39:17 +0800
 Subject: [PATCH 18/50] FROMLIST: cpufreq: loongson3: Make this drvier depend

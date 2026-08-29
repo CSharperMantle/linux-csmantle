@@ -1,4 +1,4 @@
-From 237b0ecaf9ae08b4ecb8a6b8a1e800e1c7cb0270 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Tue, 18 Aug 2026 20:39:20 +0800
 Subject: [PATCH 21/50] FROMLIST: cpufreq: loongson3: Use global physical CPU

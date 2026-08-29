@@ -1,4 +1,4 @@
-From 4f8b30de4e75b9a326cd22a3e134cee051a4c647 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Xi Ruoyao <xry111@xry111.site>
 Date: Sat, 16 Aug 2025 09:50:44 +0800
 Subject: [PATCH 46/50] AOSCOS: ACPI / scan: Add pwm_lookup_entry for PWM3 on

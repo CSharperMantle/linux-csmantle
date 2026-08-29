@@ -1,4 +1,4 @@
-From 75eb509f4a24385d7d13579c3d67777a70a7649d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Tue, 18 Aug 2026 20:39:19 +0800
 Subject: [PATCH 20/50] FROMLIST: cpufreq: loongson3: Replace per-package mutex

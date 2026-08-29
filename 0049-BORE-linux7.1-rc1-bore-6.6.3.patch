@@ -1,4 +1,4 @@
-From 0bb96a631120a71c24fd79199531b0f78055a7a8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Masahito S <firelzrd@gmail.com>
 Date: Fri, 1 May 2026 13:05:53 +0900
 Subject: [PATCH 49/50] BORE: linux7.1-rc1-bore-6.6.3
@@ -25,7 +25,7 @@ Signed-off-by: Rong Bao <rong.bao@csmantle.top>
  create mode 100644 kernel/sched/bore.c
 
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index ee06cba5c6f538aac677b2c0847f93e44c5ab18a..3369fe816c2113e55a03efdc8f7020ae315369a1 100644
+index eaf975138359637d1773d8d850373996695d2f5f..4b680997eab1f6887646ffc0f341114d5a65b07e 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -817,6 +817,37 @@ struct kmap_ctrl {
