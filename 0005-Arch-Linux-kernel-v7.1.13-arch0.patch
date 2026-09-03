@@ -1,0 +1,25 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Rong Bao <rong.bao@csmantle.top>
+Date: Fri, 28 Aug 2026 05:29:25 +0200
+Subject: [PATCH 05/55] Arch Linux kernel v7.1.13-arch0
+
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index f535c37d6fe9376471a898ddba73a39ab40f98bd..17055442a7c0875fec199aa6094898452f36370f 100644
+--- a/Makefile
++++ b/Makefile
+@@ -2,7 +2,7 @@
+ VERSION = 7
+ PATCHLEVEL = 1
+ SUBLEVEL = 13
+-EXTRAVERSION =
++EXTRAVERSION = -arch0
+ NAME = Baby Opossum Posse
+ 
+ # *DOCUMENTATION*
+-- 
+2.55.0
+
