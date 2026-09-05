@@ -1,7 +1,7 @@
 From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Tue, 18 Aug 2026 20:39:21 +0800
-Subject: [PATCH 27/55] FROMLIST: cpufreq: loongson3: Replace IOCSR read/write
+Subject: [PATCH 27/56] FROMLIST: cpufreq: loongson3: Replace IOCSR read/write
  with MMIO ones
 
 Our server productions (e.g. Loongson-3D6000/3E6000) can have multiple

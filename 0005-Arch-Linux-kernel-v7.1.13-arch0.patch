@@ -1,7 +1,7 @@
 From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Rong Bao <rong.bao@csmantle.top>
 Date: Fri, 28 Aug 2026 05:29:25 +0200
-Subject: [PATCH 05/55] Arch Linux kernel v7.1.13-arch0
+Subject: [PATCH 05/56] Arch Linux kernel v7.1.13-arch0
 
 ---
  Makefile | 2 +-

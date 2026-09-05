@@ -1,7 +1,7 @@
 From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Tue, 18 Aug 2026 20:39:19 +0800
-Subject: [PATCH 25/55] FROMLIST: cpufreq: loongson3: Replace per-package mutex
+Subject: [PATCH 25/56] FROMLIST: cpufreq: loongson3: Replace per-package mutex
  with per-node
 
 Our server productions (e.g. Loongson-3D6000/3E6000) can have multiple

@@ -1,7 +1,7 @@
 From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Rong Bao <rong.bao@csmantle.top>
 Date: Fri, 17 Jul 2026 15:17:35 +0800
-Subject: [PATCH 52/55] CSMANTLE: Revert "FROMLIST: rust: generate a fatal
+Subject: [PATCH 52/56] CSMANTLE: Revert "FROMLIST: rust: generate a fatal
  error if BINDGEN_TARGET is undefined"
 
 This reverts commit 01184c45e4269b7d1b32ead7d450767d1858a379.

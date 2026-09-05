@@ -1,7 +1,7 @@
 From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Huacai Chen <chenhuacai@loongson.cn>
 Date: Tue, 18 Aug 2026 20:39:18 +0800
-Subject: [PATCH 24/55] FROMLIST: cpufreq: loongson3: Adjust the width of id
+Subject: [PATCH 24/56] FROMLIST: cpufreq: loongson3: Adjust the width of id
  and val in smc_message
 
 The id field of smc_message is usually stand for the CPU ID. In the past

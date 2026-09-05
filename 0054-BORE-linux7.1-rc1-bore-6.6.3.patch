@@ -1,7 +1,7 @@
 From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Masahito S <firelzrd@gmail.com>
 Date: Fri, 1 May 2026 13:05:53 +0900
-Subject: [PATCH 54/55] BORE: linux7.1-rc1-bore-6.6.3
+Subject: [PATCH 54/56] BORE: linux7.1-rc1-bore-6.6.3
 
 Link: https://github.com/firelzrd/bore-scheduler/blob/16bf5baebbb42cdba393c501ba9c2af5f84e4749/patches/stable/linux-7.1-bore/0001-linux7.1-rc1-bore-6.6.3.patch
 [ Rong Bao: Resolved conflicts in kernel/sched/fair.c on 7.1.5 ]

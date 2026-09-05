@@ -1,7 +1,7 @@
 From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Peter Jung <admin@ptr1337.dev>
 Date: Sun, 16 Aug 2026 15:31:01 +0200
-Subject: [PATCH 04/55] Revert "tracing: perf: Fix stale head for perf syscall
+Subject: [PATCH 04/56] Revert "tracing: perf: Fix stale head for perf syscall
  tracing"
 
 This reverts commit be94a3a77e7eb99c53418de7d4a01bc7eb3f634e.
