@@ -29,10 +29,10 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/pci/pci-driver.c b/drivers/pci/pci-driver.c
-index f36778e62ac1a5e097cf34b58dc0e9f567e57a98..2e71ece0f143a3e107d92288403b91850ec5a0c7 100644
+index e16aa59dd7ac8bcc7d748737e4fd6aa698033a25..6a2b005e54026936bc9a797fd6859f13045bbe41 100644
 --- a/drivers/pci/pci-driver.c
 +++ b/drivers/pci/pci-driver.c
-@@ -548,7 +548,7 @@ static void pci_device_shutdown(struct device *dev)
+@@ -571,7 +571,7 @@ static void pci_device_shutdown(struct device *dev)
  	 * If it is not a kexec reboot, firmware will hit the PCI
  	 * devices with big hammer and stop their DMA any way.
  	 */

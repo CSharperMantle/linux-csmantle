@@ -23,10 +23,10 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 11 insertions(+), 3 deletions(-)
 
 diff --git a/drivers/acpi/pci_root.c b/drivers/acpi/pci_root.c
-index 4c06c3ffd0cbb54373cf1ba7d47d24251df90772..15641dcddaa0e8ebea4a895238de9de75022832c 100644
+index d836f46319f266365a04397ded53b5ce3b7d0458..478ee5e90490913ab69d334aa84af23605a73b1b 100644
 --- a/drivers/acpi/pci_root.c
 +++ b/drivers/acpi/pci_root.c
-@@ -857,7 +857,7 @@ static void acpi_pci_root_validate_resources(struct device *dev,
+@@ -861,7 +861,7 @@ static void acpi_pci_root_validate_resources(struct device *dev,
  	}
  }
  
@@ -35,7 +35,7 @@ index 4c06c3ffd0cbb54373cf1ba7d47d24251df90772..15641dcddaa0e8ebea4a895238de9de7
  			struct resource_entry *entry)
  {
  #ifdef PCI_IOBASE
-@@ -867,7 +867,15 @@ static void acpi_pci_root_remap_iospace(const struct fwnode_handle *fwnode,
+@@ -871,7 +871,15 @@ static void acpi_pci_root_remap_iospace(const struct fwnode_handle *fwnode,
  	resource_size_t length = resource_size(res);
  	unsigned long port;
  
@@ -52,7 +52,7 @@ index 4c06c3ffd0cbb54373cf1ba7d47d24251df90772..15641dcddaa0e8ebea4a895238de9de7
  		goto err;
  
  	port = pci_address_to_pio(cpu_addr);
-@@ -909,7 +917,7 @@ int acpi_pci_probe_root_resources(struct acpi_pci_root_info *info)
+@@ -913,7 +921,7 @@ int acpi_pci_probe_root_resources(struct acpi_pci_root_info *info)
  	else {
  		resource_list_for_each_entry_safe(entry, tmp, list) {
  			if (entry->res->flags & IORESOURCE_IO)

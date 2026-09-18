@@ -48,10 +48,10 @@ index 65b8497ad5f023b08632b91bec229a35673e11cb..87e1064e44d7773c4d7fc1ac8ed34e3d
  	/* Then send the real EOP event down the pipe. */
  	amdgpu_ring_write(ring, PACKET3(PACKET3_EVENT_WRITE_EOP, 4));
 diff --git a/drivers/gpu/drm/amd/amdgpu/gfx_v8_0.c b/drivers/gpu/drm/amd/amdgpu/gfx_v8_0.c
-index 70ba81e6b4d4373cc8a9f3da46e70440802545f1..283daf6ea767ed2f8914d057e76b6f99a65d87e5 100644
+index 180ed00bb95900a6dbdbddf5240deccf3bcfdc4a..96bf7af2657a4de1e0d0d4989303ae2005fc17b3 100644
 --- a/drivers/gpu/drm/amd/amdgpu/gfx_v8_0.c
 +++ b/drivers/gpu/drm/amd/amdgpu/gfx_v8_0.c
-@@ -6143,6 +6143,13 @@ static void gfx_v8_0_ring_emit_fence_gfx(struct amdgpu_ring *ring, u64 addr,
+@@ -6145,6 +6145,13 @@ static void gfx_v8_0_ring_emit_fence_gfx(struct amdgpu_ring *ring, u64 addr,
  	bool int_sel = flags & AMDGPU_FENCE_FLAG_INT;
  	bool exec = flags & AMDGPU_FENCE_FLAG_EXEC;
  
@@ -65,7 +65,7 @@ index 70ba81e6b4d4373cc8a9f3da46e70440802545f1..283daf6ea767ed2f8914d057e76b6f99
  	/* Workaround for cache flush problems. First send a dummy EOP
  	 * event down the pipe with seq one below.
  	 */
-@@ -6157,6 +6164,7 @@ static void gfx_v8_0_ring_emit_fence_gfx(struct amdgpu_ring *ring, u64 addr,
+@@ -6159,6 +6166,7 @@ static void gfx_v8_0_ring_emit_fence_gfx(struct amdgpu_ring *ring, u64 addr,
  				DATA_SEL(1) | INT_SEL(0));
  	amdgpu_ring_write(ring, lower_32_bits(seq - 1));
  	amdgpu_ring_write(ring, upper_32_bits(seq - 1));

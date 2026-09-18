@@ -86,10 +86,10 @@ index 841d8db85a3cb17c66ad9be0bbb5d2a9868b6aa2..7043bfd0399d66cd1176883e7fff53a2
  	return have_bpi;
  }
 diff --git a/drivers/acpi/pci_root.c b/drivers/acpi/pci_root.c
-index 15641dcddaa0e8ebea4a895238de9de75022832c..2867534f6388b4591d8b88273a392140b9428b3c 100644
+index 478ee5e90490913ab69d334aa84af23605a73b1b..ebaed6fa59884f088557ddb26f38af21dac08eac 100644
 --- a/drivers/acpi/pci_root.c
 +++ b/drivers/acpi/pci_root.c
-@@ -916,6 +916,7 @@ int acpi_pci_probe_root_resources(struct acpi_pci_root_info *info)
+@@ -920,6 +920,7 @@ int acpi_pci_probe_root_resources(struct acpi_pci_root_info *info)
  			"no IO and memory resources present in _CRS\n");
  	else {
  		resource_list_for_each_entry_safe(entry, tmp, list) {

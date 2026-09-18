@@ -75,10 +75,10 @@ index 0500d5fd4f112e8e8a850181c3d0ab12a94156d3..82ac1eac3a1c0ec97942bcbea10781c4
  static void quirk_nopcipci(struct pci_dev *dev)
  {
 diff --git a/include/linux/pci.h b/include/linux/pci.h
-index 64b308b6e61c195583d17606f173490a3ccf180d..5a9c0b47a5620d2f0901722e8e99b8262be0007b 100644
+index 66a4fda05793de91ad2038a2c43521984e956e29..ac3d291894b0f2fec2fb8ef62677f680d571a2f6 100644
 --- a/include/linux/pci.h
 +++ b/include/linux/pci.h
-@@ -262,6 +262,7 @@ enum pci_dev_flags {
+@@ -266,6 +266,7 @@ enum pci_dev_flags {
  	 * integrated with the downstream devices and doesn't use real PCI.
  	 */
  	PCI_DEV_FLAGS_PCI_BRIDGE_NO_ALIAS = (__force pci_dev_flags_t) (1 << 14),

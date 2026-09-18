@@ -17,7 +17,7 @@ Signed-off-by: Rong Bao <rong.bao@csmantle.top>
  2 files changed, 29 insertions(+)
 
 diff --git a/arch/loongarch/Kconfig b/arch/loongarch/Kconfig
-index 8aabf18a9f1984e2366fe5984e12bb6d064b51ec..de98f6d34ef21af067761d1a386120f1d944d880 100644
+index a9b26a8e6f0a36b26aadab367da042a1e94cceca..ab8d8e7406c5606f7f5f68b946ac5d20a9378fd8 100644
 --- a/arch/loongarch/Kconfig
 +++ b/arch/loongarch/Kconfig
 @@ -339,6 +339,17 @@ config AS_HAS_LVZ_EXTENSION

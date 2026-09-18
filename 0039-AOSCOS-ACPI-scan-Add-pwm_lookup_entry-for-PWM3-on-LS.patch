@@ -104,10 +104,10 @@ index 0000000000000000000000000000000000000000..5363747cd3a7f0f6c598c1faba2fa170
 +	acpi_scan_add_handler(&ls7a_pwm_handler);
 +}
 diff --git a/drivers/acpi/scan.c b/drivers/acpi/scan.c
-index 9a7ac2eb9ce0b8475e499e87832b8400d2d8913e..1e10937fea66ec6c0ca5683ec91c5dd81f79e89a 100644
+index 99af95f33865258c4f5529aed48f897ecbefc11c..9ef22bbe99b7fcf46c9201445ce751f8ff1fd5a6 100644
 --- a/drivers/acpi/scan.c
 +++ b/drivers/acpi/scan.c
-@@ -2836,6 +2836,7 @@ void __init acpi_scan_init(void)
+@@ -2839,6 +2839,7 @@ void __init acpi_scan_init(void)
  	acpi_pnp_init();
  	acpi_power_resources_init();
  	acpi_init_lpit();
