@@ -35,7 +35,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  create mode 100644 scripts/Makefile.rust
 
 diff --git a/Makefile b/Makefile
-index 373b82edd24ed424f86fd5589086a97bf28a49e4..c3e6cd3ee8e08ce53df85a7dcefee341d5e347a7 100644
+index 41d40eab436dde172c7ae401860266ac80c697d5..8547ace087e4e852a55f82295ae2c09c4ebd3780 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -742,9 +742,10 @@ ifneq ($(findstring clang,$(CC_VERSION_TEXT)),)
