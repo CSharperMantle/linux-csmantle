@@ -179,7 +179,7 @@ index ce1435cb08b1ecd7f800442e886c2d8270afeb18..9eee2005e25f07dd94248feab6788e79
 +	 an unnecessarily large base slice, resulting in high scheduling
 +	 latency and poor system responsiveness.
 diff --git a/kernel/exit.c b/kernel/exit.c
-index e4cd7232015df1b0eadeea94880395fe1256ca3b..4fb2681bde07c27d5c22d9aba4433ae2634dc254 100644
+index 0abce8edb28b523a44991f0b84c20114098bf24e..7c41ff9af9f9b1898df70394403d686a13d2915c 100644
 --- a/kernel/exit.c
 +++ b/kernel/exit.c
 @@ -147,7 +147,11 @@ static void __unhash_process(struct release_task_post *post, struct task_struct
@@ -195,7 +195,7 @@ index e4cd7232015df1b0eadeea94880395fe1256ca3b..4fb2681bde07c27d5c22d9aba4433ae2
  	}
  	list_del_rcu(&p->thread_node);
 diff --git a/kernel/fork.c b/kernel/fork.c
-index c4660f59bbeff220ac7c787cfc48f88fbf17c502..2f6e7e84545a4ef4c43bf19136917b01efed4cc4 100644
+index 62adf553b2c3f8b21a079bb5ccd4192ca6ac3ae5..8050ffd60ffb7ed27a515f9959004ce8f5642388 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
 @@ -120,6 +120,10 @@
@@ -760,7 +760,7 @@ index e2cf3b08d4e959d5d00f404375c98a3a3be7040d..aad22593027a52ea3243397415ebc4ae
  
  #ifdef CONFIG_CGROUP_CPUACCT
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 35d647c8c368315c75648bc0ddf4a77ded0f6b26..8d75d7b3dcdc6a56f473756fd6c408cf44dd02b1 100644
+index 3d6c55598726f97edc08d2d7bd31ce179b27f515..cdf4dd08e381d5853e7e7337d143d881052a4c15 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -100,6 +100,10 @@
@@ -786,7 +786,7 @@ index 35d647c8c368315c75648bc0ddf4a77ded0f6b26..8d75d7b3dcdc6a56f473756fd6c408cf
  	struct load_weight lw;
  
  	if (task_has_idle_policy(p)) {
-@@ -8982,6 +8990,10 @@ void __init sched_init(void)
+@@ -8989,6 +8997,10 @@ void __init sched_init(void)
  	BUG_ON(!sched_class_above(&ext_sched_class, &idle_sched_class));
  #endif
  
