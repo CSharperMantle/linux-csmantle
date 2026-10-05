@@ -42,6 +42,3 @@ index 9ba711790a95286a8aa6641820b49584778cffba..6cd19a877b2ce4477aeaf157f8f48175
  	if (ret)
  		goto out_err;
  	if (!mem->bus.is_iomem) {
--- 
-2.55.0
-

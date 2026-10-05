@@ -244,6 +244,3 @@ index 0000000000000000000000000000000000000000..93a05993745aaabe44cafda01d902985
 +MODULE_AUTHOR("Huacai Chen <chenhuacai@loongson.cn>");
 +MODULE_DESCRIPTION("Loongson CPU Hwmon driver");
 +MODULE_LICENSE("GPL");
--- 
-2.55.0
-

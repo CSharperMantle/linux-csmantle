@@ -36,6 +36,3 @@ index e814701bc8fd433b0e5bf869c16d718c0edea78a..6b6e3925248fc0258c0409a9feedc76e
  module_param_named(abmlevel, amdgpu_dm_abm_level, int, 0444);
  
  int amdgpu_backlight = -1;
--- 
-2.55.0
-

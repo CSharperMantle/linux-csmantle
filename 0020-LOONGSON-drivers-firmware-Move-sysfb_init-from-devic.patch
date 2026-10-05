@@ -53,6 +53,3 @@ index 8833582c188301afb4a9c9dbdf969828ab9449f6..7d529d8bed5124e64d2c1469fddbe46e
  /* must execute after PCI subsystem for EFI quirks */
 -device_initcall(sysfb_init);
 +fs_initcall(sysfb_init);
--- 
-2.55.0
-

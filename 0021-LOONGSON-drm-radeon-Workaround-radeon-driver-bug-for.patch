@@ -69,6 +69,3 @@ index 4681ff28630a7209cd1fb4e4220e4e7500e145cb..dee3d628e6040dc2d21f32d000e452db
  	atomic_set(&rdev->ih.lock, 0);
  
  	/* make sure wptr hasn't changed while processing */
--- 
-2.55.0
-

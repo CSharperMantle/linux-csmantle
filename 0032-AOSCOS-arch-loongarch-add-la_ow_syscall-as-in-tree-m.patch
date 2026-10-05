@@ -1374,6 +1374,3 @@ index 0000000000000000000000000000000000000000..f2b6602cc7ef4f02e78935e5b6aae8e3
 +
 +extern const char *sys_call_table_name[];
 +extern struct syscall_replace_table syscall_to_replace[];
--- 
-2.55.0
-

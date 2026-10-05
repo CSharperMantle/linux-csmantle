@@ -31,6 +31,3 @@ index fc10671c297cf3bb0184589f23f3ae5bdd8f7db4..d381cf4b40e6080b18b19b4d6b9c0805
 +# Return y if bindgen backend supports <flag>, n otherwise
 +# For now, the backend refers only to libclang, so more specifically, this function tests whether the given flag is recognized by the libclang used by bindgen.
 +bindgen-backend-option = $(success,trap "rm -f .tmp_$$.h" EXIT; touch .tmp_$$.h; $(BINDGEN) .tmp_$$.h -- --target=$(BINDGEN_TARGET) $(1))
--- 
-2.55.0
-

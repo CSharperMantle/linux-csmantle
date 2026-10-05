@@ -125,6 +125,3 @@ index b475dd27b7af94a22537f1000e95606774d6c7f2..25f8301ae14fe1159d74617931239d51
  	{ /* sentinel */ }
  };
  MODULE_DEVICE_TABLE(of, ls2x_i2c_id_table);
--- 
-2.55.0
-

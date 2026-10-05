@@ -58,6 +58,3 @@ index 5618aef462f21bf296698475cbae013518d9a1fd..5b7c6a7a0e3b349cd068c8a57d49241a
  	/**
  	 * @sysman: Resource manager for the system domain.
  	 * Access via ttm_manager_type.
--- 
-2.55.0
-

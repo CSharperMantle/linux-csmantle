@@ -36,10 +36,10 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/virt/kvm/kvm_main.c b/virt/kvm/kvm_main.c
-index 45e784462ec6ebe6cbbaf4e79c09b288d3f4555f..780dc540fc517a524a184102570dbfe5b5543171 100644
+index e389ac4744e69cd03b82c535009b4b57ccd41b36..9f493b946c402c180b195886758b0801a14a7adf 100644
 --- a/virt/kvm/kvm_main.c
 +++ b/virt/kvm/kvm_main.c
-@@ -5568,7 +5568,7 @@ static struct miscdevice kvm_dev = {
+@@ -5590,7 +5590,7 @@ static struct miscdevice kvm_dev = {
  };
  
  #ifdef CONFIG_KVM_GENERIC_HARDWARE_ENABLING
@@ -48,6 +48,3 @@ index 45e784462ec6ebe6cbbaf4e79c09b288d3f4555f..780dc540fc517a524a184102570dbfe5
  module_param(enable_virt_at_load, bool, 0444);
  EXPORT_SYMBOL_FOR_KVM_INTERNAL(enable_virt_at_load);
  
--- 
-2.55.0
-

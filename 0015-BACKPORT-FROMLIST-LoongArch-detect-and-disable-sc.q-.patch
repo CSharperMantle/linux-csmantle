@@ -87,6 +87,3 @@ index 74d31f260dfd889e66a1f55c5bcc47a3657d101f..c256b1f062bf4cebf6a886ceb5e6aae5
  		c->options |= LOONGARCH_CPU_SCQ;
  		elf_hwcap |= HWCAP_LOONGARCH_SCQ;
  	}
--- 
-2.55.0
-

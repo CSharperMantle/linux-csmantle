@@ -30,6 +30,3 @@ index db83f3365698c9b6510a4613e541b719078897d0..edc1299098d471a16fdaef78daa188a7
  	help
  	  This option adds a CPUFreq driver for Loongson processors which
  	  support software configurable cpu frequency.
--- 
-2.55.0
-

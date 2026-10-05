@@ -112,6 +112,3 @@ index c0c54baadf04edae0c6ec19ceaf433ee314daded..99fc8051585b09630e66a96753a510a8
  #else	/* CONFIG_ACPI */
  static inline void acpi_pci_add_bus(struct pci_bus *bus) { }
  static inline void acpi_pci_remove_bus(struct pci_bus *bus) { }
--- 
-2.55.0
-

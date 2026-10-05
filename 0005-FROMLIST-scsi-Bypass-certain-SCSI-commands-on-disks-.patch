@@ -152,6 +152,3 @@ index 480a0bf2aff3391933cea2fa0cefd7fc70ae3e67..5bca95706e50d3da7a6414b7a479bc43
  	if (unlikely(host->shost_state == SHOST_DEL)) {
  		cmd->result = (DID_NO_CONNECT << 16);
  		goto done;
--- 
-2.55.0
-

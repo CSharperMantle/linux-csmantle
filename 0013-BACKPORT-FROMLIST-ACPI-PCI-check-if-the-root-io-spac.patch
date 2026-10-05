@@ -61,6 +61,3 @@ index d836f46319f266365a04397ded53b5ce3b7d0458..478ee5e90490913ab69d334aa84af236
  						entry);
  
  			if (entry->res->flags & IORESOURCE_DISABLED)
--- 
-2.55.0
-

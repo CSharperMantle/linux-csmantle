@@ -73,6 +73,3 @@ index 630f679aa73957c2e72e517faf6e2b29d234763c..e3cd78a5ab1874a249804edcddb1c7b5
  		ret = devm_mutex_init(&pdev->dev, &cpufreq_mutex[i]);
  		if (ret)
  			return ret;
--- 
-2.55.0
-

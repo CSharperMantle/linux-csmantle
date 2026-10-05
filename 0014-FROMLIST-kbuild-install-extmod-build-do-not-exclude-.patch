@@ -33,6 +33,3 @@ index f12e1ffe409eb0ec76da20e82427ba798a2606af..4430379b991106e5f712ef4a8fc69252
  		! -name unifdef -a ! -name mk_elfconfig -a \( -type f -o -type l \) -print
  }
  
--- 
-2.55.0
-

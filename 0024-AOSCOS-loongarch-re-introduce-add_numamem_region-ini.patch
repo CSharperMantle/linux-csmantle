@@ -95,6 +95,3 @@ index 8b89898e20df1017226ea3a2526da87b8b33f404..3efd2b4fe37bb867408bbb34d711e0af
  static void __init info_node_memblock(void)
  {
  	u32 mem_type;
--- 
-2.55.0
-

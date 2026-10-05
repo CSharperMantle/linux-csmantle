@@ -45,6 +45,3 @@ index 068c7bea3102015bd9db153fc549f8bde9e93a64..e6d6fabe16b9d0bb541b9d06e7471b07
   err_wakeup:
  
  		/* System sleep transitions should never fail */
--- 
-2.55.0
-

@@ -41,6 +41,3 @@ index e16aa59dd7ac8bcc7d748737e4fd6aa698033a25..6a2b005e54026936bc9a797fd6859f13
  		pci_clear_master(pci_dev);
  }
  
--- 
-2.55.0
-

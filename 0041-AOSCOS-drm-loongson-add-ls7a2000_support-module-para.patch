@@ -76,6 +76,3 @@ index 34405073c4d48e669f390e2bbfb3084def211994..08587d92fb9d905eb0c507f21139cb43
  	if (IS_ERR_OR_NULL(descp))
  		return -ENODEV;
  
--- 
-2.55.0
-

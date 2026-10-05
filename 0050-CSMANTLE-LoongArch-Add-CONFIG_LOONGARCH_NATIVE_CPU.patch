@@ -74,6 +74,3 @@ index 4b22f95aaafb62cd6c2504dc73bc65c3bbdf32a8..70a7dcf662d0d1d29771b96057cf5d28
  KBUILD_RUSTFLAGS		+= --target=loongarch64-unknown-none-softfloat -Ccode-model=small
  KBUILD_RUSTFLAGS_KERNEL		+= -Zdirect-access-external-data=yes
  KBUILD_RUSTFLAGS_MODULE		+= -Zdirect-access-external-data=no
--- 
-2.55.0
-

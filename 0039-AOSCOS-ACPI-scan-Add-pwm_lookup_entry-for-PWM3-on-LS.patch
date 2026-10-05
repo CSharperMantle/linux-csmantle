@@ -115,6 +115,3 @@ index 99af95f33865258c4f5529aed48f897ecbefc11c..9ef22bbe99b7fcf46c9201445ce751f8
  
  	acpi_scan_add_handler(&generic_device_handler);
  
--- 
-2.55.0
-

@@ -44,6 +44,3 @@ index 1e8715ea1b771d1c891aac43de4c30c341f4910a..630f679aa73957c2e72e517faf6e2b29
  		u32 cmd		: 6;
  		u32 extra	: 1;
  		u32 complete	: 1;
--- 
-2.55.0
-

@@ -99,6 +99,3 @@ index 7043bfd0399d66cd1176883e7fff53a2e0a8f223..3ec69ffd8b942057d76706d0adca36d1
  int loongarch_have_legacy_bpi (void){
  	return have_bpi;
  }
--- 
-2.55.0
-

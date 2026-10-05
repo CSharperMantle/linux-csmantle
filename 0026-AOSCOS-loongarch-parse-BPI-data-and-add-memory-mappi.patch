@@ -495,6 +495,3 @@ index d4b5d1b6bb015b92a9796db37fd34db525912213..f4f6881e3529a69e9798fd77c098aece
  	cpuboot_data.task = (unsigned long)idle;
  	cpuboot_data.stack = (unsigned long)task_pt_regs(idle);
  	cpuboot_data.offset = per_cpu_offset(cpu);
--- 
-2.55.0
-

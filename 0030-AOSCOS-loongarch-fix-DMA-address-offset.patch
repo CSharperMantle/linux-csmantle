@@ -89,6 +89,3 @@ index 3ec69ffd8b942057d76706d0adca36d13c7b3269..2888e2b9fb4566a249eb984a6ccf5860
  }
  
  void acpi_arch_os_table_override (struct acpi_table_header *existing_table, struct acpi_table_header **new_table){
--- 
-2.55.0
-

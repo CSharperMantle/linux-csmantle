@@ -22,6 +22,3 @@ index c3b8c2435bae9a02b1e1222a885ade88c2529fb2..fd48b0e0d46fbbb0a79d3fad45586c3f
 -else
  export BINDGEN_TARGET
 -endif
--- 
-2.55.0
-

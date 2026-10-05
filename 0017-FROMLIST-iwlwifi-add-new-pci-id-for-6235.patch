@@ -35,6 +35,3 @@ index 7a7b10152e5ae1f4e72b8d1fbed0a2e3629d9aaf..6b41632cfb325507b343715b15a3b1c6
  
  /* 105 Series */
  	{IWL_PCI_DEVICE(0x0894, 0x0022, iwl105_mac_cfg)},
--- 
-2.55.0
-

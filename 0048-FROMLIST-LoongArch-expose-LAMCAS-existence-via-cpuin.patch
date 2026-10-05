@@ -206,6 +206,3 @@ index d4ce5b585453700caf2187c3dcc8f4f3cc8a9226..f86be83ad6f134c5793667fa6dbe2bf8
  	if (cpu_has_scq)
  		seq_puts(m, " scq");
  	if (cpu_has_ual)
--- 
-2.55.0
-

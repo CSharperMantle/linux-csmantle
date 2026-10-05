@@ -91,6 +91,3 @@ index e3cd78a5ab1874a249804edcddb1c7b5926a9a8c..1ae821e265fbf862a0234419487fa05c
  		if (ret < 0) {
  			devm_kfree(&pdev->dev, data);
  			return ret;
--- 
-2.55.0
-

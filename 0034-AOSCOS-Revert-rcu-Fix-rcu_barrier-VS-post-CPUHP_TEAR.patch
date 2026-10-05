@@ -123,6 +123,3 @@ index 03a43d3d261607a5eef3e72c7e2893d24799b25c..a164b6e5b79b8a14bd7d5bfa39ff7211
  	WARN_ON_ONCE(rcu_rdp_cpu_online(rdp));
  	rcu_barrier_entrain(rdp);
  	my_rdp = this_cpu_ptr(&rcu_data);
--- 
-2.55.0
-

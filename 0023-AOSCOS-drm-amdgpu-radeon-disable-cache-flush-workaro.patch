@@ -99,6 +99,3 @@ index 8051b83493d4e90b9c0c8fa41dd3b883ed967e8c..33a3ba97eb21e6e27a089491a17afe15
  
  	/* Then send the real EOP event down the pipe. */
  	radeon_ring_write(ring, PACKET3(PACKET3_EVENT_WRITE_EOP, 4));
--- 
-2.55.0
-

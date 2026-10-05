@@ -103,6 +103,3 @@ index 0fdf15faa344d2db0a1cf52dc52c3f58aabef49c..bff7d70e7470ea930ba29504533f11fa
  	return devm_gpiochip_add_data(&pdev->dev, &lgpio->chip.gc, lgpio);
  }
  
--- 
-2.55.0
-

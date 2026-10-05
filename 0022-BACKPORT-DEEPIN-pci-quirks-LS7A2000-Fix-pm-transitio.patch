@@ -86,6 +86,3 @@ index 66a4fda05793de91ad2038a2c43521984e956e29..ac3d291894b0f2fec2fb8ef62677f680
  };
  
  enum pci_irq_reroute_variant {
--- 
-2.55.0
-
