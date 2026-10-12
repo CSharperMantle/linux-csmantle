@@ -21,7 +21,7 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c b/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c
-index e814701bc8fd433b0e5bf869c16d718c0edea78a..6b6e3925248fc0258c0409a9feedc76e075b5043 100644
+index 14b539d50efa14a3ceb4924807214d39af2bc255..8d22758eca6997d0cbf87b7171e6c447b4238791 100644
 --- a/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c
 +++ b/drivers/gpu/drm/amd/amdgpu/amdgpu_drv.c
 @@ -882,9 +882,9 @@ module_param_named(visualconfirm, amdgpu_dc_visual_confirm, uint, 0444);

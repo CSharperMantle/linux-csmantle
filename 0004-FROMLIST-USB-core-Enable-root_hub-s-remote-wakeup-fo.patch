@@ -22,10 +22,10 @@ Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
  1 file changed, 4 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/usb/core/hub.c b/drivers/usb/core/hub.c
-index 068c7bea3102015bd9db153fc549f8bde9e93a64..e6d6fabe16b9d0bb541b9d06e7471b07d972db62 100644
+index b119f5b6065c446e2aa01cb46da4fb9bbd8a994b..7e3656e42c4ac363e90e41b7bf886937e7b640ef 100644
 --- a/drivers/usb/core/hub.c
 +++ b/drivers/usb/core/hub.c
-@@ -3536,6 +3536,7 @@ int usb_port_suspend(struct usb_device *udev, pm_message_t msg)
+@@ -3541,6 +3541,7 @@ int usb_port_suspend(struct usb_device *udev, pm_message_t msg)
  			if (PMSG_IS_AUTO(msg))
  				goto err_wakeup;
  		}
@@ -33,7 +33,7 @@ index 068c7bea3102015bd9db153fc549f8bde9e93a64..e6d6fabe16b9d0bb541b9d06e7471b07
  	}
  
  	/* disable USB2 hardware LPM */
-@@ -3599,8 +3600,10 @@ int usb_port_suspend(struct usb_device *udev, pm_message_t msg)
+@@ -3604,8 +3605,10 @@ int usb_port_suspend(struct usb_device *udev, pm_message_t msg)
  		/* Try to enable USB2 hardware LPM again */
  		usb_enable_usb2_hardware_lpm(udev);
  
