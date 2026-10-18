@@ -195,7 +195,7 @@ index 27e5cf81e78dd80a42cfe5cdeaeaf17f94dcc9ce..7b0fa38f5e5c8cad440608997ba96757
  	}
  	list_del_rcu(&p->thread_node);
 diff --git a/kernel/fork.c b/kernel/fork.c
-index 3ed738f66a482775efbf815be3a12955f82ddd55..c646772fa3536dc6ef0a4730593afeb46aa24c3f 100644
+index bb99bf764fd687f5ddce8c20c0bfa5685ed01003..35b1a680ad57ac26de145c64c63bec2c506d2bd6 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
 @@ -120,6 +120,10 @@
@@ -1251,10 +1251,10 @@ index b6cace1d0e3228b2c53c24b0d402ed7286609538..82aa8857cef951b814a7c10cd4a7da58
  	set_task_max_allowed_capacity(p);
  
 diff --git a/kernel/sched/sched.h b/kernel/sched/sched.h
-index f76e6f7f4a0147df468c8fd1b595dc90f3e266f0..ef9db7330c220f989b7cabcc2ce07ac17692338c 100644
+index a6c6f8165eecc8f7ed8b5ec0b1d7e03700bff9a9..769acf8b175259ce9e91d26f19ba34a45b99dbb3 100644
 --- a/kernel/sched/sched.h
 +++ b/kernel/sched/sched.h
-@@ -2267,7 +2267,11 @@ extern int group_balance_cpu(struct sched_group *sg);
+@@ -2266,7 +2266,11 @@ extern int group_balance_cpu(struct sched_group *sg);
  extern void update_sched_domain_debugfs(void);
  extern void dirty_sched_domain_sysctl(int cpu);
  
@@ -1266,7 +1266,7 @@ index f76e6f7f4a0147df468c8fd1b595dc90f3e266f0..ef9db7330c220f989b7cabcc2ce07ac1
  
  static inline const struct cpumask *task_user_cpus(struct task_struct *p)
  {
-@@ -3112,7 +3116,12 @@ static inline void attach_one_task(struct rq *rq, struct task_struct *p)
+@@ -3111,7 +3115,12 @@ static inline void attach_one_task(struct rq *rq, struct task_struct *p)
  extern __read_mostly unsigned int sysctl_sched_nr_migrate;
  extern __read_mostly unsigned int sysctl_sched_migration_cost;
  
