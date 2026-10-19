@@ -1,7 +1,7 @@
 pkgbase = linux-csmantle
 	pkgdesc = Linux
 	pkgver = 7.2.11.arch1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/archlinux/linux
 	arch = loong64
 	license = GPL-2.0-only
@@ -156,6 +156,7 @@ pkgname = linux-csmantle
 	depends = coreutils
 	depends = initramfs
 	depends = kmod
+	optdepends = linux-csmantle-headers: headers and scripts for building modules
 	optdepends = linux-firmware: firmware images needed for some devices
 	optdepends = scx-scheds: to use sched-ext schedulers
 	optdepends = wireless-regdb: to set the correct wireless channels of your country
@@ -178,3 +179,6 @@ pkgname = linux-csmantle-headers
 	depends = zlib
 	depends = zstd
 	provides = LINUX-HEADERS
+
+pkgname = linux-csmantle-docs
+	pkgdesc = Documentation for the Linux kernel

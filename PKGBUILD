@@ -4,7 +4,7 @@
 
 pkgbase=linux-csmantle
 pkgver=7.2.11.arch1
-pkgrel=1
+pkgrel=2
 pkgdesc='Linux'
 url='https://github.com/archlinux/linux'
 arch=(loong64)
@@ -161,9 +161,13 @@ prepare() {
 
 build() {
   cd $_srcname
+
+  make htmldocs SPHINXOPTS=-QT &
+  local pid_docs=$!
+
   make all
   make -C tools/bpf/bpftool vmlinux.h feature-clang-bpf-co-re=1
-  # make htmldocs SPHINXOPTS=-QT
+  wait $pid_docs
 }
 
 _package() {
@@ -174,6 +178,7 @@ _package() {
     kmod
   )
   optdepends=(
+    "$pkgbase-headers: headers and scripts for building modules"
     'linux-firmware: firmware images needed for some devices'
     'scx-scheds: to use sched-ext schedulers'
     'wireless-regdb: to set the correct wireless channels of your country'
@@ -238,11 +243,13 @@ _package-headers() {
   cp -t "$builddir" -a scripts
   ln -srt "$builddir" "$builddir/scripts/gdb/vmlinux-gdb.py"
 
-  # required when STACK_VALIDATION is enabled
-  install -Dt "$builddir/tools/objtool" tools/objtool/objtool
+  if [[ $(scripts/config -s CONFIG_HAVE_STACK_VALIDATION) = y ]]; then
+    install -Dt "$builddir/tools/objtool" tools/objtool/objtool
+  fi
 
-  # required when DEBUG_INFO_BTF_MODULES is enabled
-  install -Dt "$builddir/tools/bpf/resolve_btfids" tools/bpf/resolve_btfids/resolve_btfids
+  if [[ $(scripts/config -s CONFIG_DEBUG_INFO_BTF_MODULES) = y ]]; then
+    install -Dt "$builddir/tools/bpf/resolve_btfids" tools/bpf/resolve_btfids/resolve_btfids
+  fi
 
   echo "Installing headers..."
   cp -t "$builddir" -a include
@@ -271,9 +278,11 @@ _package-headers() {
   echo "Installing KConfig files..."
   find . -name 'Kconfig*' -exec install -Dm644 {} "$builddir/{}" \;
 
-  echo "Installing Rust files..."
-  install -Dt "$builddir/rust" -m644 rust/*.rmeta || true
-  install -Dt "$builddir/rust" rust/*.so || true
+  if [[ $(scripts/config -s CONFIG_RUST) = y ]]; then
+    echo "Installing Rust files..."
+    install -Dt "$builddir/rust" -m644 rust/*.rmeta
+    install -Dt "$builddir/rust" rust/*.so
+  fi
 
   echo "Installing unstripped VDSO..."
   make INSTALL_MOD_PATH="$pkgdir/usr" vdso_install \
@@ -335,7 +344,10 @@ _package-docs() {
     dst="${src#Documentation/}"
     dst="$builddir/Documentation/${dst#output/}"
     install -Dm644 "$src" "$dst"
-  done < <(find Documentation -name '.*' -prune -o ! -type d -print0)
+  done < <(
+    find Documentation \( -name '.*' -o -name __pycache__ \) -prune \
+      -o \! -type d -print0
+  )
 
   echo "Adding symlink..."
   mkdir -p "$pkgdir/usr/share/doc"
@@ -345,7 +357,7 @@ _package-docs() {
 pkgname=(
   "$pkgbase"
   "$pkgbase-headers"
-  # "$pkgbase-docs"
+  "$pkgbase-docs"
 )
 for _p in "${pkgname[@]}"; do
   eval "package_$_p() {
@@ -408,4 +420,5 @@ source+=('001-arch4loong64-addition.frag.config'
          '0049-BORE-linux7.2-rc1-bore-6.8.0.patch'
          '0050-CSMANTLE-LoongArch-Add-CONFIG_LOONGARCH_NATIVE_CPU.patch'
 )
+
 # vim:set ts=8 sts=2 sw=2 et:
