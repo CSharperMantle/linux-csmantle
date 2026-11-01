@@ -34,7 +34,7 @@ Signed-off-by: Rong Bao <rong.bao@csmantle.top>
  2 files changed, 31 insertions(+)
 
 diff --git a/drivers/pci/quirks.c b/drivers/pci/quirks.c
-index 0500d5fd4f112e8e8a850181c3d0ab12a94156d3..82ac1eac3a1c0ec97942bcbea10781c49848aab2 100644
+index 86e6af409da23e8a9243fa9b92fb51e7e00840b1..8b57bc73226fbad461ef3d3005101c62576d37cb 100644
 --- a/drivers/pci/quirks.c
 +++ b/drivers/pci/quirks.c
 @@ -387,6 +387,36 @@ static void quirk_tigerpoint_bm_sts(struct pci_dev *dev)
