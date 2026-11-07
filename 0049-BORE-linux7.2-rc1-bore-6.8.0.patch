@@ -195,7 +195,7 @@ index 256f9ab9cbfea942d80ca4e460efa16e0ff3a2e2..93f80dbf18e18f8fe3aabb423722d44a
  	}
  	list_del_rcu(&p->thread_node);
 diff --git a/kernel/fork.c b/kernel/fork.c
-index ea1224eca6b73463d767e7e6426d08d177ecef41..cdfd5dabbf1aecbb2c2eedeefde68d0fdf530c58 100644
+index ff340d59d66de6ea0308cba8752a85a2ca065467..8cbe2e4c0f34e075ac8fd5be0fd0b66cf402d607 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
 @@ -120,6 +120,10 @@
